@@ -1,4 +1,12 @@
 \documentclass{llncs}
+\usepackage{ amssymb }
+\usepackage[linesnumbered, ruled, vlined]{algorithm2e}
+
+\usepackage{xcolor}
+\definecolor{todocolor}{RGB}{72,130,84}
+\newcommand{\todo}[1] {
+  \textcolor{todocolor}{TODO: #1}
+}
 
 \begin{document}
 
@@ -20,24 +28,11 @@ Department of Computer Science \& Engineering, University of Minnesota, MN, USA\
 
 \maketitle    
 \begin{abstract} 
-Symbolic model checkers can construct proofs of
-safety properties over complex models, but when a proof succeeds,
-the results do not generally provide much insight to
-the user. For explanation of the correctness, Minimal Inductive Validity Cores (MIVCs) can be used. Every MIVC traces the property to a minimal set of model elements necessary
-for constructing a proof. 
-The traceability information provided by MIVCs can be used to perform a variety of engineering analysis such as a coverage analysis, a robustness analysis or a vacuity detection. 
-The more MIVCs are identified, the more precise analyses can be performed. 
-However, a full enumeration of all MIVCs
-is in general intractable due to the combinatorial explosion.
+Symbolic model checkers can construct proofs of safety properties over complex models, but when a proof succeeds, the results do not generally provide much insight to the user.  Minimal Inductive Validity Cores (MIVCs) trace a property to a minimal set of model elements necessary for constructing a proof, and can help to explain why a property is true of a model.  In addition, the traceability information provided by MIVCs can be used to perform a variety of engineering analysis such as coverage analysis, robustness analysis, and vacuity detection.  The more MIVCs are identified, the more precise analyses can be performed.   However, a full enumeration of all MIVCs is in general intractable due to the large number of possible model element sets.  The bottleneck of existing algorithms is that they are not guaranteed to emit minimal IVCs until the end of the computation, so returned results are not known to be minimal until all solutions are produced.  
 
-The bottleneck of existing algorithms is that they identify all MIVCs simultaneously at the very end of the computation.
-Thus they output no MIVC in the cases where the complete enumeration is intractable. 
-In this paper, we propose an algorithm that identifies MIVCs in an \emph{online} manner (i.e., one by one)
-and can be terminated anytime.
-We benchmark our algorithm against existing algorithms on a variety of benchmarks. We show that our algorithm not only is the winner in the intractable cases but also completes the enumeration sooner in many tractable cases.
+In this paper, we propose an algorithm that identifies MIVCs in an \emph{online} manner (i.e., one by one) and can be terminated at any time.  We benchmark our new algorithm against existing algorithms on a variety of examples, and demonstrate that our algorithm not only is better in intractable cases but also completes the enumeration of MIVCs faster than competing algorithms in many tractable cases.
 
-
-\keywords{Inductive Validity Cores, SMT-based model checking, Inductive proofs, Traceability}
+\keywords{Inductive Validity Cores, SMT-based model checking, Inductive proofs, Traceability, Proof cores}
 \end{abstract} 
  
  
@@ -57,9 +52,9 @@ We benchmark our algorithm against existing algorithms on a variety of benchmark
 \input{preliminaries}
 
 
-\section{Related Work}
-\label{sec:related-work}
-\input{related_work}
+\section{Existing Techniques}
+\label{sec:existing-techniques}
+\input{existing_techniques}
 
 
 \section{Algorithm}

@@ -1,0 +1,28 @@
+%\documentclass[]{article}
+%\usepackage[]{algorithm2e}
+%
+%\begin{document}
+%\begin{algorithm}
+
+\SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
+
+\DontPrintSemicolon
+
+\Input{$(I, T) \vdash P$}
+\Input{set $Unex$ of unexplored subsets of $T$}
+\Output{MIVC for $(I, T) \vdash P$}
+	\For{$T_i \in T$}{
+		\If{$ T \setminus \{ T_i \} \in Unex$ }{		
+			\If{$(I, T \setminus \{ T_i \}) \vdash P$}{
+				$T \gets T \setminus T_i$\;
+			}
+		}
+	}
+	\Return $T$\;
+
+%\end{algorithm}
+
+
+
+
+%\end{document}

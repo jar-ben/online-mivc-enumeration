@@ -1,0 +1,32 @@
+%\documentclass[]{article}
+%\usepackage[]{algorithm2e}
+%
+%\begin{document}
+%\begin{algorithm}
+
+\SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
+\SetKwFunction{getMIVCApproximation}{getMIVCApproximation}
+
+
+\DontPrintSemicolon
+
+\Input{$(I, T) \vdash P$}
+\Input{$U \subset T$ such that  $(I, U) \nvdash P$}
+\Input{set $Unex$ of unexplored subsets of $T$}
+\Output{approximately maximal inadequate subset of $\mathcal{T}$.}
+
+	$M \gets $ a maximal $M \in Unex$ such that $M \supseteq U$\;
+	\While{$(I, M) \vdash P$}{
+			$\mathit{MIVCApprox} \gets \getMIVCApproximation((I,M), P)$\;
+			$T_i \gets choose T_i \in (\mathit{MIVCApprox} \cap (T \setminus U))$\;
+			$M \gets M \setminus \{ T_i \}$\;
+	}
+	
+	\Return $M$\;
+	
+%\end{algorithm}
+
+
+
+
+%\end{document}

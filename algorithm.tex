@@ -1,0 +1,72 @@
+In this section, we propose a novel algorithm for online enumeration of MIVCs. \\
+- bude se skladat ze tri hlavnich casti: shrink, grow, core part combining shrinks and grows
+- algoritmus bude vyjmenovavat MIVCs online zpusobem diky vyuziti metody shrink. V predchozi kapitole jsme uvedli, ze shrink se ukazal byt v praci by ... velmi pomaly a tedy nepouzitelny. My zde predstavime vlastni implementaci shrinku, ktera bude velmi efektivni. 
+
+\subsection{Efficient Shrink Procedure}
+In this section, we propose an efficient shrink procedure, i.e. and algorithm that efficiently turns an adequate subset into an MIVC. The problem with the shrinking procedure UC\_BF presented in the previous section is, that it performs linearly many checks for adequacy with respect to the size of the given set to be shrunk. Since each check for adequacy means performing a model checking, linearly many checks might be too much. 
+We present and improvement to the UC\_BF algorith that is based on the fact, that we are not searching just for a one MIVC but for all MIVCs. Therefore, we can use information obtained during previous computation to speed up the subsequent shrinks. In particular, once we determine adequacy of $U \subseteq T$, i.e. once $U$ become explored, we can avoid checking $U$, and also all of its subsets (or supersets), for adequacy during subsequent shrink procedures. 
+Algorithm~\ref{alg:shrink_efficient} shows an improved shrinking procedure. Same as the $UC\_BF$ algorithm, it iteratively attempts to remove elements from the set that is being
+shrunk, checking each new set for adequacy and keeping only changes that
+leave the set adequate. However, it avoids checking unexplored subsets for adequacy since their status is already known due to the previous computation. 
+
+\begin{algorithm}[!t]
+\input{./algs/alg_map_based_shrink}
+\caption{Map based shrink algorithm}
+\end{algorithm}
+
+Intuitively, the more subsets are already explored, the more checks for adequacy can be saved during the shrinking. The question is which subsets should be checked for adequacy (i.e., become explored) before we employ the shrinking procedure. The answer to this question can be found in the following:
+
+\begin{theorem}
+\label{theorem:unex-prop}
+Let $U_1, U_2$ be subsets of $T$ such that $U_1$ is explored, $U_2$ is unexplored, and $U_1 \subset U_2$. Then $U_1$ is inadequate.
+\end{theorem}
+
+\begin{proof}
+If $U_1$ is adequate, then all of its supersets are necessarily adequate. Thus, if $U_1$ is determined to be adequate, then not just $U_1$ but also all of its supersets becomes explored. Since $U_1$ is explored and $U_2$ is unexplored, then $U_1$ is necessarily an inadequate subset of $T$.
+\end{proof}
+
+\begin{corollary}
+Let $U_1, U_2$ be subsets of $T$ such that $U_2$ is explored, $U_1$ is unexplored, and $U_1 \subset U_2$. Then $U_1$ is adequate.
+\end{corollary}
+
+\begin{proof}
+Immediately from Theorem~\ref{theorem:unex-prop}. 
+\end{proof}
+
+Assuming that we employ the shrinking algorithm only on unexplored subsets, Theorem~\ref{theorem:unex-prop} implies that each unexplored subset that is encountered during the shrinking is necessarily an inadequate subset. Therefore, it is knowledge of adequacy of inadequate subsets that can be exploited to boost the shrinking procedure since we can skip some adequacy checks. One can say that in order to save a one check for adequacy during shrinking, we have to perform the same one check before the shrinking, i.e. no checked is saved at the end. But this is not true due to two reasons. First, since we are looking for multiple MIVCs, we might perform multiple shrinks, and thus we might encounter one particular inadequate subset several times. Second, if we find out that $U \subseteq T$ is inadequate, than we determine that all of its subsets are also inadequate, and thus, we can save checking all of these subsets for adequacy during subsequent shrinks. 
+
+\begin{algorithm}[!t]
+\input{./algs/alg_grow_approximation}
+\caption{Approximate grow}
+\end{algorithm}
+
+
+
+\subsection{Efficient Grow Procedure}
+In this section, we present an efficient way how to find inadequate subsets in order to boost the subsequent calls of the shrinking procedure.
+
+Intuitively, in order to identify inadequate subsets as quickly as possible, we should strive for finding maximal inadequate subsets (MISes).  
+In order to find an MIS, we can use a \emph{grow} procedure which turns and inadequate subsets into a MIS, i.e. it is a dual of the shrink procedure. However, such procedure might be quite expensive. Similarly as in the case of UC\_BF we can iteratively attempt to add elements to the set that is being
+grown, checking each new set for adequacy and keeping only changes that
+leave the set inadequate. However, such approach performs linearly many adequacy checks which is rather inefficient. We can boost this procedure in the same way as is boosted the shrinking procedure, i.e. exploit subsets that are already known to be adequate to save some adequacy checks. However, this would mean that we are using a grow procedures to speed shrinks procedures, but to speed the grow procedures we need shrink procedures. It is easy to see, that this is not the right way. Thus, we propose a different approach. 
+
+Instead of finding MISes, we propose to search for approximately MISes. Algorithm~\ref{alg:grow-approx} shows an approach how can be an unexplored inadequate subset $U$ turned into an approximately MIS. It first finds some maximal unexplored superset $M$ such that $M \supseteq U$ and then checks it for adequacy. Note, that if a maximal unexplored subset is inadequate, then it is necessarily an MIS - this is a straightforward consequence of Corollary~\ref{corollary:unex-prop}. 
+Otherwise, if $M$ is adequate then it is iteratively reduced until an inadequate subset is found. In each iteration, we first use algorithm IVC\_UC to find an approximately minimal IVC $M_{IVC}$ of $M$. $M_{IVC}$ is a succinct representation of the reason (or one of the reasons) of $M$ being adequate. Therefore, we choose some $T_i \in M_{IVC}$ and remove it from $M$ attempting to make it inadequate. We also require $T_i$ to be included in $T \setminus U$, i.e. in $U$'s complement. This guarantees that $M$ is a superset of $U$ during the whole computation and eventually an inadequate subset is found since $U$ is inadequate. Moreover, since both $U$ and $M$ were initially unexplored, this condition on $T_i$ also implies that the resultant $M$ was also unexplored at the start of the growing, i.e. an unexplored approximately maximal inadequate subset is found. 
+
+\subsection{Complete Algorithm}
+In this section, we describe, how to combine the shrink and grow methods in order to form an efficient online MIVC enumeration algorithm.
+
+Since knowledge of (approximately) maximal inadequate subsets might be used to speed up shrinking procedures, it might be tempting to first find all maximal inadequate subsets. However, there can be up to exponentially many such subsets with respect to the size of $T$. Thus, finding first all maximal inadequate subsets is in general intractable. Instead, we propose to alternate both shrinking and growing procedures. Note, that during shrinking, we might determine some subsets to be inadequate, and such subsets can be subsequently used as \emph{seeds} for growing. Dually, we might determine some subsets to be adequate during the growing procedures, and such subsets can be used as \emph{seeds} for shrinking procedures. Thus, both these procedures somehow complements each other. 
+
+Algorithm~\ref{alg:core} shows our algorithm for online enumeration of all MIVCs. It iteratively... todo popis algoritmu + pseudokod. 
+
+
+\begin{algorithm}[!t]
+\input{./algs/alg}
+\caption{AllMIVC algorithm}
+\end{algorithm}
+
+
+
+
+ 

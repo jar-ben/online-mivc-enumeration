@@ -1,0 +1,54 @@
+\DontPrintSemicolon
+\SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
+\SetKwFunction{Shrink}{Shrink}
+\SetKwFunction{FindMIVCs}{FindMIVCs}
+\SetKwFunction{Grow}{Grow}
+\SetKwFunction{Dequeue}{Dequeue}
+\SetKwProg{Fn}{Function}{:}{}
+
+\Fn{\FindMIVCs{$(I, T) \vdash P$}}{
+	$\mathit{Unex} \gets \mathcal{P}(T)$\;
+	$\mathit{shrinkingQueue} \gets $ empty queue\;
+	\While{$Unex \neq \emptyset$}{
+		$B \gets$ a minimal $B \in Unex$\;
+		\eIf{$(I, B) \vdash P$}{
+			\textbf{output} $B$\;
+			$\mathit{Unex} \gets \mathit{Unex} \setminus \mathit{Sup}(B)$\;
+		}{
+			$\mathit{MIS} \gets \Grow(B)$ \tcp*{side effect: fills $\mathit{shrinkingQueue}$}
+			$\mathit{Unex} \gets \mathit{Unex} \setminus \mathit{Sub}(MIS)$\;			
+		} 
+		\While{$\mathit{shrinkingQueue}$ is not empty}{
+			$\mathit{seed} \Dequeue(\mathit{shrinkingQueue})$\;
+			$MIVC \gets \Shrink(seed)$\;
+			remove from $\mathit{shrinkingQueue}$ each $V$ such that $V \supset MIVC$\;
+			\textbf{output} $MIVC$\;
+			$\mathit{Unex} \gets \mathit{Unex} \setminus \mathit{Sup}(MIVC)$\;
+		}
+	}
+}
+
+\setcounter{AlgoLine}{0}
+\Fn{\Shrink{$U$}}{
+%\Input{an unsatisfiable set of constraints $C$}
+	\For{$T_i \in U$}{
+		\If{$ U \setminus \{ T_i \} \in Unex$ }{		
+			\If{$(I, U \setminus \{ T_i \}) \vdash P$}{
+				$U \gets T \setminus T_i$\;
+			}
+		}
+	}
+	\Return $U$\;
+}
+
+\setcounter{AlgoLine}{0}
+\Fn{\Grow{$B$}}{
+	$M \gets $ a maximal $M \in Unex$ such that $M \supseteq B$\;
+	\While{$(I, M) \vdash P$}{
+			$\mathit{MIVCApprox} \gets \getMIVCApproximation((I,M), P)$\;
+			$T_i \gets choose T_i \in (\mathit{MIVCApprox} \cap (T \setminus M))$\;
+			$M \gets M \setminus \{ T_i \}$\;
+	}	
+	\Return $M$\;
+}	 
+
