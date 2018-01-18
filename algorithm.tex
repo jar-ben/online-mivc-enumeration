@@ -1,20 +1,19 @@
-In this section, we propose a novel algorithm for online enumeration of MIVCs. \\
-- bude se skladat ze tri hlavnich casti: shrink, grow, core part combining shrinks and grows
-- algoritmus bude vyjmenovavat MIVCs online zpusobem diky vyuziti metody shrink. V predchozi kapitole jsme uvedli, ze shrink se ukazal byt v praci by ... velmi pomaly a tedy nepouzitelny. My zde predstavime vlastni implementaci shrinku, ktera bude velmi efektivni. 
+In this section, we propose a novel algorithm for online enumeration of MIVCs. The algorithm is build out of two basic procedures: shrink adn grow. The grow procedure is symmetric to the shrink one.\\
+ 
 
 \subsection{Efficient Shrink Procedure}
-In this section, we propose an efficient shrink procedure, i.e. and algorithm that efficiently turns an adequate subset into an MIVC. The problem with the shrinking procedure UC\_BF presented in the previous section is, that it performs linearly many checks for adequacy with respect to the size of the given set to be shrunk. Since each check for adequacy means performing a model checking, linearly many checks might be too much. 
-We present and improvement to the UC\_BF algorith that is based on the fact, that we are not searching just for a one MIVC but for all MIVCs. Therefore, we can use information obtained during previous computation to speed up the subsequent shrinks. In particular, once we determine adequacy of $U \subseteq T$, i.e. once $U$ become explored, we can avoid checking $U$, and also all of its subsets (or supersets), for adequacy during subsequent shrink procedures. 
-Algorithm~\ref{alg:shrink_efficient} shows an improved shrinking procedure. Same as the $UC\_BF$ algorithm, it iteratively attempts to remove elements from the set that is being
+Let us recall that the shrink procedure  turns an adequate subset into a MIVC. The problem with the shrinking procedure UC\_BF NOVY NAZOV presented in the previous section is, that it performs linearly many checks for adequacy with respect to the size of the given  adequate subset. Since each check for adequacy is in fact a  model checking problem, the shrink procedure can be thus extremely time demanding.   
+We can improve  the complexity of shrinking if we use the fact  that we are not searching just for   one MIVC but for all MIVCs. Therefore, we can use information obtained during the previous computation to speed up the future shrinks. In particular, once we determine the status of $U \subseteq T$, i.e. once $U$ become explored, we can avoid checking all of its subsets or supersets, respectively, for adequacy during subsequent shrink procedures. 
+Algorithm~\ref{alg:shrink_efficient} shows an improved shrinking procedure. Similarly to $UC\_BF$ algorithm, it iteratively attempts to remove elements from the set that is being
 shrunk, checking each new set for adequacy and keeping only changes that
-leave the set adequate. However, it avoids checking unexplored subsets for adequacy since their status is already known due to the previous computation. 
+leave the set adequate. However, it avoids checking explored subsets for adequacy since their status is already known.
 
 \begin{algorithm}[!t]
 \input{./algs/alg_map_based_shrink}
-\caption{Map based shrink algorithm}
+\caption{Novel shrinking algorithm.}
 \end{algorithm}
 
-Intuitively, the more subsets are already explored, the more checks for adequacy can be saved during the shrinking. The question is which subsets should be checked for adequacy (i.e., become explored) before we employ the shrinking procedure. The answer to this question can be found in the following:
+Intuitively, the more subsets are   explored, the more checks for adequacy can be saved during the shrinking. The question is which subsets should be checked for adequacy (i.e., become explored) before we employ the shrinking procedure. The answer to this question can be found in the following:
 
 \begin{theorem}
 \label{theorem:unex-prop}
@@ -37,7 +36,7 @@ Assuming that we employ the shrinking algorithm only on unexplored subsets, Theo
 
 \begin{algorithm}[!t]
 \input{./algs/alg_grow_approximation}
-\caption{Approximate grow}
+\caption{Approximate grow algorithm.}
 \end{algorithm}
 
 
@@ -63,7 +62,7 @@ Algorithm~\ref{alg:core} shows our algorithm for online enumeration of all MIVCs
 
 \begin{algorithm}[!t]
 \input{./algs/alg}
-\caption{AllMIVC algorithm}
+\caption{Our novel algorithm for MIVC enumeration.}
 \end{algorithm}
 
 

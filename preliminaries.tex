@@ -6,11 +6,13 @@ A transition system $(I,T)$ over a state space $S$ consists of an initial state 
 \end{itemize}
 
 A safety property $P: S \rightarrow bool$ holds on a transition system $(I, T)$ iff it holds on all reachable states, i.e., $\forall s \in S: \, R(s) \Rightarrow P(s)$. We denote this by $(I, T) \vdash P$. We assume
-the transition relation has the structure of a top-level conjunction $T(s, s') = T_1(s, s') \wedge \cdots \wedge T_n(s, s')$. In such case, $T$ can be identified with the set of its top level conjuncts $\{ T_1, \ldots, T_n\}$. By further abuse of notation, we write $T \setminus \{ T_i \}$ to denote removal of top level conjunct $T_i$ from $T$, and $T \cup \{ T_j\}$ to denote addition of top level conjunct $T_j$ to $T$. 
+the transiton step predicate $T$ is equivalent to   a conjunction of transition step predicates $T_1, \ldots, T_n$,  called top level conjuncts. 
+%the transition relation has the structure of a top-level conjunction $T(s, s') = T_1(s, s') \wedge \cdots \wedge T_n(s, s')$. 
+In such case, $T$ can be identified with the set of its top level conjuncts $\{ T_1, \ldots, T_n\}$. By further abuse of notation, we write $T \setminus \{ T_i \}$ to denote removal of top level conjunct $T_i$ from $T$, and $T \cup \{ T_j\}$ to denote addition of top level conjunct $T_j$ to $T$. 
 
 
 \begin{definition}
-$U \subseteq T$ is an Inductive Validity Core (IVC) for $(I, T) \vdash P$ iff $(I, U) \vdash P$. Moreover, $U$ is a Minimal IVC (MIVC) for $(I, T) \vdash P$ iff $(I, U) \vdash P$ and $\forall U_i \in U: \, (I, U \setminus \{ U_i\}) \nvdash P$.
+A set of conjucnts $U \subseteq T$ is an Inductive Validity Core (IVC) for $(I, T) \vdash P$ iff $(I, U) \vdash P$. Moreover, $U$ is a Minimal IVC (MIVC) for $(I, T) \vdash P$ iff $(I, U) \vdash P$ and $\forall U_i \in U: \, (I, U \setminus \{ U_i\}) \nvdash P$.
 \end{definition}
 
 Note, that the minimality concept used here is set minimality, not minimum cardinality. This means, that there can be multiple MIVCs with different cardinalities. 
