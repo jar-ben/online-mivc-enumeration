@@ -5,20 +5,20 @@
 %\begin{algorithm}
 
 \SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
-\SetKwFunction{getMIVCApproximation}{getMIVCApproximation}
+\SetKwFunction{getMIVCApproximation}{IVC\_UC}
 
 
 \DontPrintSemicolon
 
 \Input{$(I, T) \vdash P$}
-\Input{$U \subset T$ such that  $(I, U) \nvdash P$}
-\Input{set $Unex$ of unexplored subsets of $T$}
-\Output{approximately maximal inadequate subset of $\mathcal{T}$.}
+\Input{inadequate $U \subset T$ for $(I, T) \vdash P$}
+\Input{set $Unexplored$ of unexplored subsets of $T$}
+\Output{approximately maximal inadequate set for $(I, T) \vdash P$}
 
-	$M \gets $ a maximal $M \in Unex$ such that $M \supseteq U$\;
+	$M \gets $ a maximal $M \in Unexplored$ such that $M \supseteq U$\;
 	\While{$(I, M) \vdash P$}{
-			$\mathit{MIVCApprox} \gets \getMIVCApproximation((I,M), P)$\;
-			$T_i \gets choose T_i \in (\mathit{MIVCApprox} \cap (T \setminus U))$\;
+			$M_{IVC} \gets \getMIVCApproximation((I,M), P)$ \tcp*{gets approximately minimal IVC}
+			$T_i \gets$ choose $T_i \in (M_{IVC} \setminus U)$\;
 			$M \gets M \setminus \{ T_i \}$\;
 	}
 	
