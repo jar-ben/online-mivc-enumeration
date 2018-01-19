@@ -8,14 +8,14 @@
 
 \DontPrintSemicolon
 
-\Input{$(I, T) \vdash P$}
-\Output{MIVC for $(I, T) \vdash P$}
-	\For{$T_i \in T$}{
-		\If{$(I, T \setminus \{ T_i \}) \vdash P$}{
-			$T \gets T \setminus T_i$\;
+\Input{$(I, U) \vdash P$}
+\Output{MIVC for $(I, U) \vdash P$}
+	\For{$T_i \in U$}{
+		\lIf{$(I, U \setminus \{ T_i \}) \vdash P$}{
+			$U \gets U \setminus \{T_i\}$
 		}
 	}
-	\Return $T$\;
+	\Return $U$\;
 
 %\end{algorithm}
 

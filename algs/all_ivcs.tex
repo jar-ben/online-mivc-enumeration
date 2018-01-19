@@ -9,23 +9,13 @@
 \DontPrintSemicolon
 
 \Input{$(I, T) \vdash P$}
-\Output{set of all $\mathit{MIVCs}$ of $(I, T) \vdash P$}
-	$\mathit{Unexplored} = \mathcal{P}(T)$\;
-	\While{$Unexplored \neq \emptyset$}{
-		$U_{max} \gets $a maximal unexplored subset in $Unexplored$\;
-		\eIf{$(I, U_{max}) \nvdash P$}{
-			$\mathit{Unexplored} \gets \mathit{Unexplored} \setminus \mathit{Sub}(U_{max})$\;
-		}{
-			\For{$T_i \in U_{max}$}{
-				\If{$(I, U_{max} \setminus \{ T_i \}) \vdash P$}{
-					$U_{max} \gets U_{max} \setminus T_i$\;
-				}
-			}			
-			$\mathit{MIVCs} \gets \mathit{MIVCs} \cup U_{max}$\;
-			$\mathit{Unexplored} \gets \mathit{Unexplored} \setminus \mathit{Sup}(U_{max})$\;
-		}	
+\Output{MIVC for $(I, T) \vdash P$}
+	\For{$T_i \in T$}{
+		\If{$(I, T \setminus \{ T_i \}) \vdash P$}{
+			$T \gets T \setminus T_i$\;
+		}
 	}
-	\Return $\mathit{MIVCs}$\;	
+	\Return $T$\;
 
 %\end{algorithm}
 

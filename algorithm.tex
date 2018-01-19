@@ -1,50 +1,38 @@
-In this section, we propose a novel algorithm for online enumeration of MIVCs. The algorithm is build out of two basic procedures: shrink adn grow. The grow procedure is symmetric to the shrink one.\\
+In this section, we propose a novel algorithm for online enumeration of all MIVCs. The algorithm is build out of two basic procedures: shrink adn grow. The grow procedure is symmetric to the shrink one.\\
  
 
-\subsection{Efficient Shrink Procedure}
-Let us recall that the shrink procedure  turns an adequate subset into a MIVC. The problem with the shrinking procedure UC\_BF NOVY NAZOV presented in the previous section is, that it performs linearly many checks for adequacy with respect to the size of the given  adequate subset. Since each check for adequacy is in fact a  model checking problem, the shrink procedure can be thus extremely time demanding.   
-We can improve  the complexity of shrinking if we use the fact  that we are not searching just for   one MIVC but for all MIVCs. Therefore, we can use information obtained during the previous computation to speed up the future shrinks. In particular, once we determine the status of $U \subseteq T$, i.e. once $U$ become explored, we can avoid checking all of its subsets or supersets, respectively, for adequacy during subsequent shrink procedures. 
-Algorithm~\ref{alg:shrink_efficient} shows an improved shrinking procedure. Similarly to $UC\_BF$ algorithm, it iteratively attempts to remove elements from the set that is being
-shrunk, checking each new set for adequacy and keeping only changes that
-leave the set adequate. However, it avoids checking explored subsets for adequacy since their status is already known.
+\subsection{Shrink Procedure}
+ 
+In our algorithm we maintain the sets \textit{Explored} and  \textit{Unexplored}. We can effectively use the set  \textit{Explored} for speeding up the shrinking procedure. When testing the set $U \setminus \{T_i\}$ (see line 2 in Algorithm~\ref{shrin-procedure}) we first check whether  $U \setminus \{T_i\}$ is explored ( $U \setminus \{T_i\} \in \mathit{Explored}$). If so, the status of  $U \setminus \{T_i\}$ is known and no test for adequacy is needed.
 
-\begin{algorithm}[!t]
-\input{./algs/alg_map_based_shrink}
-\caption{Novel shrinking algorithm.}
-\end{algorithm}
+However, there is one more observation that can be exploited. 
 
-Intuitively, the more subsets are   explored, the more checks for adequacy can be saved during the shrinking. The question is which subsets should be checked for adequacy (i.e., become explored) before we employ the shrinking procedure. The answer to this question can be found in the following:
 
-\begin{theorem}
-\label{theorem:unex-prop}
-Let $U_1, U_2$ be subsets of $T$ such that $U_1$ is explored, $U_2$ is unexplored, and $U_1 \subset U_2$. Then $U_1$ is inadequate.
-\end{theorem}
+\begin{observation}
+\label{observation:explored-property}
+Let $U_1, U_2$ be subsets of $T$ such that $U_1$ is explored, $U_2$ is unexplored, and $U_1 \subset U_2$. Then $U_1$ is inadequate  for $(I, T) \vdash P$ .\\
+Symetrically, if $U_1, U_2$ are subsets of $T$ such that $U_2$ is explored, $U_1$ is unexplored, and $U_1 \subset U_2$. Then $U_1$ is adequate  for $(I, T) \vdash P$ .
+\end{observation} 
 
 \begin{proof}
 If $U_1$ is adequate, then all of its supersets are necessarily adequate. Thus, if $U_1$ is determined to be adequate, then not just $U_1$ but also all of its supersets becomes explored. Since $U_1$ is explored and $U_2$ is unexplored, then $U_1$ is necessarily an inadequate subset of $T$.
 \end{proof}
 
-\begin{corollary}
-Let $U_1, U_2$ be subsets of $T$ such that $U_2$ is explored, $U_1$ is unexplored, and $U_1 \subset U_2$. Then $U_1$ is adequate.
-\end{corollary}
+In other words, we are quaranteed that whenever during the shrinking procedure we come across an explored set, this set is inadequate. Therefore as a further optimization in our algorithm we try to identify as many inadequate sets as possible before starting the shrinking procedure. The search for inadequate sets is done with the help  of grow procedure. 
 
-\begin{proof}
-Immediately from Theorem~\ref{theorem:unex-prop}. 
-\end{proof}
 
-Assuming that we employ the shrinking algorithm only on unexplored subsets, Theorem~\ref{theorem:unex-prop} implies that each unexplored subset that is encountered during the shrinking is necessarily an inadequate subset. Therefore, it is knowledge of adequacy of inadequate subsets that can be exploited to boost the shrinking procedure since we can skip some adequacy checks. One can say that in order to save a one check for adequacy during shrinking, we have to perform the same one check before the shrinking, i.e. no checked is saved at the end. But this is not true due to two reasons. First, since we are looking for multiple MIVCs, we might perform multiple shrinks, and thus we might encounter one particular inadequate subset several times. Second, if we find out that $U \subseteq T$ is inadequate, than we determine that all of its subsets are also inadequate, and thus, we can save checking all of these subsets for adequacy during subsequent shrinks. 
+ 
 
+
+
+\subsection{Grow Procedure}
+ 
 \begin{algorithm}[!t]
 \input{./algs/alg_grow_approximation}
-\caption{Approximate grow algorithm.}
+\caption{Approximate grow}
 \end{algorithm}
 
-
-
-\subsection{Efficient Grow Procedure}
-In this section, we present an efficient way how to find inadequate subsets in order to boost the subsequent calls of the shrinking procedure.
-
-Intuitively, in order to identify inadequate subsets as quickly as possible, we should strive for finding maximal inadequate subsets (MISes).  
+To identify inadequate subsets as quickly as possible we search  maximal inadequate subsets (MISes).  
 In order to find an MIS, we can use a \emph{grow} procedure which turns and inadequate subsets into a MIS, i.e. it is a dual of the shrink procedure. However, such procedure might be quite expensive. Similarly as in the case of UC\_BF we can iteratively attempt to add elements to the set that is being
 grown, checking each new set for adequacy and keeping only changes that
 leave the set inadequate. However, such approach performs linearly many adequacy checks which is rather inefficient. We can boost this procedure in the same way as is boosted the shrinking procedure, i.e. exploit subsets that are already known to be adequate to save some adequacy checks. However, this would mean that we are using a grow procedures to speed shrinks procedures, but to speed the grow procedures we need shrink procedures. It is easy to see, that this is not the right way. Thus, we propose a different approach. 
@@ -62,7 +50,7 @@ Algorithm~\ref{alg:core} shows our algorithm for online enumeration of all MIVCs
 
 \begin{algorithm}[!t]
 \input{./algs/alg}
-\caption{Our novel algorithm for MIVC enumeration.}
+\caption{AllMIVC algorithm}
 \end{algorithm}
 
 
