@@ -1,9 +1,9 @@
-In this section, we propose a novel algorithm for online enumeration of all MIVCs. The algorithm is build out of two basic procedures: shrink adn grow. The grow procedure is symmetric to the shrink one.\\
+In this section, we propose a novel algorithm for online enumeration of all MIVCs. The algorithm is build out of two basic procedures: shrink adn grow. The grow procedure is symmetric to the shrink one.
  
+In our algorithm we maintain the sets \textit{Explored} and  \textit{Unexplored}. Every time a set $U$ of conjuncts is determined as adequate, the set $U$ as well as all its supersets are moved to the set  \textit{Explored} as due to the monotonicity they are all adequate. Symetrically for an inadeaquate set of conjunncts and the set \textit{Unexplored}. 
 
 \subsection{Shrink Procedure}
- 
-In our algorithm we maintain the sets \textit{Explored} and  \textit{Unexplored}. We can effectively use the set  \textit{Explored} for speeding up the shrinking procedure. When testing the set $U \setminus \{T_i\}$ (see line 2 in Algorithm~\ref{shrin-procedure}) we first check whether  $U \setminus \{T_i\}$ is explored ( $U \setminus \{T_i\} \in \mathit{Explored}$). If so, the status of  $U \setminus \{T_i\}$ is known and no test for adequacy is needed.
+We can effectively use the set  \textit{Explored} for speeding up the shrinking procedure. When testing the set $U \setminus \{T_i\}$ (see line 2 in Algorithm~\ref{shrin-procedure}) we first check whether  $U \setminus \{T_i\}$ is explored. If so, the status of  $U \setminus \{T_i\}$ is known and no test for adequacy is needed.
 
 However, there is one more observation that can be exploited. 
 

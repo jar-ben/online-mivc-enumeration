@@ -61,9 +61,9 @@ Every algorithm for computing MIVCs has to determine status (i.e adeqaute or ina
 \end{algorithm}
 
 
-A straightforward way to find a (so far unexplored) MIVC of $T$ is to find an unexplored adequate subset $U \subseteq T$ and turn $U$  into an MIVC by a process called \emph{shrinking}. It iteratively attempts to remove elements from the set that is being shrunk, checking each new set for adequacy and keeping only changes that
-leave the set adequate (see Algorithm~\ref{shrin-procedure} for pseudocode). To find an unexplored adequate subset Ghassabani et al.~\cite{}  always choose maximal unexplored subset adn test it for adequacy.
-The shrinking procedure itself can be   extremely time demanding.  as  each check for adequacy is in fact a  model checking problem.  Ghassabani et al.~\cite{}  therefore substitute the shrinking procedure  with an appproximative procedure which returns  IVC which is not necessarilly minimal and identify  MIVCs (using subset relation) at the end of the computation when status of all subsets is determined. Their experimental evaluations show that the approximative shrinking is much faster. However,  it does not enumerate MIVCs online.
+A straightforward way to find a (so far unexplored) MIVC of $T$ is to find an unexplored adequate subset $U \subseteq T$ and turn $U$  into an MIVC by a process called \emph{shrinking}. Shrinking procedure iteratively attempts to remove elements from the set that is being shrunk, checking each new set for adequacy and keeping only changes that
+leave the set adequate (see Algorithm~\ref{shrin-procedure} for pseudocode). To find an unexplored adequate subset Ghassabani et al.~\cite{}  always choose maximal unexplored subset and test it for adequacy.
+The shrinking procedure itself can be   extremely time demanding  as  each check for adequacy is in fact a  model checking problem.  Ghassabani et al.~\cite{}  therefore substitute the shrinking procedure  with an appproximative procedure which returns  IVC which is not necessarilly minimal and identify  MIVCs (using subset relation) at the end of the computation when status of all subsets is determined. Their experimental evaluations show that the approximative shrinking is much faster. However,  it does not enumerate MIVCs online.
  
 
 %\todo{Pseudocode of \texttt{All\_IVCs}}
