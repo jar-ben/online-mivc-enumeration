@@ -1,0 +1,223 @@
+node top(
+  request_door : bool;
+  warning_start : bool;
+  in_station : bool;
+  door_is_open : bool
+) returns (
+  OK : bool
+);
+var
+  env_always_ok : bool;
+  prop_ok : bool;
+  open_door : bool;
+  close_door : bool;
+  door_ok : bool;
+  properties~0.door_is_open : bool;
+  properties~0.in_station : bool;
+  properties~0.request_door : bool;
+  properties~0.warning_start : bool;
+  properties~0.OK : bool;
+  properties~0.door_doesnt_open_out_of_station : bool;
+  properties~0.door_opens_before_leaving_station : bool;
+  environment~0.door_is_open : bool;
+  environment~0.open_door : bool;
+  environment~0.close_door : bool;
+  environment~0.in_station : bool;
+  environment~0.door_ok : bool;
+  environment~0.warning_start : bool;
+  environment~0.env_always_ok : bool;
+  environment~0.env_ok : bool;
+  environment~0.door_doesnt_close_if_not_asked : bool;
+  environment~0.door_doesnt_open_if_not_asked : bool;
+  environment~0.tramway_doesnt_start_if_not_door_ok : bool;
+  environment~0.door_initially_closed : bool;
+  environment~0.initially_not_in_station : bool;
+  environment~0.warning_start_and_in_station_go_down_simultaneously : bool;
+  environment~0.warning_start_only_in_station : bool;
+  environment~0.warning_start_cant_become_true_when_door_is_opening : bool;
+  controller~0.request_door : bool;
+  controller~0.warning_start : bool;
+  controller~0.in_station : bool;
+  controller~0.door_is_open : bool;
+  controller~0.open_door : bool;
+  controller~0.close_door : bool;
+  controller~0.door_ok : bool;
+  controller~0.req_pending : bool;
+  properties~0.once_from_to~0.A : bool;
+  properties~0.once_from_to~0.B : bool;
+  properties~0.once_from_to~0.X : bool;
+  properties~0.once_from_to~0.OK : bool;
+  properties~0.once_from_to~0.between_A_and_X : bool;
+  environment~0.edge~0.X : bool;
+  environment~0.edge~0.edge : bool;
+  environment~0.edge~1.X : bool;
+  environment~0.edge~1.edge : bool;
+  environment~0.edge~2.X : bool;
+  environment~0.edge~2.edge : bool;
+  environment~0.jafter~0.X : bool;
+  environment~0.jafter~0.after : bool;
+  environment~0.edge~3.X : bool;
+  environment~0.edge~3.edge : bool;
+  environment~0.edge~4.X : bool;
+  environment~0.edge~4.edge : bool;
+  controller~0.switch~0.init : bool;
+  controller~0.switch~0.on : bool;
+  controller~0.switch~0.off : bool;
+  controller~0.switch~0.value : bool;
+  properties~0.jafter~0.X : bool;
+  properties~0.jafter~0.after : bool;
+  properties~0.edge~0.X : bool;
+  properties~0.edge~0.edge : bool;
+  properties~0.jafter~1.X : bool;
+  properties~0.jafter~1.after : bool;
+  properties~0.once_from_to~0.switch~0.init : bool;
+  properties~0.once_from_to~0.switch~0.on : bool;
+  properties~0.once_from_to~0.switch~0.off : bool;
+  properties~0.once_from_to~0.switch~0.value : bool;
+  properties~0.once_from_to~0.jafter~0.X : bool;
+  properties~0.once_from_to~0.jafter~0.after : bool;
+let
+  --%MAIN;
+  OK = (env_always_ok => prop_ok);
+
+  prop_ok = properties~0.OK;
+
+  env_always_ok = environment~0.env_always_ok;
+
+  open_door = controller~0.open_door;
+
+  close_door = controller~0.close_door;
+
+  door_ok = controller~0.door_ok;
+
+  properties~0.door_is_open = door_is_open;
+
+  properties~0.in_station = in_station;
+
+  properties~0.request_door = request_door;
+
+  properties~0.warning_start = warning_start;
+
+  properties~0.OK = (properties~0.door_doesnt_open_out_of_station and properties~0.door_opens_before_leaving_station);
+
+  properties~0.door_doesnt_open_out_of_station = (properties~0.door_is_open => properties~0.in_station);
+
+  properties~0.door_opens_before_leaving_station = properties~0.once_from_to~0.OK;
+
+  environment~0.door_is_open = door_is_open;
+
+  environment~0.open_door = open_door;
+
+  environment~0.close_door = close_door;
+
+  environment~0.in_station = in_station;
+
+  environment~0.door_ok = door_ok;
+
+  environment~0.warning_start = warning_start;
+
+  environment~0.env_always_ok = (environment~0.env_ok -> (environment~0.env_ok and (pre environment~0.env_always_ok)));
+
+  environment~0.env_ok = (((((((environment~0.door_doesnt_open_if_not_asked and environment~0.door_doesnt_close_if_not_asked) and environment~0.tramway_doesnt_start_if_not_door_ok) and environment~0.door_initially_closed) and environment~0.initially_not_in_station) and environment~0.warning_start_and_in_station_go_down_simultaneously) and environment~0.warning_start_only_in_station) and environment~0.warning_start_cant_become_true_when_door_is_opening);
+
+  environment~0.door_doesnt_close_if_not_asked = (environment~0.edge~0.edge => environment~0.open_door);
+
+  environment~0.door_doesnt_open_if_not_asked = (environment~0.edge~1.edge => environment~0.close_door);
+
+  environment~0.tramway_doesnt_start_if_not_door_ok = (environment~0.edge~2.edge => environment~0.jafter~0.after);
+
+  environment~0.door_initially_closed = ((not environment~0.door_is_open) -> true);
+
+  environment~0.initially_not_in_station = ((not environment~0.in_station) -> true);
+
+  environment~0.warning_start_and_in_station_go_down_simultaneously = (environment~0.edge~2.edge = environment~0.edge~3.edge);
+
+  environment~0.warning_start_only_in_station = (environment~0.warning_start => environment~0.in_station);
+
+  environment~0.warning_start_cant_become_true_when_door_is_opening = (environment~0.edge~4.edge => (not environment~0.open_door));
+
+  controller~0.request_door = request_door;
+
+  controller~0.warning_start = warning_start;
+
+  controller~0.in_station = in_station;
+
+  controller~0.door_is_open = door_is_open;
+
+  controller~0.req_pending = controller~0.switch~0.value;
+
+  controller~0.open_door = (controller~0.req_pending and controller~0.in_station);
+
+  controller~0.close_door = (controller~0.warning_start and controller~0.door_is_open);
+
+  controller~0.door_ok = ((not controller~0.door_is_open) and controller~0.warning_start);
+
+  properties~0.once_from_to~0.A = properties~0.jafter~0.after;
+
+  properties~0.once_from_to~0.B = properties~0.edge~0.edge;
+
+  properties~0.once_from_to~0.X = properties~0.jafter~1.after;
+
+  properties~0.once_from_to~0.between_A_and_X = properties~0.once_from_to~0.switch~0.value;
+
+  properties~0.once_from_to~0.OK = (not (properties~0.once_from_to~0.between_A_and_X and properties~0.once_from_to~0.B));
+
+  environment~0.edge~0.X = environment~0.door_is_open;
+
+  environment~0.edge~0.edge = (false -> (environment~0.edge~0.X or (not (pre environment~0.edge~0.X))));
+
+  environment~0.edge~1.X = (not environment~0.door_is_open);
+
+  environment~0.edge~1.edge = (false -> (environment~0.edge~1.X or (not (pre environment~0.edge~1.X))));
+
+  environment~0.edge~2.X = (not false);
+
+  environment~0.edge~2.edge = (false -> (environment~0.edge~2.X or (not (pre environment~0.edge~2.X))));
+
+  environment~0.jafter~0.X = environment~0.door_ok;
+
+  environment~0.jafter~0.after = (false -> (pre environment~0.jafter~0.X));
+
+  environment~0.edge~3.X = (not environment~0.warning_start);
+
+  environment~0.edge~3.edge = (false -> (environment~0.edge~3.X or (not (pre environment~0.edge~3.X))));
+
+  environment~0.edge~4.X = environment~0.warning_start;
+
+  environment~0.edge~4.edge = (false -> (environment~0.edge~4.X or (not (pre environment~0.edge~4.X))));
+
+  controller~0.switch~0.init = false;
+
+  controller~0.switch~0.on = (controller~0.request_door and (not controller~0.warning_start));
+
+  controller~0.switch~0.off = controller~0.door_is_open;
+
+  controller~0.switch~0.value = (if controller~0.switch~0.on then true else (if controller~0.switch~0.off then false else (controller~0.switch~0.init -> (pre controller~0.switch~0.value))));
+
+  properties~0.jafter~0.X = (properties~0.request_door and (not properties~0.warning_start));
+
+  properties~0.jafter~0.after = (false -> (pre properties~0.jafter~0.X));
+
+  properties~0.edge~0.X = (not properties~0.in_station);
+
+  properties~0.edge~0.edge = (false -> (properties~0.edge~0.X or (not (pre properties~0.edge~0.X))));
+
+  properties~0.jafter~1.X = properties~0.door_is_open;
+
+  properties~0.jafter~1.after = (false -> (pre properties~0.jafter~1.X));
+
+  properties~0.once_from_to~0.switch~0.init = false;
+
+  properties~0.once_from_to~0.switch~0.on = properties~0.once_from_to~0.A;
+
+  properties~0.once_from_to~0.switch~0.off = properties~0.once_from_to~0.jafter~0.after;
+
+  properties~0.once_from_to~0.switch~0.value = (if properties~0.once_from_to~0.switch~0.on then true else (if properties~0.once_from_to~0.switch~0.off then false else (properties~0.once_from_to~0.switch~0.init -> (pre properties~0.once_from_to~0.switch~0.value))));
+
+  properties~0.once_from_to~0.jafter~0.X = properties~0.once_from_to~0.X;
+
+  properties~0.once_from_to~0.jafter~0.after = (false -> (pre properties~0.once_from_to~0.jafter~0.X));
+
+  --%PROPERTY OK;
+
+tel;

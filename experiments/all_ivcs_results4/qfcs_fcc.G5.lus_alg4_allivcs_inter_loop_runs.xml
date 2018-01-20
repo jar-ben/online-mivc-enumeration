@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Runs>
+<Run>
+   <RunID>1</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">4.512</Time>
+</Run>
+<Run>
+   <RunID>2</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">4.293</Time>
+</Run>
+</Runs>

@@ -1,0 +1,532 @@
+<?xml version="1.0"?>
+<Runs>
+<Results>
+   <RunID>14</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">2.102</Time>
+   <SatChecks>13</SatChecks>
+   <UnsatChecks>1</UnsatChecks>
+   <ID>1</ID>
+   <IVC>ivc26</IVC>
+   <IVC>ivc37</IVC>
+   <IVC>ivc27</IVC>
+   <IVC>ivc24</IVC>
+   <IVC>ivc25</IVC>
+   <IVC>ivc11</IVC>
+   <IVC>ivc0</IVC>
+   <IVC>ivc10</IVC>
+   <IVC>ivc32</IVC>
+   <IVC>ivc2</IVC>
+   <IVC>ivc5</IVC>
+   <IVC>ivc4</IVC>
+   <IVC>ivc7</IVC>
+   <IVC>ivc6</IVC>
+</Results>
+<Results>
+   <RunID>35</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">4.96</Time>
+   <SatChecks>28</SatChecks>
+   <UnsatChecks>7</UnsatChecks>
+   <ID>2</ID>
+   <IVC>ivc8</IVC>
+   <IVC>ivc26</IVC>
+   <IVC>ivc37</IVC>
+   <IVC>ivc24</IVC>
+   <IVC>ivc10</IVC>
+</Results>
+<Results>
+   <RunID>39</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">5.532</Time>
+   <SatChecks>31</SatChecks>
+   <UnsatChecks>8</UnsatChecks>
+   <ID>3</ID>
+   <IVC>ivc28</IVC>
+   <IVC>ivc29</IVC>
+   <IVC>ivc26</IVC>
+   <IVC>ivc37</IVC>
+   <IVC>ivc24</IVC>
+   <IVC>ivc25</IVC>
+   <IVC>ivc11</IVC>
+   <IVC>ivc0</IVC>
+   <IVC>ivc10</IVC>
+   <IVC>ivc32</IVC>
+   <IVC>ivc2</IVC>
+   <IVC>ivc5</IVC>
+   <IVC>ivc4</IVC>
+   <IVC>ivc7</IVC>
+   <IVC>ivc6</IVC>
+</Results>
+<Results>
+   <RunID>40</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">5.66</Time>
+   <SatChecks>32</SatChecks>
+   <UnsatChecks>8</UnsatChecks>
+   <ID>4</ID>
+   <IVC>ivc26</IVC>
+   <IVC>ivc37</IVC>
+   <IVC>ivc24</IVC>
+   <IVC>ivc25</IVC>
+   <IVC>ivc11</IVC>
+   <IVC>ivc31</IVC>
+   <IVC>ivc0</IVC>
+   <IVC>ivc10</IVC>
+   <IVC>ivc32</IVC>
+   <IVC>ivc30</IVC>
+   <IVC>ivc2</IVC>
+   <IVC>ivc5</IVC>
+   <IVC>ivc4</IVC>
+   <IVC>ivc7</IVC>
+   <IVC>ivc6</IVC>
+</Results>
+<Results>
+   <RunID>49</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">6.698</Time>
+   <SatChecks>41</SatChecks>
+   <UnsatChecks>8</UnsatChecks>
+   <ID>5</ID>
+   <IVC>ivc37</IVC>
+   <IVC>ivc27</IVC>
+   <IVC>ivc11</IVC>
+   <IVC>ivc12</IVC>
+   <IVC>ivc0</IVC>
+   <IVC>ivc32</IVC>
+   <IVC>ivc3</IVC>
+   <IVC>ivc2</IVC>
+   <IVC>ivc5</IVC>
+   <IVC>ivc4</IVC>
+   <IVC>ivc7</IVC>
+   <IVC>ivc6</IVC>
+   <IVC>ivc8</IVC>
+</Results>
+<Results>
+   <RunID>59</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">8.247</Time>
+   <SatChecks>50</SatChecks>
+   <UnsatChecks>9</UnsatChecks>
+   <ID>6</ID>
+   <IVC>ivc8</IVC>
+   <IVC>ivc26</IVC>
+   <IVC>ivc37</IVC>
+   <IVC>ivc25</IVC>
+   <IVC>ivc10</IVC>
+</Results>
+<Results>
+   <RunID>60</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">8.364</Time>
+   <SatChecks>51</SatChecks>
+   <UnsatChecks>9</UnsatChecks>
+   <ID>7</ID>
+   <IVC>ivc26</IVC>
+   <IVC>ivc37</IVC>
+   <IVC>ivc27</IVC>
+   <IVC>ivc24</IVC>
+   <IVC>ivc25</IVC>
+   <IVC>ivc36</IVC>
+   <IVC>ivc11</IVC>
+   <IVC>ivc23</IVC>
+   <IVC>ivc0</IVC>
+   <IVC>ivc10</IVC>
+   <IVC>ivc2</IVC>
+   <IVC>ivc5</IVC>
+   <IVC>ivc4</IVC>
+   <IVC>ivc7</IVC>
+   <IVC>ivc6</IVC>
+</Results>
+<Results>
+   <RunID>62</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">8.618</Time>
+   <SatChecks>53</SatChecks>
+   <UnsatChecks>9</UnsatChecks>
+   <ID>8</ID>
+   <IVC>ivc26</IVC>
+   <IVC>ivc37</IVC>
+   <IVC>ivc27</IVC>
+   <IVC>ivc24</IVC>
+   <IVC>ivc25</IVC>
+   <IVC>ivc11</IVC>
+   <IVC>ivc33</IVC>
+   <IVC>ivc34</IVC>
+   <IVC>ivc1</IVC>
+   <IVC>ivc0</IVC>
+   <IVC>ivc10</IVC>
+   <IVC>ivc2</IVC>
+   <IVC>ivc5</IVC>
+   <IVC>ivc4</IVC>
+   <IVC>ivc7</IVC>
+   <IVC>ivc6</IVC>
+</Results>
+<Results>
+   <RunID>65</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">8.975</Time>
+   <SatChecks>56</SatChecks>
+   <UnsatChecks>9</UnsatChecks>
+   <ID>9</ID>
+   <IVC>ivc37</IVC>
+   <IVC>ivc27</IVC>
+   <IVC>ivc11</IVC>
+   <IVC>ivc33</IVC>
+   <IVC>ivc34</IVC>
+   <IVC>ivc12</IVC>
+   <IVC>ivc1</IVC>
+   <IVC>ivc0</IVC>
+   <IVC>ivc3</IVC>
+   <IVC>ivc2</IVC>
+   <IVC>ivc5</IVC>
+   <IVC>ivc4</IVC>
+   <IVC>ivc7</IVC>
+   <IVC>ivc6</IVC>
+   <IVC>ivc8</IVC>
+</Results>
+<Results>
+   <RunID>69</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">9.652</Time>
+   <SatChecks>59</SatChecks>
+   <UnsatChecks>10</UnsatChecks>
+   <ID>10</ID>
+   <IVC>ivc28</IVC>
+   <IVC>ivc29</IVC>
+   <IVC>ivc37</IVC>
+   <IVC>ivc11</IVC>
+   <IVC>ivc12</IVC>
+   <IVC>ivc0</IVC>
+   <IVC>ivc32</IVC>
+   <IVC>ivc3</IVC>
+   <IVC>ivc2</IVC>
+   <IVC>ivc5</IVC>
+   <IVC>ivc4</IVC>
+   <IVC>ivc7</IVC>
+   <IVC>ivc6</IVC>
+   <IVC>ivc8</IVC>
+</Results>
+<Results>
+   <RunID>72</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">10.122</Time>
+   <SatChecks>61</SatChecks>
+   <UnsatChecks>11</UnsatChecks>
+   <ID>11</ID>
+   <IVC>ivc37</IVC>
+   <IVC>ivc27</IVC>
+   <IVC>ivc35</IVC>
+   <IVC>ivc36</IVC>
+   <IVC>ivc11</IVC>
+   <IVC>ivc34</IVC>
+   <IVC>ivc12</IVC>
+   <IVC>ivc1</IVC>
+   <IVC>ivc0</IVC>
+   <IVC>ivc3</IVC>
+   <IVC>ivc2</IVC>
+   <IVC>ivc5</IVC>
+   <IVC>ivc4</IVC>
+   <IVC>ivc7</IVC>
+   <IVC>ivc6</IVC>
+   <IVC>ivc8</IVC>
+</Results>
+<Results>
+   <RunID>74</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">10.375</Time>
+   <SatChecks>63</SatChecks>
+   <UnsatChecks>11</UnsatChecks>
+   <ID>12</ID>
+   <IVC>ivc29</IVC>
+   <IVC>ivc37</IVC>
+   <IVC>ivc11</IVC>
+   <IVC>ivc12</IVC>
+   <IVC>ivc31</IVC>
+   <IVC>ivc0</IVC>
+   <IVC>ivc32</IVC>
+   <IVC>ivc3</IVC>
+   <IVC>ivc30</IVC>
+   <IVC>ivc2</IVC>
+   <IVC>ivc5</IVC>
+   <IVC>ivc4</IVC>
+   <IVC>ivc7</IVC>
+   <IVC>ivc6</IVC>
+   <IVC>ivc8</IVC>
+</Results>
+<Results>
+   <RunID>108</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">14.643</Time>
+   <SatChecks>96</SatChecks>
+   <UnsatChecks>12</UnsatChecks>
+   <ID>13</ID>
+   <IVC>ivc26</IVC>
+   <IVC>ivc37</IVC>
+   <IVC>ivc24</IVC>
+   <IVC>ivc25</IVC>
+   <IVC>ivc11</IVC>
+   <IVC>ivc33</IVC>
+   <IVC>ivc34</IVC>
+   <IVC>ivc1</IVC>
+   <IVC>ivc31</IVC>
+   <IVC>ivc0</IVC>
+   <IVC>ivc10</IVC>
+   <IVC>ivc30</IVC>
+   <IVC>ivc2</IVC>
+   <IVC>ivc5</IVC>
+   <IVC>ivc4</IVC>
+   <IVC>ivc7</IVC>
+   <IVC>ivc6</IVC>
+</Results>
+<Results>
+   <RunID>109</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">14.783</Time>
+   <SatChecks>96</SatChecks>
+   <UnsatChecks>13</UnsatChecks>
+   <ID>14</ID>
+   <IVC>ivc28</IVC>
+   <IVC>ivc29</IVC>
+   <IVC>ivc26</IVC>
+   <IVC>ivc37</IVC>
+   <IVC>ivc24</IVC>
+   <IVC>ivc25</IVC>
+   <IVC>ivc36</IVC>
+   <IVC>ivc11</IVC>
+   <IVC>ivc23</IVC>
+   <IVC>ivc0</IVC>
+   <IVC>ivc10</IVC>
+   <IVC>ivc2</IVC>
+   <IVC>ivc5</IVC>
+   <IVC>ivc4</IVC>
+   <IVC>ivc7</IVC>
+   <IVC>ivc6</IVC>
+</Results>
+<Results>
+   <RunID>110</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">14.927</Time>
+   <SatChecks>96</SatChecks>
+   <UnsatChecks>14</UnsatChecks>
+   <ID>15</ID>
+   <IVC>ivc26</IVC>
+   <IVC>ivc37</IVC>
+   <IVC>ivc24</IVC>
+   <IVC>ivc25</IVC>
+   <IVC>ivc36</IVC>
+   <IVC>ivc11</IVC>
+   <IVC>ivc23</IVC>
+   <IVC>ivc31</IVC>
+   <IVC>ivc0</IVC>
+   <IVC>ivc10</IVC>
+   <IVC>ivc30</IVC>
+   <IVC>ivc2</IVC>
+   <IVC>ivc5</IVC>
+   <IVC>ivc4</IVC>
+   <IVC>ivc7</IVC>
+   <IVC>ivc6</IVC>
+</Results>
+<Results>
+   <RunID>113</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">15.296</Time>
+   <SatChecks>98</SatChecks>
+   <UnsatChecks>15</UnsatChecks>
+   <ID>16</ID>
+   <IVC>ivc26</IVC>
+   <IVC>ivc37</IVC>
+   <IVC>ivc27</IVC>
+   <IVC>ivc24</IVC>
+   <IVC>ivc35</IVC>
+   <IVC>ivc25</IVC>
+   <IVC>ivc36</IVC>
+   <IVC>ivc11</IVC>
+   <IVC>ivc34</IVC>
+   <IVC>ivc1</IVC>
+   <IVC>ivc0</IVC>
+   <IVC>ivc10</IVC>
+   <IVC>ivc2</IVC>
+   <IVC>ivc5</IVC>
+   <IVC>ivc4</IVC>
+   <IVC>ivc7</IVC>
+   <IVC>ivc6</IVC>
+</Results>
+<Results>
+   <RunID>115</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">15.739</Time>
+   <SatChecks>99</SatChecks>
+   <UnsatChecks>16</UnsatChecks>
+   <ID>17</ID>
+   <IVC>ivc28</IVC>
+   <IVC>ivc29</IVC>
+   <IVC>ivc26</IVC>
+   <IVC>ivc37</IVC>
+   <IVC>ivc24</IVC>
+   <IVC>ivc25</IVC>
+   <IVC>ivc11</IVC>
+   <IVC>ivc33</IVC>
+   <IVC>ivc34</IVC>
+   <IVC>ivc1</IVC>
+   <IVC>ivc0</IVC>
+   <IVC>ivc10</IVC>
+   <IVC>ivc2</IVC>
+   <IVC>ivc5</IVC>
+   <IVC>ivc4</IVC>
+   <IVC>ivc7</IVC>
+   <IVC>ivc6</IVC>
+</Results>
+<Results>
+   <RunID>117</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">15.98</Time>
+   <SatChecks>100</SatChecks>
+   <UnsatChecks>17</UnsatChecks>
+   <ID>18</ID>
+   <IVC>ivc28</IVC>
+   <IVC>ivc29</IVC>
+   <IVC>ivc37</IVC>
+   <IVC>ivc11</IVC>
+   <IVC>ivc33</IVC>
+   <IVC>ivc34</IVC>
+   <IVC>ivc12</IVC>
+   <IVC>ivc1</IVC>
+   <IVC>ivc0</IVC>
+   <IVC>ivc3</IVC>
+   <IVC>ivc2</IVC>
+   <IVC>ivc5</IVC>
+   <IVC>ivc4</IVC>
+   <IVC>ivc7</IVC>
+   <IVC>ivc6</IVC>
+   <IVC>ivc8</IVC>
+</Results>
+<Results>
+   <RunID>118</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">16.138</Time>
+   <SatChecks>100</SatChecks>
+   <UnsatChecks>18</UnsatChecks>
+   <ID>19</ID>
+   <IVC>ivc29</IVC>
+   <IVC>ivc37</IVC>
+   <IVC>ivc11</IVC>
+   <IVC>ivc33</IVC>
+   <IVC>ivc34</IVC>
+   <IVC>ivc12</IVC>
+   <IVC>ivc1</IVC>
+   <IVC>ivc31</IVC>
+   <IVC>ivc0</IVC>
+   <IVC>ivc3</IVC>
+   <IVC>ivc30</IVC>
+   <IVC>ivc2</IVC>
+   <IVC>ivc5</IVC>
+   <IVC>ivc4</IVC>
+   <IVC>ivc7</IVC>
+   <IVC>ivc6</IVC>
+   <IVC>ivc8</IVC>
+</Results>
+<Results>
+   <RunID>121</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">16.502</Time>
+   <SatChecks>102</SatChecks>
+   <UnsatChecks>19</UnsatChecks>
+   <ID>20</ID>
+   <IVC>ivc28</IVC>
+   <IVC>ivc29</IVC>
+   <IVC>ivc26</IVC>
+   <IVC>ivc37</IVC>
+   <IVC>ivc24</IVC>
+   <IVC>ivc35</IVC>
+   <IVC>ivc25</IVC>
+   <IVC>ivc36</IVC>
+   <IVC>ivc11</IVC>
+   <IVC>ivc34</IVC>
+   <IVC>ivc1</IVC>
+   <IVC>ivc0</IVC>
+   <IVC>ivc10</IVC>
+   <IVC>ivc2</IVC>
+   <IVC>ivc5</IVC>
+   <IVC>ivc4</IVC>
+   <IVC>ivc7</IVC>
+   <IVC>ivc6</IVC>
+</Results>
+<Results>
+   <RunID>122</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">16.645</Time>
+   <SatChecks>102</SatChecks>
+   <UnsatChecks>20</UnsatChecks>
+   <ID>21</ID>
+   <IVC>ivc26</IVC>
+   <IVC>ivc37</IVC>
+   <IVC>ivc24</IVC>
+   <IVC>ivc35</IVC>
+   <IVC>ivc25</IVC>
+   <IVC>ivc36</IVC>
+   <IVC>ivc11</IVC>
+   <IVC>ivc34</IVC>
+   <IVC>ivc1</IVC>
+   <IVC>ivc31</IVC>
+   <IVC>ivc0</IVC>
+   <IVC>ivc10</IVC>
+   <IVC>ivc30</IVC>
+   <IVC>ivc2</IVC>
+   <IVC>ivc5</IVC>
+   <IVC>ivc4</IVC>
+   <IVC>ivc7</IVC>
+   <IVC>ivc6</IVC>
+</Results>
+<Results>
+   <RunID>123</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">16.784</Time>
+   <SatChecks>102</SatChecks>
+   <UnsatChecks>21</UnsatChecks>
+   <ID>22</ID>
+   <IVC>ivc28</IVC>
+   <IVC>ivc29</IVC>
+   <IVC>ivc37</IVC>
+   <IVC>ivc35</IVC>
+   <IVC>ivc36</IVC>
+   <IVC>ivc11</IVC>
+   <IVC>ivc34</IVC>
+   <IVC>ivc12</IVC>
+   <IVC>ivc1</IVC>
+   <IVC>ivc0</IVC>
+   <IVC>ivc3</IVC>
+   <IVC>ivc2</IVC>
+   <IVC>ivc5</IVC>
+   <IVC>ivc4</IVC>
+   <IVC>ivc7</IVC>
+   <IVC>ivc6</IVC>
+   <IVC>ivc8</IVC>
+</Results>
+<Results>
+   <RunID>124</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">17.027</Time>
+   <SatChecks>102</SatChecks>
+   <UnsatChecks>22</UnsatChecks>
+   <ID>23</ID>
+   <IVC>ivc29</IVC>
+   <IVC>ivc37</IVC>
+   <IVC>ivc35</IVC>
+   <IVC>ivc36</IVC>
+   <IVC>ivc11</IVC>
+   <IVC>ivc34</IVC>
+   <IVC>ivc12</IVC>
+   <IVC>ivc1</IVC>
+   <IVC>ivc31</IVC>
+   <IVC>ivc0</IVC>
+   <IVC>ivc3</IVC>
+   <IVC>ivc30</IVC>
+   <IVC>ivc2</IVC>
+   <IVC>ivc5</IVC>
+   <IVC>ivc4</IVC>
+   <IVC>ivc7</IVC>
+   <IVC>ivc6</IVC>
+   <IVC>ivc8</IVC>
+</Results>
+</Runs>

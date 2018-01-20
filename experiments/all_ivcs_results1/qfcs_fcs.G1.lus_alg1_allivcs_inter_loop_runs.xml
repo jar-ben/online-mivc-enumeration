@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Runs>
+<Run>
+   <RunID>1</RunID>
+   <Result>VALID</Result>
+   <Time unit="sec">74.592</Time>
+</Run>
+<Run>
+   <RunID>2</RunID>
+   <Result>VALID</Result>
+   <Time unit="sec">73.369</Time>
+</Run>
+<Run>
+   <RunID>3</RunID>
+   <Result>VALID</Result>
+   <Time unit="sec">71.766</Time>
+</Run>
+<Run>
+   <RunID>4</RunID>
+   <Result>VALID</Result>
+   <Time unit="sec">74.723</Time>
+</Run>
+<Run>
+   <RunID>5</RunID>
+   <Result>NOT_YET_CHECKED</Result>
+   <Time unit="sec">0.0</Time>
+</Run>
+</Runs>

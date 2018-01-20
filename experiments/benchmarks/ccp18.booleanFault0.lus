@@ -1,0 +1,548 @@
+node top(
+  onOff : bool;
+  decelSet : bool;
+  accelResume : bool;
+  cancel : bool;
+  brakePedal : bool;
+  carGear : int;
+  carSpeed : real;
+  validInputs : bool
+) returns (
+  OK : bool
+);
+var
+  mode : int;
+  SP3c : bool;
+  zz6 : int;
+  zz7 : int;
+  zz8 : int;
+  zz9 : int;
+  zz10 : int;
+  zz11 : int;
+  zz12 : int;
+  zz13 : int;
+  zz14 : int;
+  zz15 : bool;
+  zz16 : int;
+  zz17 : int;
+  zz18 : int;
+  zz19 : bool;
+  zz20 : int;
+  zz21 : int;
+  zz22 : int;
+  zz23 : bool;
+  zz24 : bool;
+  zz25 : int;
+  zz26 : bool;
+  zz27 : bool;
+  zz28 : int;
+  zz29 : int;
+  zz30 : bool;
+  zz31 : bool;
+  zz32 : int;
+  zz33 : bool;
+  zz34 : int;
+  zz35 : int;
+  zz36 : bool;
+  zz37 : bool;
+  zz38 : int;
+  zz39 : bool;
+  zz40 : int;
+  zz41 : int;
+  zz42 : bool;
+  zz43 : bool;
+  zz44 : int;
+  zz45 : int;
+  zz46 : int;
+  zz47 : bool;
+  zz48 : bool;
+  zz49 : int;
+  zz50 : int;
+  zz51 : int;
+  zz52 : bool;
+  zz53 : int;
+  zz54 : int;
+  zz55 : int;
+  zz56 : bool;
+  zz58 : int;
+  zz59 : int;
+  zz60 : int;
+  zz61 : int;
+  zz62 : int;
+  zz63 : int;
+  zz64 : bool;
+  zz66 : int;
+  zz67 : int;
+  zz68 : int;
+  zz69 : int;
+  zz70 : int;
+  zz71 : int;
+  zz72 : bool;
+  zz74 : int;
+  zz75 : int;
+  zz76 : int;
+  zz77 : int;
+  zz78 : int;
+  zz79 : int;
+  zz80 : int;
+  zz81 : int;
+  zz82 : bool;
+  zz83 : int;
+  zz84 : int;
+  zz85 : int;
+  zz86 : int;
+  zz87 : bool;
+  zz88 : bool;
+  zz89 : int;
+  zz90 : bool;
+  zz91 : int;
+  zz92 : int;
+  zz93 : bool;
+  zz94 : bool;
+  zz95 : int;
+  zz96 : bool;
+  zz97 : int;
+  zz98 : int;
+  zz99 : bool;
+  zz100 : bool;
+  zz101 : int;
+  zz102 : int;
+  zz103 : int;
+  zz104 : bool;
+  zz105 : bool;
+  zz106 : int;
+  zz107 : bool;
+  zz108 : int;
+  zz109 : int;
+  zz110 : int;
+  zz111 : int;
+  zz112 : bool;
+  zz113 : int;
+  zz114 : int;
+  zz115 : int;
+  zz116 : bool;
+  zz118 : int;
+  zz119 : int;
+  zz120 : int;
+  zz121 : int;
+  zz122 : int;
+  zz123 : int;
+  zz124 : int;
+  zz125 : int;
+  zz126 : int;
+  zz127 : int;
+  zz128 : bool;
+  zz129 : int;
+  zz130 : int;
+  zz131 : int;
+  zz132 : int;
+  zz133 : bool;
+  zz134 : int;
+  zz135 : int;
+  zz136 : int;
+  zz137 : int;
+  zz138 : bool;
+  zz139 : bool;
+  zz140 : int;
+  zz141 : bool;
+  zz142 : int;
+  zz143 : int;
+  zz144 : bool;
+  zz145 : bool;
+  zz146 : int;
+  zz147 : int;
+  zz148 : int;
+  zz149 : int;
+  zz150 : int;
+  zz151 : bool;
+  zz153 : int;
+  zz154 : int;
+  zz155 : bool;
+  zz156 : int;
+  zz157 : int;
+  zz158 : bool;
+  zz160 : int;
+  zz161 : int;
+  zz162 : bool;
+  zz163 : bool;
+  zz166 : int;
+  zz167 : int;
+  zz168 : int;
+  zz169 : int;
+  zz170 : int;
+  zz171 : bool;
+  zz172 : int;
+  zz173 : int;
+  zz174 : int;
+  zz175 : int;
+  zz176 : int;
+  zz177 : bool;
+  zz178 : bool;
+  zz179 : bool;
+  zz180 : bool;
+  zz181 : bool;
+  zz182 : bool;
+  zz183 : bool;
+  zz184 : bool;
+  zz185 : bool;
+  zz186 : bool;
+  zz199 : bool;
+let
+  --%MAIN;
+  zz166 = (if (0 >= zz168) then 0 else zz168);
+
+  zz168 = (if accelResume then zz167 else 0);
+
+  zz169 = (0 -> (pre zz170));
+
+  zz172 = (if (0 >= zz174) then 0 else zz174);
+
+  zz174 = (if decelSet then zz173 else 0);
+
+  zz175 = (0 -> (pre zz176));
+
+  zz156 = (0 -> (pre zz161));
+
+  zz157 = (0 -> (pre mode));
+
+  zz93 = ((zz91 = 8) and ((((if ((zz185 = true) = false) then 0 else 1) <> 0) and ((if ((zz186 = true) = false) then 0 else 1) <> 0)) and (not (pre zz88))));
+
+  zz99 = ((zz97 = 8) and ((((if ((zz180 = true) = false) then 0 else 1) <> 0) and ((if ((zz186 = true) = false) then 0 else 1) <> 0)) and (not zz94)));
+
+  zz104 = ((zz102 = 7) and ((((if ((zz185 = true) = false) then 0 else 1) <> 0) and ((if ((zz186 = true) = false) then 0 else 1) <> 0)) and (not zz100)));
+
+  zz24 = ((zz108 = 4) and ((if ((zz185 = true) = false) then 0 else 1) <> 0));
+
+  zz30 = ((zz28 = 4) and (((if ((zz171 = true) = false) then 0 else 1) <> 0) and (not zz24)));
+
+  zz36 = ((zz34 = 4) and (((if ((zz177 = true) = false) then 0 else 1) <> 0) and (not zz31)));
+
+  zz42 = ((zz40 = 6) and (((if ((zz177 = false) = false) then 0 else 1) <> 0) and (not zz37)));
+
+  zz47 = ((zz45 = 5) and (((if ((zz171 = false) = false) then 0 else 1) <> 0) and (not zz43)));
+
+  zz63 = (if (not ((zz101 >= 3) and (zz101 <= 6))) then 3 else zz101);
+
+  zz64 = ((not ((zz101 >= 3) and (zz101 <= 6))) and ((zz63 >= 3) and (zz63 <= 6)));
+
+  zz116 = ((not ((zz146 >= 2) and (zz146 <= 8))) and ((zz115 >= 2) and (zz115 <= 8)));
+
+  zz120 = (if (zz142 = 1) then 0 else zz142);
+
+  zz137 = (if ((zz156 >= 2) and (zz156 <= 8)) then 0 else zz136);
+
+  SP3c = true;
+
+  zz171 = (zz170 = 20);
+
+  zz105 = (zz104 or zz100);
+
+  zz127 = (if (zz156 = 4) then 3 else zz156);
+
+  zz136 = (if ((zz156 >= 2) and (zz156 <= 8)) then zz123 else zz135);
+
+  zz106 = (if zz104 then zz60 else zz102);
+
+  zz173 = (zz175 + 1);
+
+  zz81 = (if (zz147 = 4) then 3 else zz147);
+
+  zz181 = (carGear = 3);
+
+  zz79 = (if (zz84 = 6) then 3 else zz84);
+
+  zz38 = (if zz36 then zz14 else zz34);
+
+  zz119 = (if zz116 then zz114 else zz143);
+
+  zz78 = (if (not (zz89 = 8)) then 3 else zz148);
+
+  zz15 = (if (zz34 = 4) then false else zz33);
+
+  zz83 = (if ((zz147 >= 3) and (zz147 <= 6)) then zz81 else zz147);
+
+  zz54 = (if (not (zz55 = 4)) then 4 else zz103);
+
+  zz16 = (if (not (zz32 = 5)) then 5 else zz32);
+
+  zz158 = (false -> (pre zz162));
+
+  OK = ((not (not zz163)) or (not zz199));
+
+  zz67 = (if zz64 then zz62 else zz98);
+
+  zz43 = (zz42 or zz37);
+
+  zz76 = (if (zz91 = 8) then 2 else zz91);
+
+  zz80 = (if (zz83 = 5) then 3 else zz83);
+
+  zz123 = (if (zz135 = 8) then 2 else zz135);
+
+  zz19 = (if (zz28 = 4) then false else zz27);
+
+  zz94 = (zz93 or zz88);
+
+  zz86 = (if ((zz147 >= 3) and (zz147 <= 6)) then 2 else zz85);
+
+  zz131 = (if ((zz156 >= 3) and (zz156 <= 6)) then zz125 else zz130);
+
+  zz138 = (if ((zz156 >= 2) and (zz156 <= 8)) then zz133 else zz158);
+
+  zz6 = (if (not (zz49 = 4)) then 4 else zz49);
+
+  zz33 = (if zz30 then zz19 else zz27);
+
+  zz134 = (if ((zz156 >= 2) and (zz156 <= 8)) then zz132 else zz156);
+
+  zz61 = (if (not (zz63 = 4)) then 4 else zz63);
+
+  zz34 = (if zz30 then zz16 else zz32);
+
+  zz141 = (if zz139 then zz138 else zz158);
+
+  zz139 = (((zz156 >= 2) and (zz156 <= 8)) and (not onOff));
+
+  zz178 = accelResume;
+
+  zz45 = (if zz42 then zz9 else zz44);
+
+  zz121 = (if (not (zz140 = 1)) then 1 else zz140);
+
+  zz184 = (true -> (pre zz183));
+
+  zz118 = (if zz116 then zz113 else zz115);
+
+  zz41 = (if zz36 then zz13 else zz35);
+
+  zz35 = (if zz30 then zz17 else zz29);
+
+  zz154 = (if (not (zz156 = 1)) then 1 else zz157);
+
+  zz142 = (if zz139 then zz121 else zz140);
+
+  zz124 = (if (zz134 = 7) then 2 else zz134);
+
+  zz75 = (if zz72 then zz70 else zz92);
+
+  zz185 = ((not zz184) and zz183);
+
+  zz180 = ((not zz179) and zz178);
+
+  zz148 = (if zz144 then zz119 else zz143);
+
+  zz115 = (if (not ((zz146 >= 2) and (zz146 <= 8))) then 2 else zz146);
+
+  zz40 = (if zz36 then zz12 else zz38);
+
+  zz140 = (if zz139 then zz137 else zz156);
+
+  zz39 = (if zz36 then zz15 else zz33);
+
+  zz8 = (if (zz45 = 5) then 3 else zz45);
+
+  zz122 = (if (not (zz140 = 1)) then 1 else zz157);
+
+  zz179 = (true -> (pre zz178));
+
+  zz82 = (if (zz147 = 4) then false else zz141);
+
+  zz186 = (((((not cancel) and (not brakePedal)) and zz181) and zz182) and validInputs);
+
+  zz183 = decelSet;
+
+  zz155 = (true -> (if (pre SP3c) then false else (pre zz155)));
+
+  zz161 = zz160;
+
+  zz9 = (if (not (zz44 = 4)) then 4 else zz44);
+
+  zz96 = (if zz93 then true else zz90);
+
+  zz52 = (if ((not zz48) and (zz50 = 4)) then false else zz39);
+
+  zz51 = (if zz47 then zz7 else zz46);
+
+  zz162 = (if SP3c then (if zz155 then zz158 else zz151) else zz158);
+
+  zz100 = (zz99 or zz94);
+
+  zz53 = (if (not (zz55 = 4)) then 4 else zz55);
+
+  zz13 = (if (not (zz38 = 6)) then 5 else zz35);
+
+  zz14 = (if (zz34 = 4) then 3 else zz34);
+
+  zz126 = (if (zz129 = 5) then 3 else zz129);
+
+  zz26 = (if zz24 then zz23 else zz107);
+
+  zz146 = (if zz144 then zz120 else zz142);
+
+  zz199 = ((if (zz162 = false) then 0.0 else 1.0) = 1.0);
+
+  zz150 = (if ((not zz145) and ((zz147 >= 2) and (zz147 <= 8))) then zz111 else zz148);
+
+  zz177 = (zz176 = 20);
+
+  zz27 = (if zz24 then true else zz26);
+
+  zz97 = (if zz93 then zz74 else zz95);
+
+  zz71 = (if (not ((zz95 >= 3) and (zz95 <= 6))) then 3 else zz95);
+
+  zz62 = (if (not (zz63 = 4)) then 4 else zz98);
+
+  zz103 = (if zz99 then zz67 else zz98);
+
+  zz55 = (if (not ((zz106 >= 3) and (zz106 <= 6))) then 3 else zz106);
+
+  zz56 = ((not ((zz106 >= 3) and (zz106 <= 6))) and ((zz55 >= 3) and (zz55 <= 6)));
+
+  zz72 = ((not ((zz95 >= 3) and (zz95 <= 6))) and ((zz71 >= 3) and (zz71 <= 6)));
+
+  zz91 = (if zz88 then zz77 else zz89);
+
+  zz108 = (if zz104 then zz58 else zz106);
+
+  zz88 = (((zz147 >= 3) and (zz147 <= 6)) and (not zz186));
+
+  zz48 = (zz47 or zz43);
+
+  zz149 = (if ((not zz145) and ((zz147 >= 2) and (zz147 <= 8))) then zz110 else zz147);
+
+  zz132 = (if ((zz156 >= 3) and (zz156 <= 6)) then 2 else zz131);
+
+  zz112 = (if ((not zz105) and ((zz108 >= 3) and (zz108 <= 6))) then zz52 else zz107);
+
+  zz44 = (if zz42 then zz11 else zz40);
+
+  zz113 = (if (not (zz115 = 7)) then 7 else zz115);
+
+  zz50 = (if zz47 then zz6 else zz49);
+
+  zz95 = (if zz93 then zz76 else zz91);
+
+  zz60 = (if (zz102 = 7) then 2 else zz102);
+
+  zz109 = (if zz104 then zz59 else zz103);
+
+  zz70 = (if (not (zz71 = 4)) then 4 else zz92);
+
+  zz22 = (if (zz108 = 4) then 3 else zz108);
+
+  zz160 = (if SP3c then (if zz155 then zz153 else zz149) else zz156);
+
+  zz153 = (if (not (zz156 = 1)) then 1 else zz156);
+
+  zz58 = (if zz56 then zz53 else zz55);
+
+  zz144 = ((zz142 = 1) and (onOff and (not zz139)));
+
+  zz37 = (zz36 or zz31);
+
+  zz68 = (if (zz97 = 8) then 2 else zz97);
+
+  zz125 = (if (zz130 = 6) then 3 else zz130);
+
+  zz170 = (if (zz166 <= 20) then zz166 else 20);
+
+  zz167 = (zz169 + 1);
+
+  zz11 = (if (zz40 = 6) then 3 else zz40);
+
+  zz163 = (mode = 4);
+
+  zz129 = (if ((zz156 >= 3) and (zz156 <= 6)) then zz127 else zz156);
+
+  zz90 = (if zz88 then zz87 else zz141);
+
+  zz46 = (if zz42 then zz10 else zz41);
+
+  zz98 = (if zz93 then zz75 else zz92);
+
+  zz32 = (if zz30 then zz18 else zz28);
+
+  zz25 = (if zz24 then zz22 else zz108);
+
+  mode = (if SP3c then (if zz155 then zz154 else zz150) else zz157);
+
+  zz135 = (if ((zz156 >= 2) and (zz156 <= 8)) then zz124 else zz134);
+
+  zz111 = (if ((not zz105) and ((zz108 >= 3) and (zz108 <= 6))) then zz51 else zz109);
+
+  zz143 = (if zz139 then zz122 else zz157);
+
+  zz23 = (if (zz108 = 4) then false else zz107);
+
+  zz145 = (zz144 or zz139);
+
+  zz66 = (if zz64 then zz61 else zz63);
+
+  zz110 = (if ((not zz105) and ((zz108 >= 3) and (zz108 <= 6))) then zz50 else zz108);
+
+  zz107 = (if zz104 then true else zz96);
+
+  zz89 = (if zz88 then zz86 else zz147);
+
+  zz21 = (if (not (zz25 = 4)) then 4 else zz109);
+
+  zz102 = (if zz99 then zz66 else zz101);
+
+  zz176 = (if (zz172 <= 20) then zz172 else 20);
+
+  zz130 = (if ((zz156 >= 3) and (zz156 <= 6)) then zz126 else zz129);
+
+  zz101 = (if zz99 then zz68 else zz97);
+
+  zz17 = (if (not (zz32 = 5)) then 6 else zz29);
+
+  zz74 = (if zz72 then zz69 else zz71);
+
+  zz133 = (if ((zz156 >= 3) and (zz156 <= 6)) then zz128 else zz158);
+
+  zz151 = (if ((not zz145) and ((zz147 >= 2) and (zz147 <= 8))) then zz112 else zz141);
+
+  zz28 = (if zz24 then zz20 else zz25);
+
+  zz12 = (if (not (zz38 = 6)) then 6 else zz38);
+
+  zz87 = (if ((zz147 >= 3) and (zz147 <= 6)) then zz82 else zz141);
+
+  zz59 = (if zz56 then zz54 else zz103);
+
+  zz128 = (if (zz156 = 4) then false else zz158);
+
+  zz147 = (if zz144 then zz118 else zz146);
+
+  zz7 = (if (not (zz49 = 4)) then 4 else zz46);
+
+  zz29 = (if zz24 then zz21 else zz109);
+
+  zz18 = (if (zz28 = 4) then 3 else zz28);
+
+  zz114 = (if (not (zz115 = 7)) then 2 else zz143);
+
+  zz69 = (if (not (zz71 = 4)) then 4 else zz71);
+
+  zz20 = (if (not (zz25 = 4)) then 4 else zz25);
+
+  zz31 = (zz30 or zz24);
+
+  zz10 = (if (not (zz44 = 4)) then 4 else zz41);
+
+  zz77 = (if (not (zz89 = 8)) then 8 else zz89);
+
+  zz92 = (if zz88 then zz78 else zz148);
+
+  zz182 = (carSpeed >= 15.0);
+
+  zz85 = (if ((zz147 >= 3) and (zz147 <= 6)) then zz79 else zz84);
+
+  zz84 = (if ((zz147 >= 3) and (zz147 <= 6)) then zz80 else zz83);
+
+  zz49 = (if zz47 then zz8 else zz45);
+
+  --%PROPERTY OK;
+
+tel;

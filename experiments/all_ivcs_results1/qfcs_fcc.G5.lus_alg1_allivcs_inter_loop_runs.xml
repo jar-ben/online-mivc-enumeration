@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Runs>
+<Run>
+   <RunID>1</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">3.29</Time>
+</Run>
+<Run>
+   <RunID>2</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">3.528</Time>
+</Run>
+<Run>
+   <RunID>3</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">2.923</Time>
+</Run>
+<Run>
+   <RunID>4</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">2.806</Time>
+</Run>
+<Run>
+   <RunID>5</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">3.406</Time>
+</Run>
+<Run>
+   <RunID>6</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">3.189</Time>
+</Run>
+</Runs>
