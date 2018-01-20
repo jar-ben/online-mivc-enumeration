@@ -1,4 +1,4 @@
-In this section, we propose a novel algorithm for online enumeration of all MIVCs. The algorithm is build out of two basic procedures: shrink adn grow. The grow procedure is symmetric to the shrink one.
+In this section, we propose a novel algorithm for online enumeration of all MIVCs. The algorithm is built out of two basic procedures: shrink and grow. The grow procedure is symmetric to the shrink one.
  
 In our algorithm we maintain the sets \textit{Explored} and  \textit{Unexplored}. Every time a set $U$ of conjuncts is determined as adequate, the set $U$ as well as all its supersets are moved to the set  \textit{Explored} as due to the monotonicity they are all adequate. Symetrically for an inadeaquate set of conjunncts and the set \textit{Unexplored}. 
 
@@ -11,7 +11,7 @@ However, there is one more observation that can be exploited.
 \begin{observation}
 \label{observation:explored-property}
 Let $U_1, U_2$ be subsets of $T$ such that $U_1$ is explored, $U_2$ is unexplored, and $U_1 \subset U_2$. Then $U_1$ is inadequate  for $(I, T) \vdash P$ .\\
-Symetrically, if $U_1, U_2$ are subsets of $T$ such that $U_2$ is explored, $U_1$ is unexplored, and $U_1 \subset U_2$. Then $U_1$ is adequate  for $(I, T) \vdash P$ .
+Symetrically, if $U_1, U_2$ are subsets of $T$ such that $U_2$ is explored, $U_1$ is unexplored, and $U_1 \subset U_2$. Then $U_2$ is adequate  for $(I, T) \vdash P$ .
 \end{observation} 
 
 \begin{proof}
@@ -26,20 +26,6 @@ In other words, we are quaranteed that whenever during the shrinking procedure w
 
 
 \subsection{Grow Procedure}
-
-%- pripomenout, ze kdyz zjistime, ze je set inadequate, tak automaticky vime, ze i vsechny jeho podmnoziny jsou inadequate. 
-%- proto, cim vetsi je mnozina, o ktere zjistime ze je inadequate, tim vice informaci ziskame. 
-%- proto se zamerujeme na hledani maximal inadequate subsets
-%- rict, ze mozna varianta je najit nejaky inadequate a pak pomoci grow z nej ziskat maximalni inadequate. 
-%- to je ale drahe a proto navrhujeme pouzit approximativni pristup
-%
-%- uvest algoritmus pro approx grow
-%- slovne popsat
-%
-%- vlastnosti algoritmu: 
-%-- vysledkem je inadequate set
-%-- vysledny set byl pred zavolanim procedure unexplored nebo roven U.
- 
 \begin{algorithm}[!t]
 \label{alg:approx-grow}
 \input{./algs/alg_grow_approximation}
@@ -47,7 +33,7 @@ In other words, we are quaranteed that whenever during the shrinking procedure w
 \end{algorithm}
 
 Recall that if a set is determined to be inadequate then all of its subsets are necessarily also inadequate. Therefore, the larger set is determined to be inadequate, the more inadequate sets become explored.  %(due to the monotonicity of adequacy).  
-To identify inadequate subsets as quickly as possible we search for maximal inadequate subsets (MISes).  
+To identify inadequate sets as quickly as possible we search for maximal inadequate sets (MISes).  
 
 In order to find a MIS, we can find an inadequate set $U \subset T$ and use a process called \emph{grow} which turns $U$ to a MIS for $(I,T) \vdash P$.
 Grow procedure iteratively attempts to add elements from $T \setminus U$ to $U$, checking each new set for adequacy and keeping only changes that leave the set inadequate. Same as in the case of shrink procedure, we can use the set $Explored$ to avoid checking sets whose status is already known.
@@ -57,17 +43,16 @@ However, such grow procedure might still perform too many checks for adequacy an
 Instead, we propose to use a different approach. Algorithm~\ref{alg:approx-grow} shows a procedure that, given an inadequate set $U$ for $(I, T) \vdash P$, finds an \emph{approximately} maximal inadequate set. 
 It first finds some maximal unexplored set $M$ such that $M \supseteq U$ and checks it for adequacy. 
 If $M$ is inadequate, then it is necessarily a MIS
-%Note, that if a maximal unexplored subset is inadequate, then it is necessarily a MIS 
 (this is a straightforward consequence of Observation~\ref{observation:explored-property}). 
 Otherwise, if $M$ is adequate then it is iteratively reduced until an inadequate set is found.
-In particular, whenever $M$ is found to be adequate, the approximative procedure by Ghassabani et al.~\cite{single-mivc} is used to find an approximate MIVC $M_{IVC}$ of $M$ which succinctly explains $M$'s adequacy. In order to turn $M$ into an inadequate set, it is reduced by one element from $M_{IVC} \setminus U$ and checked for adequacy. If $M$ is still adequate then the approximate growing procedure continues with a next iteration. Otherwise, if $M$ is inadequate, the procedure finishes.
+In particular, whenever $M$ is found to be adequate, the approximative procedure \texttt{IVC\_UC} by Ghassabani et al.~\cite{single-mivc} is used to find an approximate MIVC $M_{IVC}$ of $M$ which succinctly explains $M$'s adequacy. In order to turn $M$ into an inadequate set, it is reduced by one element from $M_{IVC} \setminus U$ and checked for adequacy. If $M$ is still adequate then the approximate growing procedure continues with a next iteration. Otherwise, if $M$ is inadequate, the procedure finishes.
 
 \begin{proposition}
 Given an unexplored inadequate set $U$ for $(I,T) \vdash P$ and a set of unexplored subsets of $T$, Algorithm~\ref{alg:approx-grow} returns an \emph{unexplored} inadequate subset $M$ of $T$.
 \end{proposition}
 
 \begin{proof}
-Let us denote initial $M$ as $M_{init}$. Since $M_{init} \supseteq U$ and $M$ is recursively reduced only by elements that are not contained in $U$, then in every iteration holds that $U \supseteq M \supseteq M_{init}$. Since both $U, \, M_{init}$ are unexplored, then $M$ is necessarily also unexplored. 
+Let us denote initial $M$ as $M_{init}$. Since $M_{init} \supseteq U$ and $M$ is recursively reduced only by elements that are not contained in $U$, then in every iteration holds that $U \subseteq M \subseteq M_{init}$. Since both $U, \, M_{init}$ are unexplored, then $M$ is necessarily also unexplored. 
 \end{proof}
 
 
@@ -76,8 +61,9 @@ In this section, we describe, how to combine the shrink and grow methods in orde
 
 Since knowledge of (approximately) maximal inadequate subsets might be used to speed up shrinking procedures, it might be tempting to first find all maximal inadequate subsets. However, there can be up to exponentially many such subsets with respect to the size of $T$. Thus, finding first all maximal inadequate subsets is in general intractable. Instead, we propose to alternate both shrinking and growing procedures. Note, that during shrinking, we might determine some subsets to be inadequate, and such subsets can be subsequently used as \emph{seeds} for growing. Dually, we might determine some subsets to be adequate during the growing procedures, and such subsets can be used as \emph{seeds} for shrinking procedures. Thus, both these procedures somehow complements each other. 
 
-Algorithm~\ref{alg:core} shows our algorithm for online enumeration of all MIVCs. It iteratively... todo popis algoritmu + pseudokod. 
+Algorithm~\ref{alg:core} shows our algorithm for online enumeration of all MIVCs. It iteratively... todo: description of the algorithm.
 
+\todo{correctness and complexity}
 
 \begin{algorithm}[!t]
 \input{./algs/alg}
