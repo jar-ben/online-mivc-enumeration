@@ -12,12 +12,19 @@
 \newtheorem{observation}{Observation}
 \renewcommand{\theobservation}{\arabic{observation}.}% #.
 
+\newcommand{\bfalg}{\texttt{\small{IVC\_BF}}}
+\newcommand{\ucalg}{\texttt{\small{IVC\_UC}}}
+\newcommand{\ucbfalg}{\texttt{\small{IVC\_UCBF}}}
+\newcommand{\mustalg}{\texttt{\small{IVC\_MUST}}}
+\newcommand{\getivc}{\textsc{GetIVC}}
+
+
 
 \begin{document}
 
 \title{Online Enumeration of All Minimal Inductive Validity Cores}
 
-\author{Jaroslav Bend\'ik\inst{1} 
+\author{Jaroslav Bend\'ik\inst{1}
 	\and Elaheh Ghassabani\inst{2}
 	\and Michael Whalen\inst{2}
 	\and Ivana \v Cern\'a\inst{1}
@@ -31,17 +38,17 @@ Department of Computer Science \& Engineering, University of Minnesota, MN, USA\
 }
 
 
-\maketitle    
-\begin{abstract} 
-Symbolic model checkers can construct proofs of safety properties over complex models, but when a proof succeeds, the results do not generally provide much insight to the user.  Minimal Inductive Validity Cores (MIVCs) trace a property to a minimal set of model elements necessary for constructing a proof, and can help to explain why a property is true of a model.  In addition, the traceability information provided by MIVCs can be used to perform a variety of engineering analysis such as coverage analysis, robustness analysis, and vacuity detection.  The more MIVCs are identified, the more precise analyses can be performed.   However, a full enumeration of all MIVCs is in general intractable due to the large number of possible model element sets.  The bottleneck of existing algorithms is that they are not guaranteed to emit minimal IVCs until the end of the computation, so returned results are not known to be minimal until all solutions are produced.  
+\maketitle
+\begin{abstract}
+Symbolic model checkers can construct proofs of safety properties over complex models, but when a proof succeeds, the results do not generally provide much insight to the user.  Minimal Inductive Validity Cores (MIVCs) trace a property to a minimal set of model elements necessary for constructing a proof, and can help to explain why a property is true of a model.  In addition, the traceability information provided by MIVCs can be used to perform a variety of engineering analysis such as coverage analysis, robustness analysis, and vacuity detection.  The more MIVCs are identified, the more precise analyses can be performed.   However, a full enumeration of all MIVCs is in general intractable due to the large number of possible model element sets.  The bottleneck of existing algorithms is that they are not guaranteed to emit minimal IVCs until the end of the computation, so returned results are not known to be minimal until all solutions are produced.
 
 In this paper, we propose an algorithm that identifies MIVCs in an \emph{online} manner (i.e., one by one) and can be terminated at any time.  We benchmark our new algorithm against existing algorithms on a variety of examples, and demonstrate that our algorithm not only is better in intractable cases but also completes the enumeration of MIVCs faster than competing algorithms in many tractable cases.
 
 \keywords{Inductive Validity Cores, SMT-based model checking, Inductive proofs, Traceability, Proof cores}
-\end{abstract} 
- 
- 
- 
+\end{abstract}
+
+
+
 \section{Introduction}
 \label{sec:intro}
 \input{intro}
@@ -73,13 +80,20 @@ In this paper, we propose an algorithm that identifies MIVCs in an \emph{online}
 
 \section{Implementation}
 \label{sec:impl}
-\input{implementation}
+\input{impl}
 
 
 \section{Experiment}
 \label{sec:experiment}
 \input{experiment}
 
+\section{Conclusion}
+\label{sec:conclusions}
+\input{conclusion}
 
 
-\end{document}
+\bibliographystyle{abbrv}
+\bibliography{biblio}
+
+
+\end{document} 

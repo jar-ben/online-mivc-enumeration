@@ -1,19 +1,19 @@
 \newcommand{\fUnex}{f_{\mathit{Unexplored}}}
-Let us first recall 
-%Consider first 
+Let us first recall
+%Consider first
 a naive enumeration algorithm that   explicitly checks each subset of $T$ for being an IVC  and then finds the minimal IVCs  using subset inclusion relation. The main disadvantage of this approach is the   exponential number of subsets of $T$.
 We briefly describe existing techniques that can be used to find all MIVCs while checking only a a small portion of subsets of $T$  for being IVCs.  Most of the techniques were inspired by the MUS enumeration techniques~\cite{}   proposed in the area of constraint processing and applied by Ghassabani et al.~\cite{}.
 
 
 
-% An elaborated algorithm was     very recently presented by Ghassabani et al.~\cite{}. However,  most of the techniques were inspired by the MUS enumeration techniques~\cite{} previously proposed in the area of constraint processing. 
+% An elaborated algorithm was     very recently presented by Ghassabani et al.~\cite{}. However,  most of the techniques were inspired by the MUS enumeration techniques~\cite{} previously proposed in the area of constraint processing.
 
 
 
 \begin{definition}[Inadequacy] A set of conjuncts  $U \subseteq T$  is an \emph{inadequate} set for $(I, T) \vdash P$ iff $(I, U) \nvdash P$. Especially, $U \subseteq T$ is a \emph{Maximal Inadequate Set (MIS)} for $(I, T) \vdash P$ iff $U$ is inadequate and $\forall T_i \in (T \setminus U): \, (I, U \cup \{ T_i\}) \vdash P$.
 \end{definition}
 
-Inadequate sets are duals to inductive validity cores. Each $U \subseteq T$ is either inadequate set or an inductive validity core. In order to unify the notation, we   use notation \emph{inadequate} and \emph{adequate}. Note that especially minimal inductive validity cores can be thus called  minimal adequate sets.  
+Inadequate sets are duals to inductive validity cores. Each $U \subseteq T$ is either inadequate set or an inductive validity core. In order to unify the notation, we   use notation \emph{inadequate} and \emph{adequate}. Note that especially minimal inductive validity cores can be thus called  minimal adequate sets.
 
 
 
@@ -47,13 +47,13 @@ of $(I, U_1)$.
 
 Monotonicity allows  to determine status  of multiple subsets of $T$ while using only a single check for adequacy. For example, if a set $U \subseteq T$ is determined to be adequate, than all of its supersets are   adequate and do not need to be explicitly checked. Let     $\mathit{Sup}(U)$ and $\mathit{Sub}(U)$ denote the set of all supersets and subsets of $U$, respectively.
 
-Every algorithm for computing MIVCs has to determine status (i.e adeqaute or inadequate) of every subset of $T$.  In order to distinguish the subsets whose status is already known from those whose status is not known yet, we denote the former subsets as \emph{explored} subsets and the latter as \emph{unexplored} subsets. Moreover, we distinguish \emph{maximal} resp. \emph{minimal} unexplored subsets 
+Every algorithm for computing MIVCs has to determine status (i.e adeqaute or inadequate) of every subset of $T$.  In order to distinguish the subsets whose status is already known from those whose status is not known yet, we denote the former subsets as \emph{explored} subsets and the latter as \emph{unexplored} subsets. Moreover, we distinguish \emph{maximal} resp. \emph{minimal} unexplored subsets
 \begin{itemize}
 	\item $U_{max}$ is a \emph{maximal unexplored subset} of $T$ iff $U_{max} \subseteq T$, $U_{max}$ is unexplored, and each of its proper supersets is explored.
 	\item $U_{min}$ is a \emph{minimal unexplored subset} of $T$ iff $U_{min} \subseteq T$, $U_{max}$ is unexplored, and each of its proper subsets is explored.
 \end{itemize}
 
- 
+
 
 \begin{algorithm}[!t]\label{shrin-procedure}
 \input{./algs/ivc_bf}
@@ -62,9 +62,9 @@ Every algorithm for computing MIVCs has to determine status (i.e adeqaute or ina
 
 
 A straightforward way to find a (so far unexplored) MIVC of $T$ is to find an unexplored adequate subset $U \subseteq T$ and turn $U$  into an MIVC by a process called \emph{shrinking}. Shrinking procedure iteratively attempts to remove elements from the set that is being shrunk, checking each new set for adequacy and keeping only changes that
-leave the set adequate (see Algorithm~\ref{shrin-procedure} for pseudocode). To find an unexplored adequate subset Ghassabani et al.~\cite{}  always choose maximal unexplored subset and test it for adequacy.
+leave the set adequate (see Algorithm~\ref{shrin-procedure} for pseudocode). To find an unexplored adequate subset Ghassabani et al.~\cite{Ghass17AllIVCs}  always choose maximal unexplored subset and test it for adequacy.
 The shrinking procedure itself can be   extremely time demanding  as  each check for adequacy is in fact a  model checking problem.  Ghassabani et al.~\cite{}  therefore substitute the shrinking procedure  with an appproximative procedure which returns  IVC which is not necessarilly minimal and identify  MIVCs (using subset relation) at the end of the computation when status of all subsets is determined. Their experimental evaluations show that the approximative shrinking is much faster. However,  it does not enumerate MIVCs online.
- 
+
 
 %\todo{Pseudocode of \texttt{All\_IVCs}}
 %

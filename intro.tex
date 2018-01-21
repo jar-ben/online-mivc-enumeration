@@ -1,0 +1,33 @@
+Symbolic model checking using induction-based techniques such as IC3/PDR~\cite{Een2011:PDR}, $k$-induction~\cite{SheeranSS00}, and $k$-liveness~\cite{conf/fmcad/ClaessenS12} can be used to determine whether properties hold of complex finite or infinite-state systems.  Such tools are popular both because they are highly automated (often requiring no user interaction other than the specification of the model and desired properties), and also because, in the event of a violation, the tool provides a counterexample demonstrating a situation in which the property fails to hold.  These counterexamples can be used both to illustrate subtle errors in complex hardware and software designs~\cite{hilt2013,McMillan99:compositional,Miller10:CACM} and to support automated test case generation~\cite{Whalen13:OMCDC,You15:dse}.
+
+If a property is proved, however, most model checking tools do not provide additional information.  This can lead to situations in which developers have an unwarranted level of confidence in the behavior of the system.  Issues such as vacuity~\cite{Kupferman03:Vacuity}, incorrect environmental assumptions~\cite{Whalen07:FMICS}, and errors either in English language requirements or formalization~\cite{Pike06:axioms} can all lead to failures of ``proved'' systems.  Thus, even if proofs are established, one must approach verification with skepticism.
+
+Recently, {\em proof cores}~\cite{jasper_gold} have been proposed as a mechanism to determine which elements of a model are used when constructing a proof.  This idea is formalized by Ghassabani et al. for inductive model checkers~\cite{Ghass16} as {\em Inductive Validity Cores} (IVCs). IVCs offer proof explanation as to why a property is satisfied by a model in a formal and human-understandable way.  The idea lifts UNSAT cores~\cite{zhang2003extracting}
+to the level of sequential model checking algorithms using induction.  Informally, if a model is viewed as a conjunction of constraints,
+a minimal IVC (MIVC) is a set of constraints that is sufficient to construct a proof such that if any constraint is removed, the property is no longer valid.  
+%
+Depending on the model and property to be analyzed, there are many possible MIVCs, and there is often substantial diversity between the IVCs used for proof.  
+
+In previous work~\cite{Ghass16,Murugesan16:renext,Ghass17Cov,Ghass17AllIVCs} we have explored several different uses of IVCs, including: 
+
+\noindent \textbf{Traceability: } For functional properties that can be proven with inductive model checkers, inductive validity cores can provide accurate traceability matrices with no user effort.  Given multiple IVCs, {\em rich traceability} matrices~\cite{Murugesan16:renext} can be automatically constructed that provide additional insight about {\em required} vs. {\em optional} design elements.
+
+\noindent \textbf{Vacuity detection:} The idea of syntactic vacuity detection (checking whether all subformulae within a property are necessary for its validity) has been well studied~\cite{Kupferman03:Vacuity}.   IVCs allow a generalized notion of vacuity that can indicate weak or mis-specified properties even when a property is syntactically non-vacuous.
+
+\noindent \textbf{Coverage analysis:} Closely related to vacuity detection is the idea of {\em coverage analysis}, e.g., are all atoms in the model necessary for at least one of the properties proven about the model?  Several different notions of coverage have been proposed~\cite{chockler_coverage_2003,kupferman_theory_2008}, but these tend to be very expensive to compute.
+
+\noindent \textbf{Impact Analysis:} Given a single (or for more accurate results, all) MIVCs, it is possible to determine which requirements may be falsified by changes to the model.  This analysis allows for selective regression verification of tests and proofs: if there are alternate proof paths that do not require the modified portions of the model, then the requirement does not need to be re-verified.
+
+\noindent \textbf{Design Optimization:} Synthesis tools can benefit from MIVCs in the process of transforming an abstract behavior into a design implementation. A practical way of calculating all MIVCs allows synthesizers to find a minimum set of design elements (optimal implementation) for a certain behavior. Such optimizations can be performed at different levels of synthesis.
+
+To be useful for these tasks, the generation process must be efficient and the generated IVC must be accurate and precise (that is, sound and minimal).  In previous work, we have developed an efficient {\em offline} algorithm~\cite{Ghass17AllIVCs} for finding all minimal IVCs based on the MARCO algorithm for MUSes~\cite{marco2016fast}.  The algorithm is considered {\em offline} because it is not until all IVCs have been computed that one knows whether the solutions computed are, in fact, minimal.  In cases in which models contain many IVCs, this approach can be impractically expensive or simply not terminate.
+
+\todo{Jaroslav and Ivana: Make sure I'm speaking correctly here}
+\todo{Elaheh: fill in experimental data}
+\todo{ALL: talk about `unknown' results when timeout occurs.}
+\todo{ALL: do we need a running example?  I'm not sure.  If we do an illustration of it, the Brno team might be best at this.}
+
+In this paper, we consider three {\em online} algorithms for MIVC enumeration.  With these algorithms, solutions are produced at a regular rate, and each solution produced is guaranteed to be minimal.  Additionally, for models with a large number of IVCs, the proposed algorithms are considerably more efficient than the baseline MARCO algorithm.  We demonstrate this via experiment, where the new 
+
+The rest of the paper is organized as follows...
+
