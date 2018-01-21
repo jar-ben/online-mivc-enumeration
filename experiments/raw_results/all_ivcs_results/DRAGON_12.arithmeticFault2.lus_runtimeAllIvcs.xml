@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<Results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AllIvcRuntime unit="sec">470.864</AllIvcRuntime>
+  <NumOfGetIvcCalls>116</NumOfGetIvcCalls>
+  <NumOfTimedOuts>6</NumOfTimedOuts>
+</Results>

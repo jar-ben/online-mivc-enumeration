@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Progress source="bmc" trueFor="1">
+    <PropertyProgress name="__GUARANTEE35"/>
+  </Progress>
+  <Progress source="bmc" trueFor="2">
+    <PropertyProgress name="__GUARANTEE35"/>
+  </Progress>
+  <Progress source="bmc" trueFor="3">
+    <PropertyProgress name="__GUARANTEE35"/>
+  </Progress>
+  <Progress source="bmc" trueFor="4">
+    <PropertyProgress name="__GUARANTEE35"/>
+  </Progress>
+  <Property name="__GUARANTEE35">
+    <Runtime unit="sec">3.247</Runtime>
+    <Answer source="invariant-generation">valid</Answer>
+    <K>1</K>
+    <NumberOfIVCs>1</NumberOfIVCs>
+    <MustElem>__GUARANTEE35</MustElem>
+    <MustElem>_TOP__ALARM~0.__ASSERT</MustElem>
+    <MustElem>_TOP__ALARM~0.__ASSUME__CONJ</MustElem>
+    <MustElem>_TOP__ALARM~0.__ASSUME__HIST</MustElem>
+    <IvcSet number="1">
+    <Invariant>__GUARANTEE35</Invariant>
+    <Invariant>false</Invariant>
+    <Ivc>_TOP__ALARM~0.__ASSERT</Ivc>
+    <Ivc>_TOP__ALARM~0.__ASSUME__CONJ</Ivc>
+    <Ivc>_TOP__ALARM~0.__ASSUME__HIST</Ivc>
+    </IvcSet>
+  </Property></Results>

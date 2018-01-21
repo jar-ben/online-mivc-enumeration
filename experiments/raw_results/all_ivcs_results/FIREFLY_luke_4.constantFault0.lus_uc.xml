@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <UcRuntime unit="sec">0.025</UcRuntime>
+   <Timeout unit="sec">32.045</Timeout>
+   <ProofTime unit="sec">0.384</ProofTime>
+   <Runtime unit="sec">0.40900000000000003</Runtime>
+   <IVC>OK</IVC>
+   <IVC>exclusive</IVC>
+   <IVC>firefly~0.exclusive</IVC>
+   <IVC>firefly~0.garde1</IVC>
+   <IVC>firefly~0.garde2</IVC>
+   <IVC>firefly~0.garde3</IVC>
+   <IVC>firefly~0.garde5</IVC>
+   <IVC>firefly~0.garde7</IVC>
+   <IVC>firefly~0.garde8</IVC>
+   <IVC>firefly~0.invalid</IVC>
+   <IVC>firefly~0.mem_invalid</IVC>
+   <IVC>firefly~0.shared</IVC>
+   <TRIVC>firefly~0.shared</TRIVC>
+   <TRIVC>firefly~0.garde1</TRIVC>
+   <TRIVC>firefly~0.garde3</TRIVC>
+   <TRIVC>firefly~0.garde2</TRIVC>
+   <TRIVC>exclusive</TRIVC>
+   <TRIVC>firefly~0.garde5</TRIVC>
+   <TRIVC>firefly~0.garde7</TRIVC>
+   <TRIVC>OK</TRIVC>
+   <TRIVC>firefly~0.mem_invalid</TRIVC>
+   <TRIVC>firefly~0.exclusive</TRIVC>
+   <TRIVC>firefly~0.invalid</TRIVC>
+   <TRIVC>firefly~0.garde8</TRIVC>
+</Results>

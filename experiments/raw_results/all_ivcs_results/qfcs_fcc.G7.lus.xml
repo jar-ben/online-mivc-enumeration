@@ -1,0 +1,355 @@
+<?xml version="1.0"?>
+<Results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Progress source="bmc" trueFor="1">
+    <PropertyProgress name="__GUARANTEE7"/>
+  </Progress>
+  <Progress source="bmc" trueFor="2">
+    <PropertyProgress name="__GUARANTEE7"/>
+  </Progress>
+  <Progress source="bmc" trueFor="3">
+    <PropertyProgress name="__GUARANTEE7"/>
+  </Progress>
+  <Progress source="bmc" trueFor="4">
+    <PropertyProgress name="__GUARANTEE7"/>
+  </Progress>
+  <Progress source="bmc" trueFor="5">
+    <PropertyProgress name="__GUARANTEE7"/>
+  </Progress>
+  <Progress source="bmc" trueFor="6">
+    <PropertyProgress name="__GUARANTEE7"/>
+  </Progress>
+  <Progress source="bmc" trueFor="7">
+    <PropertyProgress name="__GUARANTEE7"/>
+  </Progress>
+  <Progress source="bmc" trueFor="8">
+    <PropertyProgress name="__GUARANTEE7"/>
+  </Progress>
+  <Progress source="bmc" trueFor="9">
+    <PropertyProgress name="__GUARANTEE7"/>
+  </Progress>
+  <Progress source="bmc" trueFor="10">
+    <PropertyProgress name="__GUARANTEE7"/>
+  </Progress>
+  <Progress source="bmc" trueFor="11">
+    <PropertyProgress name="__GUARANTEE7"/>
+  </Progress>
+  <Progress source="bmc" trueFor="12">
+    <PropertyProgress name="__GUARANTEE7"/>
+  </Progress>
+  <Progress source="bmc" trueFor="13">
+    <PropertyProgress name="__GUARANTEE7"/>
+  </Progress>
+  <Progress source="bmc" trueFor="14">
+    <PropertyProgress name="__GUARANTEE7"/>
+  </Progress>
+  <Progress source="bmc" trueFor="15">
+    <PropertyProgress name="__GUARANTEE7"/>
+  </Progress>
+  <Progress source="bmc" trueFor="16">
+    <PropertyProgress name="__GUARANTEE7"/>
+  </Progress>
+  <Progress source="bmc" trueFor="17">
+    <PropertyProgress name="__GUARANTEE7"/>
+  </Progress>
+  <Progress source="bmc" trueFor="18">
+    <PropertyProgress name="__GUARANTEE7"/>
+  </Progress>
+  <Progress source="bmc" trueFor="19">
+    <PropertyProgress name="__GUARANTEE7"/>
+  </Progress>
+  <Progress source="bmc" trueFor="20">
+    <PropertyProgress name="__GUARANTEE7"/>
+  </Progress>
+  <Progress source="bmc" trueFor="21">
+    <PropertyProgress name="__GUARANTEE7"/>
+  </Progress>
+  <Progress source="bmc" trueFor="22">
+    <PropertyProgress name="__GUARANTEE7"/>
+  </Progress>
+  <Property name="__GUARANTEE7">
+    <Runtime unit="sec">756.885</Runtime>
+    <Answer source="pdr">valid</Answer>
+    <K>1</K>
+    <NumberOfIVCs>1</NumberOfIVCs>
+    <MustElem>OSAS_S_140__req.fails.ELLOB</MustElem>
+    <MustElem>OSAS_S_140__req.acts.SPLLIB</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.fails.ELLOB</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_fail.ELLIB</MustElem>
+    <MustElem>_TOP__OSAS_comp.__ASSUME__CONJ</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.OSAS_S_140__req_helper.res</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_out.ELLIB</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_fail.GEAR</MustElem>
+    <MustElem>OSAS_S_140__req.acts.ELLOB</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_out.SPLLIB</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.fails.BRAKE</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.acts.SPLLIB</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_out.THROTL</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.fails.GEAR</MustElem>
+    <MustElem>OSAS_S_140__req.fails.FLAPLO</MustElem>
+    <MustElem>OSAS_S_140__req.fails.BRAKE</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_fail.SPLLIB</MustElem>
+    <MustElem>OSAS_S_140__req.fails.FLAPLI</MustElem>
+    <MustElem>OSAS_S_140__req.fails.RUDUP</MustElem>
+    <MustElem>OSAS_S_140__req.acts.AILL</MustElem>
+    <MustElem>OSAS_S_140__req.fails.STEER</MustElem>
+    <MustElem>OSAS_S_140__req.fails.RUDLO</MustElem>
+    <MustElem>OSAS_S_140__req.acts.AILR</MustElem>
+    <MustElem>OSAS_S_140__req.fails.ELRIB</MustElem>
+    <MustElem>OSAS_S_140__req.fails.SPLLOB</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.fails.SPLLIB</MustElem>
+    <MustElem>OSAS_S_140__req.acts.SPLROB</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.acts.ELLOB</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.OSAS_S_140__req_helper.fail</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_fail.ELROB</MustElem>
+    <MustElem>OSAS_S_140__req.fails.ELLIB</MustElem>
+    <MustElem>OSAS_S_140__req.OSAS_S_140__req_helper.res</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_out.BRAKE</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_fail.BRAKE</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_out.FLAPRI</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_out.ELROB</MustElem>
+    <MustElem>OSAS_S_140__req.OSAS_S_140__req_helper.fail</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_out.SPLROB</MustElem>
+    <MustElem>OSAS_S_140__req.acts.BRAKE</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.fails.ELRIB</MustElem>
+    <MustElem>OSAS_S_140__req.acts.ELRIB</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.acts.SPLROB</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.OSAS_S_140__req_helper.act</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.acts.BRAKE</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_fail.SPLROB</MustElem>
+    <MustElem>OSAS_S_140__req.fails.FLAPRO</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_fail.AILR</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.acts.ELRIB</MustElem>
+    <MustElem>OSAS_S_140__req.fails.FLAPRI</MustElem>
+    <MustElem>OSAS_S_140__req.OSAS_S_140__req_helper.act</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_fail.AILL</MustElem>
+    <MustElem>OSAS_S_140__req.fails.SPLRIB</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.fails.SPLROB</MustElem>
+    <MustElem>OSAS_S_140__req.fails.AILL</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_fail.RUDLO</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_fail.STEER</MustElem>
+    <MustElem>__GUARANTEE7</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.acts.SPLRIB</MustElem>
+    <MustElem>OSAS_S_140__req.fails.AILR</MustElem>
+    <MustElem>OSAS_S_140__req.fails.ELROB</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_out.RUDLO</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.acts.AILL</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.acts.AILR</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_out.AILL</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_out.ELRIB</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_fail.ELRIB</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_out.SPLRIB</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_fail.FLAPLO</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_fail.FLAPLI</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_out.GEAR</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_fail.RUDUP</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.acts.STEER</MustElem>
+    <MustElem>OSAS_S_140__req.acts.ELROB</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.fails.ELROB</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.acts.GEAR</MustElem>
+    <MustElem>OSAS_S_140__req.fails.THROTL</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_fail.SPLRIB</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.fails.FLAPRI</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.acts.FLAPLI</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.fails.FLAPRO</MustElem>
+    <MustElem>OSAS_S_140__req.fails.SPLROB</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_fail.ELLOB</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_out.RUDUP</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.fails.SPLRIB</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.acts.FLAPLO</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_out.FLAPRO</MustElem>
+    <MustElem>OSAS_S_140__req.acts.FLAPRO</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.acts.ELROB</MustElem>
+    <MustElem>OSAS_S_140__req.acts.SPLRIB</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_out.STEER</MustElem>
+    <MustElem>OSAS_S_140__req.fails.GEAR</MustElem>
+    <MustElem>OSAS_S_140__req.fails.THROTR</MustElem>
+    <MustElem>OSAS_S_140__req.acts.FLAPRI</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.fails.SPLLOB</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.fails.AILR</MustElem>
+    <MustElem>OSAS_S_140__req.res</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.fails.AILL</MustElem>
+    <MustElem>OSAS_S_140__req.acts.SPLLOB</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_fail.FLAPRI</MustElem>
+    <MustElem>OSAS_S_140__req.acts.GEAR</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.acts.THROTR</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.acts.RUDUP</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_fail.FLAPRO</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.fails.FLAPLO</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.acts.THROTL</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.acts.SPLLOB</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_out.ELLOB</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_out.SPLLOB</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.fails.RUDLO</MustElem>
+    <MustElem>OSAS_S_140__req.acts.RUDLO</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.fails.ELLIB</MustElem>
+    <MustElem>OSAS_S_140__req.acts.ELLIB</MustElem>
+    <MustElem>OSAS_S_140__req.acts.STEER</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.acts.FLAPRI</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.res</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.fails.RUDUP</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_out.THROTR</MustElem>
+    <MustElem>OSAS_S_140__req.acts.THROTL</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.acts.FLAPRO</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.fails.FLAPLI</MustElem>
+    <MustElem>OSAS_S_140__req.fails.SPLLIB</MustElem>
+    <MustElem>OSAS_S_140__req.acts.FLAPLO</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.fails.STEER</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_fail.THROTR</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_out.AILR</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.fails.THROTL</MustElem>
+    <MustElem>_TOP__OSAS_comp.__ASSUME__HIST</MustElem>
+    <MustElem>OSAS_S_140__req.acts.THROTR</MustElem>
+    <MustElem>OSAS_S_140__req.acts.RUDUP</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_out.FLAPLI</MustElem>
+    <MustElem>OSAS_S_140__req.acts.FLAPLI</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_out.FLAPLO</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.acts.ELLIB</MustElem>
+    <MustElem>_TOP__OSAS_comp.__ASSERT</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_fail.SPLLOB</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.acts.RUDLO</MustElem>
+    <MustElem>_TOP__OSAS_comp.acts_fail.THROTL</MustElem>
+    <MustElem>_TOP__OSAS_comp.OSAS_S_140__req.fails.THROTR</MustElem>
+    <IvcSet number="1">
+    <Invariant>_TOP__OSAS_comp~0.__ASSUME__HIST</Invariant>
+    <Invariant>__GUARANTEE7</Invariant>
+    <Ivc>OSAS_S_140__req.fails.ELLOB</Ivc>
+    <Ivc>OSAS_S_140__req.acts.SPLLIB</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.fails.ELLOB</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_fail.ELLIB</Ivc>
+    <Ivc>_TOP__OSAS_comp.__ASSUME__CONJ</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.OSAS_S_140__req_helper.res</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_out.ELLIB</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_fail.GEAR</Ivc>
+    <Ivc>OSAS_S_140__req.acts.ELLOB</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_out.SPLLIB</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.fails.BRAKE</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.acts.SPLLIB</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_out.THROTL</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.fails.GEAR</Ivc>
+    <Ivc>OSAS_S_140__req.fails.FLAPLO</Ivc>
+    <Ivc>OSAS_S_140__req.fails.BRAKE</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_fail.SPLLIB</Ivc>
+    <Ivc>OSAS_S_140__req.fails.FLAPLI</Ivc>
+    <Ivc>OSAS_S_140__req.fails.RUDUP</Ivc>
+    <Ivc>OSAS_S_140__req.acts.AILL</Ivc>
+    <Ivc>OSAS_S_140__req.fails.STEER</Ivc>
+    <Ivc>OSAS_S_140__req.fails.RUDLO</Ivc>
+    <Ivc>OSAS_S_140__req.acts.AILR</Ivc>
+    <Ivc>OSAS_S_140__req.fails.ELRIB</Ivc>
+    <Ivc>OSAS_S_140__req.fails.SPLLOB</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.fails.SPLLIB</Ivc>
+    <Ivc>OSAS_S_140__req.acts.SPLROB</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.acts.ELLOB</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.OSAS_S_140__req_helper.fail</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_fail.ELROB</Ivc>
+    <Ivc>OSAS_S_140__req.fails.ELLIB</Ivc>
+    <Ivc>OSAS_S_140__req.OSAS_S_140__req_helper.res</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_out.BRAKE</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_fail.BRAKE</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_out.FLAPRI</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_out.ELROB</Ivc>
+    <Ivc>OSAS_S_140__req.OSAS_S_140__req_helper.fail</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_out.SPLROB</Ivc>
+    <Ivc>OSAS_S_140__req.acts.BRAKE</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.fails.ELRIB</Ivc>
+    <Ivc>OSAS_S_140__req.acts.ELRIB</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.acts.SPLROB</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.OSAS_S_140__req_helper.act</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.acts.BRAKE</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_fail.SPLROB</Ivc>
+    <Ivc>OSAS_S_140__req.fails.FLAPRO</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_fail.AILR</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.acts.ELRIB</Ivc>
+    <Ivc>OSAS_S_140__req.fails.FLAPRI</Ivc>
+    <Ivc>OSAS_S_140__req.OSAS_S_140__req_helper.act</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_fail.AILL</Ivc>
+    <Ivc>OSAS_S_140__req.fails.SPLRIB</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.fails.SPLROB</Ivc>
+    <Ivc>OSAS_S_140__req.fails.AILL</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_fail.RUDLO</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_fail.STEER</Ivc>
+    <Ivc>__GUARANTEE7</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.acts.SPLRIB</Ivc>
+    <Ivc>OSAS_S_140__req.fails.AILR</Ivc>
+    <Ivc>OSAS_S_140__req.fails.ELROB</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_out.RUDLO</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.acts.AILL</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.acts.AILR</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_out.AILL</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_out.ELRIB</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_fail.ELRIB</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_out.SPLRIB</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_fail.FLAPLO</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_fail.FLAPLI</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_out.GEAR</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_fail.RUDUP</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.acts.STEER</Ivc>
+    <Ivc>OSAS_S_140__req.acts.ELROB</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.fails.ELROB</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.acts.GEAR</Ivc>
+    <Ivc>OSAS_S_140__req.fails.THROTL</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_fail.SPLRIB</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.fails.FLAPRI</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.acts.FLAPLI</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.fails.FLAPRO</Ivc>
+    <Ivc>OSAS_S_140__req.fails.SPLROB</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_fail.ELLOB</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_out.RUDUP</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.fails.SPLRIB</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.acts.FLAPLO</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_out.FLAPRO</Ivc>
+    <Ivc>OSAS_S_140__req.acts.FLAPRO</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.acts.ELROB</Ivc>
+    <Ivc>OSAS_S_140__req.acts.SPLRIB</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_out.STEER</Ivc>
+    <Ivc>OSAS_S_140__req.fails.GEAR</Ivc>
+    <Ivc>OSAS_S_140__req.fails.THROTR</Ivc>
+    <Ivc>OSAS_S_140__req.acts.FLAPRI</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.fails.SPLLOB</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.fails.AILR</Ivc>
+    <Ivc>OSAS_S_140__req.res</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.fails.AILL</Ivc>
+    <Ivc>OSAS_S_140__req.acts.SPLLOB</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_fail.FLAPRI</Ivc>
+    <Ivc>OSAS_S_140__req.acts.GEAR</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.acts.THROTR</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.acts.RUDUP</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_fail.FLAPRO</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.fails.FLAPLO</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.acts.THROTL</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.acts.SPLLOB</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_out.ELLOB</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_out.SPLLOB</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.fails.RUDLO</Ivc>
+    <Ivc>OSAS_S_140__req.acts.RUDLO</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.fails.ELLIB</Ivc>
+    <Ivc>OSAS_S_140__req.acts.ELLIB</Ivc>
+    <Ivc>OSAS_S_140__req.acts.STEER</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.acts.FLAPRI</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.res</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.fails.RUDUP</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_out.THROTR</Ivc>
+    <Ivc>OSAS_S_140__req.acts.THROTL</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.acts.FLAPRO</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.fails.FLAPLI</Ivc>
+    <Ivc>OSAS_S_140__req.fails.SPLLIB</Ivc>
+    <Ivc>OSAS_S_140__req.acts.FLAPLO</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.fails.STEER</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_fail.THROTR</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_out.AILR</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.fails.THROTL</Ivc>
+    <Ivc>_TOP__OSAS_comp.__ASSUME__HIST</Ivc>
+    <Ivc>OSAS_S_140__req.acts.THROTR</Ivc>
+    <Ivc>OSAS_S_140__req.acts.RUDUP</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_out.FLAPLI</Ivc>
+    <Ivc>OSAS_S_140__req.acts.FLAPLI</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_out.FLAPLO</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.acts.ELLIB</Ivc>
+    <Ivc>_TOP__OSAS_comp.__ASSERT</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_fail.SPLLOB</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.acts.RUDLO</Ivc>
+    <Ivc>_TOP__OSAS_comp.acts_fail.THROTL</Ivc>
+    <Ivc>_TOP__OSAS_comp.OSAS_S_140__req.fails.THROTR</Ivc>
+    </IvcSet>
+  </Property>
+</Results>

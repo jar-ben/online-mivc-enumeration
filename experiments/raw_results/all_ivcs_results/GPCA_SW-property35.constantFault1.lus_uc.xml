@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <UcRuntime unit="sec">0.17</UcRuntime>
+   <Timeout unit="sec">31.925</Timeout>
+   <ProofTime unit="sec">0.215</ProofTime>
+   <Runtime unit="sec">0.385</Runtime>
+   <IVC>_TOP__ALARM~0.__ASSERT</IVC>
+   <IVC>_TOP__ALARM~0.__ASSUME__CONJ</IVC>
+   <IVC>_TOP__ALARM~0.__ASSUME__HIST</IVC>
+   <TRIVC>_TOP__ALARM~0.__ASSERT</TRIVC>
+   <TRIVC>_TOP__ALARM~0.__ASSUME__CONJ</TRIVC>
+   <TRIVC>_TOP__ALARM~0.__ASSUME__HIST</TRIVC>
+</Results>

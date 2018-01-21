@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<Results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <UcRuntime unit="sec">0.062</UcRuntime>
+   <Timeout unit="sec">39.4</Timeout>
+   <ProofTime unit="sec">1.818</ProofTime>
+   <Runtime unit="sec">1.8800000000000001</Runtime>
+   <IVC>Microwave_SEng5861__Display_Control__Impl__update_digit~0.carry_out</IVC>
+   <IVC>Microwave_SEng5861__Display_Control__Impl__update_digit~0.carry_value</IVC>
+   <IVC>Microwave_SEng5861__Display_Control__Impl__update_digit~0.digit</IVC>
+   <IVC>Microwave_SEng5861__Display_Control__Impl__update_digit~0.prev_right</IVC>
+   <IVC>Microwave_SEng5861__Display_Control__Impl__update_digit~1.carry_in</IVC>
+   <IVC>Microwave_SEng5861__Display_Control__Impl__update_digit~1.carry_out</IVC>
+   <IVC>Microwave_SEng5861__Display_Control__Impl__update_digit~1.carry_value</IVC>
+   <IVC>Microwave_SEng5861__Display_Control__Impl__update_digit~1.defs__is_cooking~0._outvar</IVC>
+   <IVC>Microwave_SEng5861__Display_Control__Impl__update_digit~1.defs__is_cooking~0.m</IVC>
+   <IVC>Microwave_SEng5861__Display_Control__Impl__update_digit~1.digit</IVC>
+   <IVC>Microwave_SEng5861__Display_Control__Impl__update_digit~1.mode</IVC>
+   <IVC>Microwave_SEng5861__Display_Control__Impl__update_digit~1.prev_at_zero</IVC>
+   <IVC>Microwave_SEng5861__Display_Control__Impl__update_digit~1.prev_right</IVC>
+   <IVC>Microwave_SEng5861__Display_Control__Impl__update_digit~2.carry_in</IVC>
+   <IVC>Microwave_SEng5861__Display_Control__Impl__update_digit~2.defs__is_cooking~0._outvar</IVC>
+   <IVC>Microwave_SEng5861__Display_Control__Impl__update_digit~2.defs__is_cooking~0.m</IVC>
+   <IVC>Microwave_SEng5861__Display_Control__Impl__update_digit~2.digit</IVC>
+   <IVC>Microwave_SEng5861__Display_Control__Impl__update_digit~2.mode</IVC>
+   <IVC>Microwave_SEng5861__Display_Control__Impl__update_digit~2.prev_right</IVC>
+   <IVC>__GUARANTEE0</IVC>
+   <TRIVC>Microwave_SEng5861__Display_Control__Impl__update_digit~0.carry_out</TRIVC>
+   <TRIVC>Microwave_SEng5861__Display_Control__Impl__update_digit~0.prev_right</TRIVC>
+   <TRIVC>__GUARANTEE0</TRIVC>
+   <TRIVC>Microwave_SEng5861__Display_Control__Impl__update_digit~1.carry_value</TRIVC>
+   <TRIVC>Microwave_SEng5861__Display_Control__Impl__update_digit~1.defs__is_cooking~0._outvar</TRIVC>
+   <TRIVC>Microwave_SEng5861__Display_Control__Impl__update_digit~0.carry_value</TRIVC>
+   <TRIVC>Microwave_SEng5861__Display_Control__Impl__update_digit~1.carry_out</TRIVC>
+   <TRIVC>Microwave_SEng5861__Display_Control__Impl__update_digit~2.carry_in</TRIVC>
+   <TRIVC>Microwave_SEng5861__Display_Control__Impl__update_digit~1.defs__is_cooking~0.m</TRIVC>
+   <TRIVC>Microwave_SEng5861__Display_Control__Impl__update_digit~2.mode</TRIVC>
+   <TRIVC>Microwave_SEng5861__Display_Control__Impl__update_digit~2.defs__is_cooking~0.m</TRIVC>
+   <TRIVC>Microwave_SEng5861__Display_Control__Impl__update_digit~1.prev_right</TRIVC>
+   <TRIVC>Microwave_SEng5861__Display_Control__Impl__update_digit~2.digit</TRIVC>
+   <TRIVC>Microwave_SEng5861__Display_Control__Impl__update_digit~1.carry_in</TRIVC>
+   <TRIVC>Microwave_SEng5861__Display_Control__Impl__update_digit~2.defs__is_cooking~0._outvar</TRIVC>
+   <TRIVC>Microwave_SEng5861__Display_Control__Impl__update_digit~1.digit</TRIVC>
+   <TRIVC>Microwave_SEng5861__Display_Control__Impl__update_digit~1.prev_at_zero</TRIVC>
+   <TRIVC>Microwave_SEng5861__Display_Control__Impl__update_digit~1.mode</TRIVC>
+   <TRIVC>Microwave_SEng5861__Display_Control__Impl__update_digit~2.prev_right</TRIVC>
+   <TRIVC>Microwave_SEng5861__Display_Control__Impl__update_digit~0.digit</TRIVC>
+</Results>

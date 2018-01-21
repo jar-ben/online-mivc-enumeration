@@ -1,0 +1,19 @@
+num of mivcs discovered by algorithm1: 2601.0
+num of mivcs discovered by algorithm2: 2370.0
+num of mivcs discovered by algorithm3: 2208.0
+num of mivcs discovered by algorithm4: 1719.0
+
+algorithm 1 finished successfuly in 10 mins without timeout for 20 models
+algorithm 2 finished successfuly in 10 mins without timeout for 20 models
+algorithm 3 finished successfuly in 10 mins without timeout for 13 models
+algorithm 4 finished successfuly in 10 mins without timeout for 6 models
+
+
+algorithm 1 average runtime for models that terminated in 10 min: 269.6302
+algorithm 1 standard dv. runtime for models that terminated in 10 min: 111.749461791
+algorithm 2 average runtime for models that terminated in 10 min: 328.81635
+algorithm 2 standard dv. runtime for models that terminated in 10 min: 142.910621379
+algorithm 3 average runtime for models that terminated in 10 min: 257.844230769
+algorithm 3 standard dv. runtime for models that terminated in 10 min: 103.064482266
+algorithm 4 average runtime for models that terminated in 10 min: 297.1095
+algorithm 4 standard dv. runtime for models that terminated in 10 min: 128.501990931
