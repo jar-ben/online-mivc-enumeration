@@ -1,0 +1,147 @@
+<?xml version="1.0"?>
+<Runs>
+<Result>
+   <ShrinkID>1</ShrinkID>
+   <InitialSize>35</InitialSize>
+   <FinalSize>35</FinalSize>
+   <SatChecks>33</SatChecks>
+   <UnsatChecks>0</UnsatChecks>
+   <Runtime unit="sec">3.508</Runtime>
+</Result>
+<Result>
+   <ShrinkID>2</ShrinkID>
+   <InitialSize>62</InitialSize>
+   <FinalSize>54</FinalSize>
+   <SatChecks>26</SatChecks>
+   <UnsatChecks>8</UnsatChecks>
+   <Runtime unit="sec">7.588999999999999</Runtime>
+</Result>
+<Result>
+   <ShrinkID>3</ShrinkID>
+   <InitialSize>66</InitialSize>
+   <FinalSize>66</FinalSize>
+   <SatChecks>36</SatChecks>
+   <UnsatChecks>0</UnsatChecks>
+   <Runtime unit="sec">4.0120000000000005</Runtime>
+</Result>
+<Result>
+   <ShrinkID>4</ShrinkID>
+   <InitialSize>67</InitialSize>
+   <FinalSize>67</FinalSize>
+   <SatChecks>37</SatChecks>
+   <UnsatChecks>0</UnsatChecks>
+   <Runtime unit="sec">4.2379999999999995</Runtime>
+</Result>
+<Result>
+   <ShrinkID>5</ShrinkID>
+   <InitialSize>62</InitialSize>
+   <FinalSize>55</FinalSize>
+   <SatChecks>2</SatChecks>
+   <UnsatChecks>7</UnsatChecks>
+   <Runtime unit="sec">4.255999999999972</Runtime>
+</Result>
+<Result>
+   <ShrinkID>6</ShrinkID>
+   <InitialSize>63</InitialSize>
+   <FinalSize>62</FinalSize>
+   <SatChecks>30</SatChecks>
+   <UnsatChecks>1</UnsatChecks>
+   <Runtime unit="sec">5.403999999999996</Runtime>
+</Result>
+<Result>
+   <ShrinkID>7</ShrinkID>
+   <InitialSize>62</InitialSize>
+   <FinalSize>61</FinalSize>
+   <SatChecks>3</SatChecks>
+   <UnsatChecks>1</UnsatChecks>
+   <Runtime unit="sec">1.3840000000000146</Runtime>
+</Result>
+<Result>
+   <ShrinkID>8</ShrinkID>
+   <InitialSize>61</InitialSize>
+   <FinalSize>61</FinalSize>
+   <SatChecks>1</SatChecks>
+   <UnsatChecks>0</UnsatChecks>
+   <Runtime unit="sec">0.36299999999999955</Runtime>
+</Result>
+<Result>
+   <ShrinkID>9</ShrinkID>
+   <InitialSize>69</InitialSize>
+   <FinalSize>69</FinalSize>
+   <SatChecks>2</SatChecks>
+   <UnsatChecks>0</UnsatChecks>
+   <Runtime unit="sec">0.5289999999999964</Runtime>
+</Result>
+<Result>
+   <ShrinkID>10</ShrinkID>
+   <InitialSize>55</InitialSize>
+   <FinalSize>55</FinalSize>
+   <SatChecks>0</SatChecks>
+   <UnsatChecks>0</UnsatChecks>
+   <Runtime unit="sec">0.25099999999997635</Runtime>
+</Result>
+<Result>
+   <ShrinkID>11</ShrinkID>
+   <InitialSize>65</InitialSize>
+   <FinalSize>62</FinalSize>
+   <SatChecks>2</SatChecks>
+   <UnsatChecks>3</UnsatChecks>
+   <Runtime unit="sec">5.634999999999991</Runtime>
+</Result>
+<Result>
+   <ShrinkID>12</ShrinkID>
+   <InitialSize>63</InitialSize>
+   <FinalSize>63</FinalSize>
+   <SatChecks>1</SatChecks>
+   <UnsatChecks>0</UnsatChecks>
+   <Runtime unit="sec">0.41100000000000136</Runtime>
+</Result>
+<Result>
+   <ShrinkID>13</ShrinkID>
+   <InitialSize>56</InitialSize>
+   <FinalSize>56</FinalSize>
+   <SatChecks>0</SatChecks>
+   <UnsatChecks>0</UnsatChecks>
+   <Runtime unit="sec">0.2750000000000341</Runtime>
+</Result>
+<Result>
+   <ShrinkID>14</ShrinkID>
+   <InitialSize>61</InitialSize>
+   <FinalSize>61</FinalSize>
+   <SatChecks>0</SatChecks>
+   <UnsatChecks>0</UnsatChecks>
+   <Runtime unit="sec">0.3910000000000764</Runtime>
+</Result>
+<Result>
+   <ShrinkID>15</ShrinkID>
+   <InitialSize>62</InitialSize>
+   <FinalSize>62</FinalSize>
+   <SatChecks>1</SatChecks>
+   <UnsatChecks>0</UnsatChecks>
+   <Runtime unit="sec">0.5330000000000155</Runtime>
+</Result>
+<Result>
+   <ShrinkID>16</ShrinkID>
+   <InitialSize>62</InitialSize>
+   <FinalSize>62</FinalSize>
+   <SatChecks>0</SatChecks>
+   <UnsatChecks>0</UnsatChecks>
+   <Runtime unit="sec">0.4350000000000591</Runtime>
+</Result>
+<Result>
+   <ShrinkID>17</ShrinkID>
+   <InitialSize>62</InitialSize>
+   <FinalSize>62</FinalSize>
+   <SatChecks>2</SatChecks>
+   <UnsatChecks>0</UnsatChecks>
+   <Runtime unit="sec">0.6839999999999691</Runtime>
+</Result>
+<Result>
+   <ShrinkID>18</ShrinkID>
+   <InitialSize>63</InitialSize>
+   <FinalSize>63</FinalSize>
+   <SatChecks>1</SatChecks>
+   <UnsatChecks>0</UnsatChecks>
+   <Runtime unit="sec">0.5890000000000555</Runtime>
+</Result>
+</Runs>

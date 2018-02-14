@@ -1,0 +1,532 @@
+<?xml version="1.0"?>
+<Runs>
+<Results>
+   <RunID>6</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">0.651</Time>
+   <SatChecks>5</SatChecks>
+   <UnsatChecks>1</UnsatChecks>
+   <ID>1</ID>
+   <IVC>V284_X</IVC>
+   <IVC>V56_env</IVC>
+   <IVC>OK</IVC>
+   <IVC>V54_empty_section</IVC>
+   <IVC>V246_X</IVC>
+</Results>
+<Results>
+   <RunID>24</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">2.943</Time>
+   <SatChecks>19</SatChecks>
+   <UnsatChecks>5</UnsatChecks>
+   <ID>2</ID>
+   <IVC>V180_empty_section</IVC>
+   <IVC>V50_no_collision</IVC>
+   <IVC>V46_grant_access</IVC>
+   <IVC>V309_afterA</IVC>
+   <IVC>V54_empty_section</IVC>
+   <IVC>V52_no_derail_AB</IVC>
+   <IVC>V53_no_derail_BC</IVC>
+   <IVC>V51_exclusive_req</IVC>
+   <IVC>V48_do_AB</IVC>
+   <IVC>V181_only_on_B</IVC>
+   <IVC>OK</IVC>
+   <IVC>V321_afterA</IVC>
+   <IVC>V49_do_BC</IVC>
+</Results>
+<Results>
+   <RunID>47</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">5.926</Time>
+   <SatChecks>41</SatChecks>
+   <UnsatChecks>6</UnsatChecks>
+   <ID>3</ID>
+   <IVC>V180_empty_section</IVC>
+   <IVC>V50_no_collision</IVC>
+   <IVC>V46_grant_access</IVC>
+   <IVC>V309_afterA</IVC>
+   <IVC>V284_X</IVC>
+   <IVC>V56_env</IVC>
+   <IVC>V52_no_derail_AB</IVC>
+   <IVC>V265_X</IVC>
+   <IVC>V246_X</IVC>
+   <IVC>V53_no_derail_BC</IVC>
+   <IVC>V51_exclusive_req</IVC>
+   <IVC>V48_do_AB</IVC>
+   <IVC>OK</IVC>
+   <IVC>V321_afterA</IVC>
+</Results>
+<Results>
+   <RunID>62</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">7.898</Time>
+   <SatChecks>52</SatChecks>
+   <UnsatChecks>10</UnsatChecks>
+   <ID>4</ID>
+   <IVC>V284_X</IVC>
+   <IVC>V56_env</IVC>
+   <IVC>OK</IVC>
+   <IVC>V54_empty_section</IVC>
+   <IVC>V265_X</IVC>
+</Results>
+<Results>
+   <RunID>64</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">8.118</Time>
+   <SatChecks>54</SatChecks>
+   <UnsatChecks>10</UnsatChecks>
+   <ID>5</ID>
+   <IVC>V180_empty_section</IVC>
+   <IVC>V50_no_collision</IVC>
+   <IVC>V46_grant_access</IVC>
+   <IVC>V309_afterA</IVC>
+   <IVC>V54_empty_section</IVC>
+   <IVC>V52_no_derail_AB</IVC>
+   <IVC>V53_no_derail_BC</IVC>
+   <IVC>V47_grant_exit</IVC>
+   <IVC>V322_afterA</IVC>
+   <IVC>V323_alwaysBsinceA</IVC>
+   <IVC>V51_exclusive_req</IVC>
+   <IVC>V48_do_AB</IVC>
+   <IVC>V181_only_on_B</IVC>
+   <IVC>OK</IVC>
+   <IVC>V49_do_BC</IVC>
+</Results>
+<Results>
+   <RunID>68</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">8.602</Time>
+   <SatChecks>57</SatChecks>
+   <UnsatChecks>11</UnsatChecks>
+   <ID>6</ID>
+   <IVC>V180_empty_section</IVC>
+   <IVC>V311_alwaysBsinceA</IVC>
+   <IVC>V50_no_collision</IVC>
+   <IVC>V46_grant_access</IVC>
+   <IVC>V54_empty_section</IVC>
+   <IVC>V52_no_derail_AB</IVC>
+   <IVC>V53_no_derail_BC</IVC>
+   <IVC>V310_afterA</IVC>
+   <IVC>V51_exclusive_req</IVC>
+   <IVC>V48_do_AB</IVC>
+   <IVC>V181_only_on_B</IVC>
+   <IVC>OK</IVC>
+   <IVC>V321_afterA</IVC>
+   <IVC>V49_do_BC</IVC>
+</Results>
+<Results>
+   <RunID>71</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">8.943</Time>
+   <SatChecks>59</SatChecks>
+   <UnsatChecks>12</UnsatChecks>
+   <ID>7</ID>
+   <IVC>V180_empty_section</IVC>
+   <IVC>V311_alwaysBsinceA</IVC>
+   <IVC>V50_no_collision</IVC>
+   <IVC>V46_grant_access</IVC>
+   <IVC>V284_X</IVC>
+   <IVC>V56_env</IVC>
+   <IVC>V52_no_derail_AB</IVC>
+   <IVC>V265_X</IVC>
+   <IVC>V246_X</IVC>
+   <IVC>V53_no_derail_BC</IVC>
+   <IVC>V310_afterA</IVC>
+   <IVC>V51_exclusive_req</IVC>
+   <IVC>V48_do_AB</IVC>
+   <IVC>OK</IVC>
+   <IVC>V321_afterA</IVC>
+</Results>
+<Results>
+   <RunID>72</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">9.091</Time>
+   <SatChecks>60</SatChecks>
+   <UnsatChecks>12</UnsatChecks>
+   <ID>8</ID>
+   <IVC>V180_empty_section</IVC>
+   <IVC>V50_no_collision</IVC>
+   <IVC>V46_grant_access</IVC>
+   <IVC>V284_X</IVC>
+   <IVC>V56_env</IVC>
+   <IVC>V52_no_derail_AB</IVC>
+   <IVC>V265_X</IVC>
+   <IVC>V246_X</IVC>
+   <IVC>V53_no_derail_BC</IVC>
+   <IVC>V312_afterA</IVC>
+   <IVC>V51_exclusive_req</IVC>
+   <IVC>V48_do_AB</IVC>
+   <IVC>V313_onceCsinceA</IVC>
+   <IVC>OK</IVC>
+   <IVC>V321_afterA</IVC>
+</Results>
+<Results>
+   <RunID>73</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">9.206</Time>
+   <SatChecks>61</SatChecks>
+   <UnsatChecks>12</UnsatChecks>
+   <ID>9</ID>
+   <IVC>V208_X</IVC>
+   <IVC>V180_empty_section</IVC>
+   <IVC>V50_no_collision</IVC>
+   <IVC>V46_grant_access</IVC>
+   <IVC>V309_afterA</IVC>
+   <IVC>V284_X</IVC>
+   <IVC>V56_env</IVC>
+   <IVC>V52_no_derail_AB</IVC>
+   <IVC>V265_X</IVC>
+   <IVC>V246_X</IVC>
+   <IVC>V53_no_derail_BC</IVC>
+   <IVC>V51_exclusive_req</IVC>
+   <IVC>V48_do_AB</IVC>
+   <IVC>OK</IVC>
+   <IVC>V325_onceCsinceA</IVC>
+</Results>
+<Results>
+   <RunID>75</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">9.467</Time>
+   <SatChecks>63</SatChecks>
+   <UnsatChecks>12</UnsatChecks>
+   <ID>10</ID>
+   <IVC>V180_empty_section</IVC>
+   <IVC>V50_no_collision</IVC>
+   <IVC>V46_grant_access</IVC>
+   <IVC>V309_afterA</IVC>
+   <IVC>V284_X</IVC>
+   <IVC>V56_env</IVC>
+   <IVC>V52_no_derail_AB</IVC>
+   <IVC>V265_X</IVC>
+   <IVC>V246_X</IVC>
+   <IVC>V53_no_derail_BC</IVC>
+   <IVC>V47_grant_exit</IVC>
+   <IVC>V322_afterA</IVC>
+   <IVC>V323_alwaysBsinceA</IVC>
+   <IVC>V51_exclusive_req</IVC>
+   <IVC>V48_do_AB</IVC>
+   <IVC>OK</IVC>
+</Results>
+<Results>
+   <RunID>77</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">9.719</Time>
+   <SatChecks>65</SatChecks>
+   <UnsatChecks>12</UnsatChecks>
+   <ID>11</ID>
+   <IVC>V180_empty_section</IVC>
+   <IVC>V50_no_collision</IVC>
+   <IVC>V46_grant_access</IVC>
+   <IVC>V309_afterA</IVC>
+   <IVC>V54_empty_section</IVC>
+   <IVC>V52_no_derail_AB</IVC>
+   <IVC>V53_no_derail_BC</IVC>
+   <IVC>V47_grant_exit</IVC>
+   <IVC>V323_alwaysBsinceA</IVC>
+   <IVC>V51_exclusive_req</IVC>
+   <IVC>V48_do_AB</IVC>
+   <IVC>V181_only_on_B</IVC>
+   <IVC>OK</IVC>
+   <IVC>V325_onceCsinceA</IVC>
+   <IVC>V49_do_BC</IVC>
+   <IVC>V324_afterA</IVC>
+</Results>
+<Results>
+   <RunID>79</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">9.985</Time>
+   <SatChecks>67</SatChecks>
+   <UnsatChecks>12</UnsatChecks>
+   <ID>12</ID>
+   <IVC>V180_empty_section</IVC>
+   <IVC>V311_alwaysBsinceA</IVC>
+   <IVC>V50_no_collision</IVC>
+   <IVC>V46_grant_access</IVC>
+   <IVC>V54_empty_section</IVC>
+   <IVC>V52_no_derail_AB</IVC>
+   <IVC>V53_no_derail_BC</IVC>
+   <IVC>V312_afterA</IVC>
+   <IVC>V51_exclusive_req</IVC>
+   <IVC>V48_do_AB</IVC>
+   <IVC>V313_onceCsinceA</IVC>
+   <IVC>V181_only_on_B</IVC>
+   <IVC>OK</IVC>
+   <IVC>V321_afterA</IVC>
+   <IVC>V49_do_BC</IVC>
+</Results>
+<Results>
+   <RunID>87</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">11.117</Time>
+   <SatChecks>74</SatChecks>
+   <UnsatChecks>13</UnsatChecks>
+   <ID>13</ID>
+   <IVC>V180_empty_section</IVC>
+   <IVC>V311_alwaysBsinceA</IVC>
+   <IVC>V50_no_collision</IVC>
+   <IVC>V46_grant_access</IVC>
+   <IVC>V54_empty_section</IVC>
+   <IVC>V52_no_derail_AB</IVC>
+   <IVC>V53_no_derail_BC</IVC>
+   <IVC>V47_grant_exit</IVC>
+   <IVC>V322_afterA</IVC>
+   <IVC>V323_alwaysBsinceA</IVC>
+   <IVC>V310_afterA</IVC>
+   <IVC>V51_exclusive_req</IVC>
+   <IVC>V48_do_AB</IVC>
+   <IVC>V181_only_on_B</IVC>
+   <IVC>OK</IVC>
+   <IVC>V49_do_BC</IVC>
+</Results>
+<Results>
+   <RunID>138</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">18.577</Time>
+   <SatChecks>124</SatChecks>
+   <UnsatChecks>14</UnsatChecks>
+   <ID>14</ID>
+   <IVC>V180_empty_section</IVC>
+   <IVC>V311_alwaysBsinceA</IVC>
+   <IVC>V50_no_collision</IVC>
+   <IVC>V46_grant_access</IVC>
+   <IVC>V54_empty_section</IVC>
+   <IVC>V52_no_derail_AB</IVC>
+   <IVC>V53_no_derail_BC</IVC>
+   <IVC>V47_grant_exit</IVC>
+   <IVC>V322_afterA</IVC>
+   <IVC>V323_alwaysBsinceA</IVC>
+   <IVC>V312_afterA</IVC>
+   <IVC>V51_exclusive_req</IVC>
+   <IVC>V48_do_AB</IVC>
+   <IVC>V313_onceCsinceA</IVC>
+   <IVC>V181_only_on_B</IVC>
+   <IVC>OK</IVC>
+   <IVC>V49_do_BC</IVC>
+</Results>
+<Results>
+   <RunID>149</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">20.243</Time>
+   <SatChecks>134</SatChecks>
+   <UnsatChecks>15</UnsatChecks>
+   <ID>15</ID>
+   <IVC>V180_empty_section</IVC>
+   <IVC>V50_no_collision</IVC>
+   <IVC>V46_grant_access</IVC>
+   <IVC>V309_afterA</IVC>
+   <IVC>V284_X</IVC>
+   <IVC>V56_env</IVC>
+   <IVC>V52_no_derail_AB</IVC>
+   <IVC>V265_X</IVC>
+   <IVC>V246_X</IVC>
+   <IVC>V53_no_derail_BC</IVC>
+   <IVC>V47_grant_exit</IVC>
+   <IVC>V323_alwaysBsinceA</IVC>
+   <IVC>V51_exclusive_req</IVC>
+   <IVC>V48_do_AB</IVC>
+   <IVC>OK</IVC>
+   <IVC>V325_onceCsinceA</IVC>
+   <IVC>V324_afterA</IVC>
+</Results>
+<Results>
+   <RunID>157</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">21.399</Time>
+   <SatChecks>140</SatChecks>
+   <UnsatChecks>17</UnsatChecks>
+   <ID>16</ID>
+   <IVC>V180_empty_section</IVC>
+   <IVC>V50_no_collision</IVC>
+   <IVC>V46_grant_access</IVC>
+   <IVC>V284_X</IVC>
+   <IVC>V56_env</IVC>
+   <IVC>V52_no_derail_AB</IVC>
+   <IVC>V265_X</IVC>
+   <IVC>V246_X</IVC>
+   <IVC>V53_no_derail_BC</IVC>
+   <IVC>V47_grant_exit</IVC>
+   <IVC>V322_afterA</IVC>
+   <IVC>V323_alwaysBsinceA</IVC>
+   <IVC>V312_afterA</IVC>
+   <IVC>V51_exclusive_req</IVC>
+   <IVC>V48_do_AB</IVC>
+   <IVC>V313_onceCsinceA</IVC>
+   <IVC>OK</IVC>
+</Results>
+<Results>
+   <RunID>157</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">21.426</Time>
+   <SatChecks>140</SatChecks>
+   <UnsatChecks>17</UnsatChecks>
+   <ID>17</ID>
+   <IVC>V180_empty_section</IVC>
+   <IVC>V311_alwaysBsinceA</IVC>
+   <IVC>V50_no_collision</IVC>
+   <IVC>V46_grant_access</IVC>
+   <IVC>V284_X</IVC>
+   <IVC>V56_env</IVC>
+   <IVC>V52_no_derail_AB</IVC>
+   <IVC>V265_X</IVC>
+   <IVC>V246_X</IVC>
+   <IVC>V53_no_derail_BC</IVC>
+   <IVC>V47_grant_exit</IVC>
+   <IVC>V322_afterA</IVC>
+   <IVC>V323_alwaysBsinceA</IVC>
+   <IVC>V310_afterA</IVC>
+   <IVC>V51_exclusive_req</IVC>
+   <IVC>V48_do_AB</IVC>
+   <IVC>OK</IVC>
+</Results>
+<Results>
+   <RunID>160</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">21.832</Time>
+   <SatChecks>142</SatChecks>
+   <UnsatChecks>18</UnsatChecks>
+   <ID>18</ID>
+   <IVC>V208_X</IVC>
+   <IVC>V180_empty_section</IVC>
+   <IVC>V311_alwaysBsinceA</IVC>
+   <IVC>V50_no_collision</IVC>
+   <IVC>V46_grant_access</IVC>
+   <IVC>V284_X</IVC>
+   <IVC>V56_env</IVC>
+   <IVC>V52_no_derail_AB</IVC>
+   <IVC>V265_X</IVC>
+   <IVC>V246_X</IVC>
+   <IVC>V53_no_derail_BC</IVC>
+   <IVC>V310_afterA</IVC>
+   <IVC>V48_do_AB</IVC>
+   <IVC>V51_exclusive_req</IVC>
+   <IVC>OK</IVC>
+   <IVC>V325_onceCsinceA</IVC>
+</Results>
+<Results>
+   <RunID>161</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">21.969</Time>
+   <SatChecks>142</SatChecks>
+   <UnsatChecks>19</UnsatChecks>
+   <ID>19</ID>
+   <IVC>V180_empty_section</IVC>
+   <IVC>V311_alwaysBsinceA</IVC>
+   <IVC>V50_no_collision</IVC>
+   <IVC>V46_grant_access</IVC>
+   <IVC>V284_X</IVC>
+   <IVC>V56_env</IVC>
+   <IVC>V52_no_derail_AB</IVC>
+   <IVC>V265_X</IVC>
+   <IVC>V246_X</IVC>
+   <IVC>V47_grant_exit</IVC>
+   <IVC>V53_no_derail_BC</IVC>
+   <IVC>V323_alwaysBsinceA</IVC>
+   <IVC>V310_afterA</IVC>
+   <IVC>V48_do_AB</IVC>
+   <IVC>V51_exclusive_req</IVC>
+   <IVC>OK</IVC>
+   <IVC>V325_onceCsinceA</IVC>
+   <IVC>V324_afterA</IVC>
+</Results>
+<Results>
+   <RunID>162</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">22.108</Time>
+   <SatChecks>142</SatChecks>
+   <UnsatChecks>20</UnsatChecks>
+   <ID>20</ID>
+   <IVC>V180_empty_section</IVC>
+   <IVC>V311_alwaysBsinceA</IVC>
+   <IVC>V50_no_collision</IVC>
+   <IVC>V46_grant_access</IVC>
+   <IVC>V52_no_derail_AB</IVC>
+   <IVC>V54_empty_section</IVC>
+   <IVC>V47_grant_exit</IVC>
+   <IVC>V53_no_derail_BC</IVC>
+   <IVC>V323_alwaysBsinceA</IVC>
+   <IVC>V310_afterA</IVC>
+   <IVC>V48_do_AB</IVC>
+   <IVC>V51_exclusive_req</IVC>
+   <IVC>V181_only_on_B</IVC>
+   <IVC>OK</IVC>
+   <IVC>V325_onceCsinceA</IVC>
+   <IVC>V49_do_BC</IVC>
+   <IVC>V324_afterA</IVC>
+</Results>
+<Results>
+   <RunID>165</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">22.535</Time>
+   <SatChecks>144</SatChecks>
+   <UnsatChecks>21</UnsatChecks>
+   <ID>21</ID>
+   <IVC>V208_X</IVC>
+   <IVC>V180_empty_section</IVC>
+   <IVC>V50_no_collision</IVC>
+   <IVC>V46_grant_access</IVC>
+   <IVC>V284_X</IVC>
+   <IVC>V56_env</IVC>
+   <IVC>V52_no_derail_AB</IVC>
+   <IVC>V265_X</IVC>
+   <IVC>V246_X</IVC>
+   <IVC>V53_no_derail_BC</IVC>
+   <IVC>V312_afterA</IVC>
+   <IVC>V48_do_AB</IVC>
+   <IVC>V51_exclusive_req</IVC>
+   <IVC>V313_onceCsinceA</IVC>
+   <IVC>OK</IVC>
+   <IVC>V325_onceCsinceA</IVC>
+</Results>
+<Results>
+   <RunID>166</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">22.675</Time>
+   <SatChecks>144</SatChecks>
+   <UnsatChecks>22</UnsatChecks>
+   <ID>22</ID>
+   <IVC>V180_empty_section</IVC>
+   <IVC>V50_no_collision</IVC>
+   <IVC>V46_grant_access</IVC>
+   <IVC>V284_X</IVC>
+   <IVC>V56_env</IVC>
+   <IVC>V52_no_derail_AB</IVC>
+   <IVC>V265_X</IVC>
+   <IVC>V246_X</IVC>
+   <IVC>V47_grant_exit</IVC>
+   <IVC>V53_no_derail_BC</IVC>
+   <IVC>V323_alwaysBsinceA</IVC>
+   <IVC>V312_afterA</IVC>
+   <IVC>V48_do_AB</IVC>
+   <IVC>V51_exclusive_req</IVC>
+   <IVC>V313_onceCsinceA</IVC>
+   <IVC>OK</IVC>
+   <IVC>V325_onceCsinceA</IVC>
+   <IVC>V324_afterA</IVC>
+</Results>
+<Results>
+   <RunID>171</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">23.589</Time>
+   <SatChecks>148</SatChecks>
+   <UnsatChecks>23</UnsatChecks>
+   <ID>23</ID>
+   <IVC>V180_empty_section</IVC>
+   <IVC>V311_alwaysBsinceA</IVC>
+   <IVC>V50_no_collision</IVC>
+   <IVC>V46_grant_access</IVC>
+   <IVC>V52_no_derail_AB</IVC>
+   <IVC>V54_empty_section</IVC>
+   <IVC>V47_grant_exit</IVC>
+   <IVC>V53_no_derail_BC</IVC>
+   <IVC>V323_alwaysBsinceA</IVC>
+   <IVC>V312_afterA</IVC>
+   <IVC>V48_do_AB</IVC>
+   <IVC>V51_exclusive_req</IVC>
+   <IVC>V313_onceCsinceA</IVC>
+   <IVC>V181_only_on_B</IVC>
+   <IVC>OK</IVC>
+   <IVC>V325_onceCsinceA</IVC>
+   <IVC>V49_do_BC</IVC>
+   <IVC>V324_afterA</IVC>
+</Results>
+</Runs>
