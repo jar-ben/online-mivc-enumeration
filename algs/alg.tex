@@ -4,51 +4,66 @@
 \SetKwFunction{FindMIVCs}{FindMIVCs}
 \SetKwFunction{Grow}{Grow}
 \SetKwFunction{Dequeue}{Dequeue}
+\SetKwFunction{Enqueue}{Enqueue}
+\SetKwFunction{approx}{IVC\_UC}
 \SetKwProg{Fn}{Function}{:}{}
+\SetKwFunction{Init}{Init}
 
+
+\Fn{\Init{$(I, T) \vdash P$}}{
+	$\mathit{Unexplored} \gets \mathcal{P}(T)$ \tcp*{a global variable}
+	$\mathit{shrinkingQueue} \gets$ empty queue \tcp*{a global variable}
+	$\FindMIVCs((I, T) \vdash P)$\;
+}
+
+\setcounter{AlgoLine}{0}
 \Fn{\FindMIVCs{$(I, T) \vdash P$}}{
-	$\mathit{Unex} \gets \mathcal{P}(T)$\;
-	$\mathit{shrinkingQueue} \gets $ empty queue\;
-	\While{$Unex \neq \emptyset$}{
-		$B \gets$ a minimal $B \in Unex$\;
-		\eIf{$(I, B) \vdash P$}{
-			\textbf{output} $B$\;
-			$\mathit{Unex} \gets \mathit{Unex} \setminus \mathit{Sup}(B)$\;
+	\While{$\mathit{Unexplored} \neq \emptyset$}{
+		$U_{max} \gets$ a maximal $U_{max} \in \mathit{Unexplored}$\;
+		\eIf{$(I, U_{max}) \vdash P$}{
+			$U_{\mathit{IVC}} \gets \approx((I,U_{max}), P)$\;
+			$\Shrink(U_{\mathit{IVC}})$\;
 		}{
-			$\mathit{MIS} \gets \Grow(B)$ \tcp*{side effect: fills $\mathit{shrinkingQueue}$}
-			$\mathit{Unex} \gets \mathit{Unex} \setminus \mathit{Sub}(MIS)$\;			
+			$\mathit{Unexplored} \gets \mathit{Unexplored} \setminus \mathit{Sub}(U_{max})$\;			
 		} 
 		\While{$\mathit{shrinkingQueue}$ is not empty}{
-			$\mathit{seed} \Dequeue(\mathit{shrinkingQueue})$\;
-			$MIVC \gets \Shrink(seed)$\;
-			remove from $\mathit{shrinkingQueue}$ each $V$ such that $V \supset MIVC$\;
-			\textbf{output} $MIVC$\;
-			$\mathit{Unex} \gets \mathit{Unex} \setminus \mathit{Sup}(MIVC)$\;
+			$\mathit{U} \gets \Dequeue(\mathit{shrinkingQueue})$\;
+			\todo{deal with explored seeds in the queue}\;			
+			$\Shrink(U)$\;
 		}
 	}
 }
 
 \setcounter{AlgoLine}{0}
 \Fn{\Shrink{$U$}}{
-%\Input{an unsatisfiable set of constraints $C$}
+	$\mathit{growingQueue} \gets$ empty queue\;
 	\For{$T_i \in U$}{
-		\If{$ U \setminus \{ T_i \} \in Unex$ }{		
-			\If{$(I, U \setminus \{ T_i \}) \vdash P$}{
-				$U \gets T \setminus T_i$\;
+		\If{$ U \setminus \{ T_i \} \in \mathit{Unexplored}$ }{		
+			\eIf{$(I, U \setminus \{ T_i \}) \vdash P$}{
+				$U \gets U \setminus \{ T_i \}$\;
+			}{
+				$\Enqueue(\mathit{growingQueue}, U \setminus \{ T_i \})$\;			
 			}
 		}
 	}
-	\Return $U$\;
+	\textbf{output} $U$\;
+	$\mathit{Unexplored} \gets \mathit{Unexplored} \setminus \mathit{Sup}(U)$\;
+	\While{$\mathit{growingQueue}$ is not empty}{
+		$V \gets \Dequeue(\mathit{growingQueue})$\;
+		$\Grow(V)$\;
+	}
 }
 
 \setcounter{AlgoLine}{0}
-\Fn{\Grow{$B$}}{
-	$M \gets $ a maximal $M \in Unex$ such that $M \supseteq B$\;
+\Fn{\Grow{$V$}}{
+	$M \gets $ a maximal $M \in \mathit{Unexplored}$ such that $M \supseteq V$\;
 	\While{$(I, M) \vdash P$}{
-			$\mathit{MIVCApprox} \gets \getMIVCApproximation((I,M), P)$\;
-			$T_i \gets choose T_i \in (\mathit{MIVCApprox} \cap (T \setminus M))$\;
+			$\Enqueue(\mathit{shrinkingQueue}, M)$\;
+			$\mathit{Unexplored} \gets \mathit{Unexplored} \setminus \mathit{Sup}(M)$\;
+			$M_{\mathit{IVC}} \gets \approx((I,M), P)$\;
+			$T_i \gets choose T_i \in (M_{\mathit{IVC}} \setminus V)$\;
 			$M \gets M \setminus \{ T_i \}$\;
 	}	
-	\Return $M$\;
+	$\mathit{Unexplored} \gets \mathit{Unexplored} \setminus \mathit{Sub}(M)$\;
 }	 
 
