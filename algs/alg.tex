@@ -13,11 +13,11 @@
 \Fn{\Init{$(I, T) \vdash P$}}{
 	$\mathit{Unexplored} \gets \mathcal{P}(T)$ \tcp*{a global variable}
 	$\mathit{shrinkingQueue} \gets$ empty queue \tcp*{a global variable}
-	$\FindMIVCs((I, T) \vdash P)$\;
+	$\FindMIVCs()$\;
 }
 
 \setcounter{AlgoLine}{0}
-\Fn{\FindMIVCs{$(I, T) \vdash P$}}{
+\Fn{\FindMIVCs{}}{
 	\While{$\mathit{Unexplored} \neq \emptyset$}{
 		$U_{max} \gets$ a maximal $U_{max} \in \mathit{Unexplored}$\;
 		\eIf{$(I, U_{max}) \vdash P$}{
@@ -58,10 +58,10 @@
 \Fn{\Grow{$V$}}{
 	$M \gets $ a maximal $M \in \mathit{Unexplored}$ such that $M \supseteq V$\;
 	\While{$(I, M) \vdash P$}{
-			$\Enqueue(\mathit{shrinkingQueue}, M)$\;
-			$\mathit{Unexplored} \gets \mathit{Unexplored} \setminus \mathit{Sup}(M)$\;
-			$M_{\mathit{IVC}} \gets \approx((I,M), P)$\;
-			$T_i \gets choose T_i \in (M_{\mathit{IVC}} \setminus V)$\;
+			$M_{\mathit{IVC}} \gets \approx((I,M), P)$\;			
+			$\Enqueue(\mathit{shrinkingQueue}, M_{\mathit{IVC}})$\;
+			$\mathit{Unexplored} \gets \mathit{Unexplored} \setminus \mathit{Sup}(M_{\mathit{IVC}})$\;			
+			$T_i \gets$ choose $T_i \in (M_{\mathit{IVC}} \setminus V)$\;
 			$M \gets M \setminus \{ T_i \}$\;
 	}	
 	$\mathit{Unexplored} \gets \mathit{Unexplored} \setminus \mathit{Sub}(M)$\;

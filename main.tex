@@ -1,6 +1,8 @@
 \documentclass{llncs}
 \usepackage{ amssymb }
 \usepackage[linesnumbered, ruled, vlined]{algorithm2e}
+\usepackage{tikz}
+\usetikzlibrary{arrows,shapes,positioning}
 
 \usepackage{xcolor}
 \definecolor{todocolor}{RGB}{72,130,84}
@@ -76,6 +78,11 @@ In this paper, we propose an algorithm that identifies MIVCs in an \emph{online}
 \section{Symbolic Representation of Unexplored Subsets}
 \label{sec:symbolic-representation}
 \input{symbolic_representation}
+
+\section{Example Execution of Our Algorithm}
+\label{sec:example-execution}
+\input{example_execution}
+
 
 
 \section{Implementation}
