@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.14)  1 MAR 2018 17:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.14)  1 MAR 2018 18:21
 entering extended mode
 **C:/Users/whalen/Documents/git/jaroslav/online-mivc-enumeration/main.tex
 (C:/Users/whalen/Documents/git/jaroslav/online-mivc-enumeration/main.tex
@@ -720,25 +720,22 @@ LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 (intro.tex [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2])
-(motivation.tex) (preliminaries.tex) (existing_techniques.tex [3]
-(algs/ivc_bf.tex) [4]) (algorithm.tex [5] (algs/alg_grow_approximation.tex)
-[6]
-
-LaTeX Warning: Citation `single-mivc' on page 7 undefined on input line 52.
-
-(algs/solve.tex) [7] (algs/alg.tex)) (symbolic_representation.tex [8] [9])
-(example_execution.tex (running_cube_unexplored.tex) [10]) (impl.tex
+(motivation.tex) (preliminaries.tex [3]) (existing_techniques.tex [4]
+(algs/ivc_bf.tex)) (algorithm.tex [5] (algs/alg_grow_approximation.tex)
+[6] (algs/solve.tex) [7] [8] (algs/alg.tex) (symbolic_representation.tex))
+(example_execution.tex (running_cube_unexplored.tex) [9] [10]
 Underfull \vbox (badness 5592) has occurred while \output is active []
 
  [11])
-(experiment.tex) (conclusion.tex) (main.bbl
+(impl.tex) (experiment.tex) (conclusion.tex) (main.bbl [12]
 Missing character: There is no Ã in font cmr9!
 Missing character: There is no ¶ in font cmr9!
- [12])
+ [13])
 \tf@thm=\write4
 \openout4 = `main.thm'.
 
- [13] (main.aux)
+ [14]
+(main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -748,13 +745,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 16117 strings out of 493334
- 334706 string characters out of 3139248
- 450559 words of memory out of 3000000
- 19292 multiletter control sequences out of 15000+200000
+ 16124 strings out of 493334
+ 334849 string characters out of 3139248
+ 460676 words of memory out of 3000000
+ 19299 multiletter control sequences out of 15000+200000
  12956 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,21n,68p,1170b,12849s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,21n,68p,1050b,12849s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
 x10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Progr
@@ -776,9 +773,9 @@ e1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (13 pages, 343947 bytes).
+Output written on main.pdf (14 pages, 348145 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
+ 143 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -4,6 +4,32 @@
 {Cadence JasperGold Formal Verification Platform}.
 \newblock \url{https://www.cadence.com/}.
 
+\bibitem{bacchus2015using}
+F.~Bacchus and G.~Katsirelos.
+\newblock Using minimal correction sets to more efficiently compute minimal
+  unsatisfiable sets.
+\newblock In {\em CAV'15}, 2015.
+
+\bibitem{belov2012muser2}
+A.~Belov and J.~Marques-Silva.
+\newblock Muser2: An efficient mus extractor.
+\newblock {\em JSAT journal}, 2012.
+
+\bibitem{DBLP:conf/sefm/BendikBBC16}
+J.~Bend{\'{\i}}k, N.~Benes, J.~Barnat, and I.~Cern{\'{a}}.
+\newblock Finding boundary elements in ordered sets with application to safety
+  and requirements analysis.
+\newblock In {\em Software Engineering and Formal Methods - 14th International
+  Conference, {SEFM} 2016, Held as Part of {STAF} 2016, Vienna, Austria, July
+  4-8, 2016, Proceedings}, pages 121--136, 2016.
+
+\bibitem{DBLP:conf/fsttcs/BendikBCB16}
+J.~Bend{\'{\i}}k, N.~Benes, I.~Cern{\'{a}}, and J.~Barnat.
+\newblock Tunable online {MUS/MSS} enumeration.
+\newblock In {\em 36th {IARCS} Annual Conference on Foundations of Software
+  Technology and Theoretical Computer Science, {FSTTCS} 2016, December 13-15,
+  2016, Chennai, India}, pages 50:1--50:13, 2016.
+
 \bibitem{chockler_coverage_2003}
 H.~Chockler, O.~Kupferman, and M.~Vardi.
 \newblock Coverage metrics for formal verification.
@@ -78,6 +104,11 @@ M.~Liffiton et~al.
 \newblock Fast, flexible {MUS} enumeration.
 \newblock {\em Constraints}, 2016.
 
+\bibitem{Liffiton2016}
+M.~H. Liffiton, A.~Previti, A.~Malik, and J.~Marques-Silva.
+\newblock Fast, flexible mus enumeration.
+\newblock {\em Constraints}, 21(2):223--250, 2016.
+
 \bibitem{McMillan99:compositional}
 K.~L. McMillan.
 \newblock A methodology for hardware verification using compositional model
@@ -99,6 +130,11 @@ A.~Murugesan et~al.
 A.~Murugesan et~al.
 \newblock Complete traceability for requirements in satisfaction arguments.
 \newblock In {\em RE'16 (RE@Next! Track)}, 2016.
+
+\bibitem{nadel2014accelerated}
+A.~Nadel et~al.
+\newblock Accelerated deletion-based extraction of minimal unsatisfiable cores.
+\newblock {\em JSAT journal}, 2014.
 
 \bibitem{Pike06:axioms}
 L.~Pike.
@@ -134,6 +170,6 @@ D.~You, S.~Rayadurgam, M.~Whalen, and M.~Heimdahl.
 L.~Zhang and S.~Malik.
 \newblock Extracting small unsatisfiable cores from unsatisfiable boolean
   formula.
-\newblock In {\em SAT'03}.
+\newblock In {\em SAT'03}, 2003.
 
 \end{thebibliography}

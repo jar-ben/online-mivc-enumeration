@@ -1,4 +1,4 @@
-\begin{figure}[t] \label{fig:running_cube}
+\begin{figure}[t]\label{fig:running_cube}
 \centering
 \input{running_cube_unexplored}
 \caption{The power set from the example execution of our algorithm.}
@@ -16,4 +16,4 @@ The growing of the set $01000$ results into an approximately maximal inadequate 
 
 After the second grow, the procedure \texttt{Shrink} terminates and the main procedure \texttt{FindMIVCs} continues. The queue $\mathit{shrinkingQueue}$ contains two sets: $00011$, $11110$, thus the procedure now shrinks them. During shrinking the set $00011$, the algorithm would attempt to check the sets $00001$ and $00010$ for adequacy, however since both these are already explored, the set $00011$ is identified to be a MIVC without performing any adequacy checks. The procedure \texttt{FindMIVCs} would now shrink also the set $11110$, thus empty the queue $\mathit{shrinkingQueue}$, and continue with a next iteration.
 
-
+After the second grow, the procedure \texttt{Shrink} terminates and the main procedure \texttt{FindMIVCs} continues. The queue $\mathit{shrinkingQueue}$ contains two sets: $00011$, $11110$, thus the procedure now shrinks them. During shrinking the set $00011$, the algorithm would attempt to check the sets $00001$ and $00010$ for adequacy, however since both these sets are already explored, the set $00011$ is identified to be a MIVC without performing any adequacy checks. The procedure \texttt{FindMIVCs} would now shrink also the set $11110$, thus empty the queue $\mathit{shrinkingQueue}$, and continue with a next iteration.
