@@ -22,7 +22,7 @@
 \Fn{\FindMIVCs{}}{
 	\While{$\mathit{Unexplored} \neq \emptyset$}{
 		%$U_{max} \gets$ a maximal $U_{max} \in \mathit{Unexplored}$\;
-		$U_{max} \gets $ a maximal set $\in \mathit{Unexplored}$\; 
+		$U_{max} \gets $ a maximal set $\in \mathit{Unexplored}$\;
         \eIf{$\Solve(I,U,P)$}{
 			$U_{\mathit{IVC}} \gets \approx((I,U_{max}), P)$\;
 			$\Shrink(U_{\mathit{IVC}})$\;
@@ -31,8 +31,9 @@
 		}
 		\While{$\mathit{shrinkingQueue}$ is not empty}{
 			$\mathit{U} \gets \Dequeue(\mathit{shrinkingQueue})$\;
-			\todo{deal with explored seeds in the queue}\;			
-			$\Shrink(U)$\;
+			\If{$U \in \mathit{Unexplored}$}{
+    			$\Shrink(U)$\;
+            }
 		}
 	}
 }
