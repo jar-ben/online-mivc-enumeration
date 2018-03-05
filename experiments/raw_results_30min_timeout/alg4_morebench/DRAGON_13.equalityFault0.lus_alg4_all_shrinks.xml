@@ -1,0 +1,24 @@
+<Result>
+   <ShrinkID>1</ShrinkID>
+   <InitialSize>34</InitialSize>
+   <FinalSize>32</FinalSize>
+   <SatChecks>32</SatChecks>
+   <UnsatChecks>2</UnsatChecks>
+   <Runtime unit="sec">6.449</Runtime>
+</Result>
+<Result>
+   <ShrinkID>2</ShrinkID>
+   <InitialSize>36</InitialSize>
+   <FinalSize>33</FinalSize>
+   <SatChecks>33</SatChecks>
+   <UnsatChecks>3</UnsatChecks>
+   <Runtime unit="sec">6.493000000000002</Runtime>
+</Result>
+<Result>
+   <ShrinkID>3</ShrinkID>
+   <InitialSize>43</InitialSize>
+   <FinalSize>41</FinalSize>
+   <SatChecks>41</SatChecks>
+   <UnsatChecks>2</UnsatChecks>
+   <Runtime unit="sec">15.031999999999996</Runtime>
+</Result>

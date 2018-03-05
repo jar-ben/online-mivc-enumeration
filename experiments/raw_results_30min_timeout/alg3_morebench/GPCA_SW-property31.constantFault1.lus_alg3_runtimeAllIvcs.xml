@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AllIvcRuntime unit="sec">181.001</AllIvcRuntime>
+  <NumOfGetIvcCalls>348</NumOfGetIvcCalls>
+  <NumOfTimedOuts>0</NumOfTimedOuts>
+  <Timedout>false</Timedout>
+<Runtime0>0</Runtime0>
+<Runtime1>0</Runtime1>
+<Runtime2>144</Runtime2>
+<Runtime3>27</Runtime3>
+<Runtime4>145</Runtime4>
+<Runtime5>7</Runtime5>
+<Runtime6>144</Runtime6>
+<Runtime7>0</Runtime7>
+<Runtime8>0</Runtime8>
+<Runtime9>4</Runtime9>
+<Runtime10>1</Runtime10>
+<Runtime11>0</Runtime11>
+<Runtime12>3</Runtime12>
+<Runtime13>0</Runtime13>
+<Runtime14>0</Runtime14>
+<Runtime15>0</Runtime15>
+<Runtime16>0</Runtime16>
+<Runtime17>0</Runtime17>
+<Runtime18>0</Runtime18>
+<Runtime19>0</Runtime19>
+<Runtime20>0</Runtime20>
+<Runtime21>0</Runtime21>
+<Runtime22>0</Runtime22>
+<Runtime23>0</Runtime23>
+<Runtime24>0</Runtime24>
+</Results>

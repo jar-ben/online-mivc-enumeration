@@ -1,0 +1,401 @@
+<Results>
+   <RunID>13</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">1.378</Time>
+   <SatChecks>12</SatChecks>
+   <UnsatChecks>1</UnsatChecks>
+   <ID>1</ID>
+   <IVC>V250_door_doesnt_open_out_of_station</IVC>
+   <IVC>V266_door_doesnt_open_if_not_asked</IVC>
+   <IVC>V58_env_always_ok</IVC>
+   <IVC>V264_env_ok</IVC>
+   <IVC>V59_prop_ok</IVC>
+   <IVC>V251_door_opens_before_leaving_station</IVC>
+   <IVC>V60_open_door</IVC>
+   <IVC>V265_door_doesnt_close_if_not_asked</IVC>
+   <IVC>V272_warning_start_cant_become_true_when_door_is_opening</IVC>
+   <IVC>V268_door_initially_closed</IVC>
+   <IVC>V253_between_A_and_X</IVC>
+   <IVC>OK</IVC>
+   <IVC>V61_close_door</IVC>
+</Results>
+<Results>
+   <RunID>32</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">3.352</Time>
+   <SatChecks>25</SatChecks>
+   <UnsatChecks>7</UnsatChecks>
+   <ID>2</ID>
+   <IVC>V250_door_doesnt_open_out_of_station</IVC>
+   <IVC>V274_X</IVC>
+   <IVC>V267_tramway_doesnt_start_if_not_door_ok</IVC>
+   <IVC>V62_door_ok</IVC>
+   <IVC>V58_env_always_ok</IVC>
+   <IVC>V264_env_ok</IVC>
+   <IVC>V59_prop_ok</IVC>
+   <IVC>V251_door_opens_before_leaving_station</IVC>
+   <IVC>V60_open_door</IVC>
+   <IVC>V265_door_doesnt_close_if_not_asked</IVC>
+   <IVC>V272_warning_start_cant_become_true_when_door_is_opening</IVC>
+   <IVC>V268_door_initially_closed</IVC>
+   <IVC>V253_between_A_and_X</IVC>
+   <IVC>OK</IVC>
+</Results>
+<Results>
+   <RunID>37</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">3.981</Time>
+   <SatChecks>30</SatChecks>
+   <UnsatChecks>7</UnsatChecks>
+   <ID>3</ID>
+   <IVC>V250_door_doesnt_open_out_of_station</IVC>
+   <IVC>V275_X</IVC>
+   <IVC>V58_env_always_ok</IVC>
+   <IVC>V276_X</IVC>
+   <IVC>V264_env_ok</IVC>
+   <IVC>V59_prop_ok</IVC>
+   <IVC>V251_door_opens_before_leaving_station</IVC>
+   <IVC>V60_open_door</IVC>
+   <IVC>V265_door_doesnt_close_if_not_asked</IVC>
+   <IVC>V272_warning_start_cant_become_true_when_door_is_opening</IVC>
+   <IVC>V268_door_initially_closed</IVC>
+   <IVC>V270_warning_start_and_in_station_go_down_simultaneously</IVC>
+   <IVC>V269_initially_not_in_station</IVC>
+   <IVC>OK</IVC>
+</Results>
+<Results>
+   <RunID>42</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">4.619</Time>
+   <SatChecks>33</SatChecks>
+   <UnsatChecks>9</UnsatChecks>
+   <ID>4</ID>
+   <IVC>V264_env_ok</IVC>
+   <IVC>V59_prop_ok</IVC>
+   <IVC>V250_door_doesnt_open_out_of_station</IVC>
+   <IVC>V251_door_opens_before_leaving_station</IVC>
+   <IVC>V265_door_doesnt_close_if_not_asked</IVC>
+   <IVC>V272_warning_start_cant_become_true_when_door_is_opening</IVC>
+   <IVC>V268_door_initially_closed</IVC>
+   <IVC>V269_initially_not_in_station</IVC>
+   <IVC>OK</IVC>
+   <IVC>V271_warning_start_only_in_station</IVC>
+   <IVC>V58_env_always_ok</IVC>
+</Results>
+<Results>
+   <RunID>48</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">5.249</Time>
+   <SatChecks>39</SatChecks>
+   <UnsatChecks>9</UnsatChecks>
+   <ID>5</ID>
+   <IVC>V250_door_doesnt_open_out_of_station</IVC>
+   <IVC>V266_door_doesnt_open_if_not_asked</IVC>
+   <IVC>V252_X</IVC>
+   <IVC>V274_X</IVC>
+   <IVC>V267_tramway_doesnt_start_if_not_door_ok</IVC>
+   <IVC>V62_door_ok</IVC>
+   <IVC>V273_X</IVC>
+   <IVC>V271_warning_start_only_in_station</IVC>
+   <IVC>V58_env_always_ok</IVC>
+   <IVC>V264_env_ok</IVC>
+   <IVC>V59_prop_ok</IVC>
+   <IVC>V251_door_opens_before_leaving_station</IVC>
+   <IVC>V268_door_initially_closed</IVC>
+   <IVC>V269_initially_not_in_station</IVC>
+   <IVC>OK</IVC>
+   <IVC>V61_close_door</IVC>
+</Results>
+<Results>
+   <RunID>55</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">5.988</Time>
+   <SatChecks>45</SatChecks>
+   <UnsatChecks>10</UnsatChecks>
+   <ID>6</ID>
+   <IVC>V250_door_doesnt_open_out_of_station</IVC>
+   <IVC>V252_X</IVC>
+   <IVC>V274_X</IVC>
+   <IVC>V267_tramway_doesnt_start_if_not_door_ok</IVC>
+   <IVC>V62_door_ok</IVC>
+   <IVC>V58_env_always_ok</IVC>
+   <IVC>V264_env_ok</IVC>
+   <IVC>V59_prop_ok</IVC>
+   <IVC>V251_door_opens_before_leaving_station</IVC>
+   <IVC>V60_open_door</IVC>
+   <IVC>V265_door_doesnt_close_if_not_asked</IVC>
+   <IVC>V268_door_initially_closed</IVC>
+   <IVC>V253_between_A_and_X</IVC>
+   <IVC>OK</IVC>
+</Results>
+<Results>
+   <RunID>58</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">6.31</Time>
+   <SatChecks>48</SatChecks>
+   <UnsatChecks>10</UnsatChecks>
+   <ID>7</ID>
+   <IVC>V250_door_doesnt_open_out_of_station</IVC>
+   <IVC>V266_door_doesnt_open_if_not_asked</IVC>
+   <IVC>V252_X</IVC>
+   <IVC>V58_env_always_ok</IVC>
+   <IVC>V264_env_ok</IVC>
+   <IVC>V59_prop_ok</IVC>
+   <IVC>V251_door_opens_before_leaving_station</IVC>
+   <IVC>V60_open_door</IVC>
+   <IVC>V265_door_doesnt_close_if_not_asked</IVC>
+   <IVC>V272_warning_start_cant_become_true_when_door_is_opening</IVC>
+   <IVC>V268_door_initially_closed</IVC>
+   <IVC>V269_initially_not_in_station</IVC>
+   <IVC>OK</IVC>
+   <IVC>V61_close_door</IVC>
+</Results>
+<Results>
+   <RunID>63</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">6.843</Time>
+   <SatChecks>52</SatChecks>
+   <UnsatChecks>11</UnsatChecks>
+   <ID>8</ID>
+   <IVC>V250_door_doesnt_open_out_of_station</IVC>
+   <IVC>V252_X</IVC>
+   <IVC>V274_X</IVC>
+   <IVC>V267_tramway_doesnt_start_if_not_door_ok</IVC>
+   <IVC>V62_door_ok</IVC>
+   <IVC>V58_env_always_ok</IVC>
+   <IVC>V264_env_ok</IVC>
+   <IVC>V59_prop_ok</IVC>
+   <IVC>V251_door_opens_before_leaving_station</IVC>
+   <IVC>V60_open_door</IVC>
+   <IVC>V265_door_doesnt_close_if_not_asked</IVC>
+   <IVC>V272_warning_start_cant_become_true_when_door_is_opening</IVC>
+   <IVC>V268_door_initially_closed</IVC>
+   <IVC>V269_initially_not_in_station</IVC>
+   <IVC>OK</IVC>
+</Results>
+<Results>
+   <RunID>64</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">6.964</Time>
+   <SatChecks>53</SatChecks>
+   <UnsatChecks>11</UnsatChecks>
+   <ID>9</ID>
+   <IVC>V250_door_doesnt_open_out_of_station</IVC>
+   <IVC>V266_door_doesnt_open_if_not_asked</IVC>
+   <IVC>V252_X</IVC>
+   <IVC>V274_X</IVC>
+   <IVC>V267_tramway_doesnt_start_if_not_door_ok</IVC>
+   <IVC>V62_door_ok</IVC>
+   <IVC>V271_warning_start_only_in_station</IVC>
+   <IVC>V58_env_always_ok</IVC>
+   <IVC>V264_env_ok</IVC>
+   <IVC>V59_prop_ok</IVC>
+   <IVC>V251_door_opens_before_leaving_station</IVC>
+   <IVC>V268_door_initially_closed</IVC>
+   <IVC>V269_initially_not_in_station</IVC>
+   <IVC>V253_between_A_and_X</IVC>
+   <IVC>OK</IVC>
+   <IVC>V61_close_door</IVC>
+</Results>
+<Results>
+   <RunID>64</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">6.973</Time>
+   <SatChecks>53</SatChecks>
+   <UnsatChecks>11</UnsatChecks>
+   <ID>10</ID>
+   <IVC>V250_door_doesnt_open_out_of_station</IVC>
+   <IVC>V266_door_doesnt_open_if_not_asked</IVC>
+   <IVC>V252_X</IVC>
+   <IVC>V287_req_pending</IVC>
+   <IVC>V58_env_always_ok</IVC>
+   <IVC>V264_env_ok</IVC>
+   <IVC>V59_prop_ok</IVC>
+   <IVC>V251_door_opens_before_leaving_station</IVC>
+   <IVC>V60_open_door</IVC>
+   <IVC>V265_door_doesnt_close_if_not_asked</IVC>
+   <IVC>V268_door_initially_closed</IVC>
+   <IVC>V269_initially_not_in_station</IVC>
+   <IVC>OK</IVC>
+   <IVC>V61_close_door</IVC>
+</Results>
+<Results>
+   <RunID>74</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">8.019</Time>
+   <SatChecks>62</SatChecks>
+   <UnsatChecks>12</UnsatChecks>
+   <ID>11</ID>
+   <IVC>V250_door_doesnt_open_out_of_station</IVC>
+   <IVC>V266_door_doesnt_open_if_not_asked</IVC>
+   <IVC>V275_X</IVC>
+   <IVC>V274_X</IVC>
+   <IVC>V267_tramway_doesnt_start_if_not_door_ok</IVC>
+   <IVC>V62_door_ok</IVC>
+   <IVC>V287_req_pending</IVC>
+   <IVC>V273_X</IVC>
+   <IVC>V58_env_always_ok</IVC>
+   <IVC>V276_X</IVC>
+   <IVC>V264_env_ok</IVC>
+   <IVC>V59_prop_ok</IVC>
+   <IVC>V251_door_opens_before_leaving_station</IVC>
+   <IVC>V60_open_door</IVC>
+   <IVC>V265_door_doesnt_close_if_not_asked</IVC>
+   <IVC>V268_door_initially_closed</IVC>
+   <IVC>V270_warning_start_and_in_station_go_down_simultaneously</IVC>
+   <IVC>V253_between_A_and_X</IVC>
+   <IVC>OK</IVC>
+   <IVC>V61_close_door</IVC>
+</Results>
+<Results>
+   <RunID>84</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">9.181</Time>
+   <SatChecks>71</SatChecks>
+   <UnsatChecks>13</UnsatChecks>
+   <ID>12</ID>
+   <IVC>V250_door_doesnt_open_out_of_station</IVC>
+   <IVC>V266_door_doesnt_open_if_not_asked</IVC>
+   <IVC>V275_X</IVC>
+   <IVC>V287_req_pending</IVC>
+   <IVC>V273_X</IVC>
+   <IVC>V58_env_always_ok</IVC>
+   <IVC>V276_X</IVC>
+   <IVC>V264_env_ok</IVC>
+   <IVC>V59_prop_ok</IVC>
+   <IVC>V251_door_opens_before_leaving_station</IVC>
+   <IVC>V60_open_door</IVC>
+   <IVC>V265_door_doesnt_close_if_not_asked</IVC>
+   <IVC>V268_door_initially_closed</IVC>
+   <IVC>V270_warning_start_and_in_station_go_down_simultaneously</IVC>
+   <IVC>V269_initially_not_in_station</IVC>
+   <IVC>OK</IVC>
+   <IVC>V61_close_door</IVC>
+</Results>
+<Results>
+   <RunID>93</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">10.258</Time>
+   <SatChecks>79</SatChecks>
+   <UnsatChecks>14</UnsatChecks>
+   <ID>13</ID>
+   <IVC>V250_door_doesnt_open_out_of_station</IVC>
+   <IVC>V266_door_doesnt_open_if_not_asked</IVC>
+   <IVC>V275_X</IVC>
+   <IVC>V252_X</IVC>
+   <IVC>V58_env_always_ok</IVC>
+   <IVC>V276_X</IVC>
+   <IVC>V264_env_ok</IVC>
+   <IVC>V59_prop_ok</IVC>
+   <IVC>V251_door_opens_before_leaving_station</IVC>
+   <IVC>V60_open_door</IVC>
+   <IVC>V265_door_doesnt_close_if_not_asked</IVC>
+   <IVC>V268_door_initially_closed</IVC>
+   <IVC>V270_warning_start_and_in_station_go_down_simultaneously</IVC>
+   <IVC>V269_initially_not_in_station</IVC>
+   <IVC>V253_between_A_and_X</IVC>
+   <IVC>OK</IVC>
+   <IVC>V61_close_door</IVC>
+</Results>
+<Results>
+   <RunID>103</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">11.319</Time>
+   <SatChecks>88</SatChecks>
+   <UnsatChecks>15</UnsatChecks>
+   <ID>14</ID>
+   <IVC>V250_door_doesnt_open_out_of_station</IVC>
+   <IVC>V266_door_doesnt_open_if_not_asked</IVC>
+   <IVC>V252_X</IVC>
+   <IVC>V274_X</IVC>
+   <IVC>V267_tramway_doesnt_start_if_not_door_ok</IVC>
+   <IVC>V62_door_ok</IVC>
+   <IVC>V273_X</IVC>
+   <IVC>V58_env_always_ok</IVC>
+   <IVC>V264_env_ok</IVC>
+   <IVC>V59_prop_ok</IVC>
+   <IVC>V251_door_opens_before_leaving_station</IVC>
+   <IVC>V60_open_door</IVC>
+   <IVC>V265_door_doesnt_close_if_not_asked</IVC>
+   <IVC>V268_door_initially_closed</IVC>
+   <IVC>V269_initially_not_in_station</IVC>
+   <IVC>OK</IVC>
+   <IVC>V61_close_door</IVC>
+</Results>
+<Results>
+   <RunID>110</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">12.265</Time>
+   <SatChecks>93</SatChecks>
+   <UnsatChecks>17</UnsatChecks>
+   <ID>15</ID>
+   <IVC>V250_door_doesnt_open_out_of_station</IVC>
+   <IVC>V266_door_doesnt_open_if_not_asked</IVC>
+   <IVC>V252_X</IVC>
+   <IVC>V267_tramway_doesnt_start_if_not_door_ok</IVC>
+   <IVC>V62_door_ok</IVC>
+   <IVC>V273_X</IVC>
+   <IVC>V271_warning_start_only_in_station</IVC>
+   <IVC>V58_env_always_ok</IVC>
+   <IVC>V264_env_ok</IVC>
+   <IVC>V59_prop_ok</IVC>
+   <IVC>V251_door_opens_before_leaving_station</IVC>
+   <IVC>V60_open_door</IVC>
+   <IVC>V265_door_doesnt_close_if_not_asked</IVC>
+   <IVC>V268_door_initially_closed</IVC>
+   <IVC>V269_initially_not_in_station</IVC>
+   <IVC>OK</IVC>
+   <IVC>V61_close_door</IVC>
+</Results>
+<Results>
+   <RunID>114</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">12.709</Time>
+   <SatChecks>97</SatChecks>
+   <UnsatChecks>17</UnsatChecks>
+   <ID>16</ID>
+   <IVC>V250_door_doesnt_open_out_of_station</IVC>
+   <IVC>V266_door_doesnt_open_if_not_asked</IVC>
+   <IVC>V275_X</IVC>
+   <IVC>V252_X</IVC>
+   <IVC>V267_tramway_doesnt_start_if_not_door_ok</IVC>
+   <IVC>V62_door_ok</IVC>
+   <IVC>V273_X</IVC>
+   <IVC>V58_env_always_ok</IVC>
+   <IVC>V276_X</IVC>
+   <IVC>V264_env_ok</IVC>
+   <IVC>V59_prop_ok</IVC>
+   <IVC>V251_door_opens_before_leaving_station</IVC>
+   <IVC>V60_open_door</IVC>
+   <IVC>V265_door_doesnt_close_if_not_asked</IVC>
+   <IVC>V268_door_initially_closed</IVC>
+   <IVC>V270_warning_start_and_in_station_go_down_simultaneously</IVC>
+   <IVC>V269_initially_not_in_station</IVC>
+   <IVC>OK</IVC>
+   <IVC>V61_close_door</IVC>
+</Results>
+<Results>
+   <RunID>130</RunID>
+   <NewSet>true</NewSet>
+   <Time unit="sec">14.586</Time>
+   <SatChecks>112</SatChecks>
+   <UnsatChecks>18</UnsatChecks>
+   <ID>17</ID>
+   <IVC>V250_door_doesnt_open_out_of_station</IVC>
+   <IVC>V266_door_doesnt_open_if_not_asked</IVC>
+   <IVC>V252_X</IVC>
+   <IVC>V267_tramway_doesnt_start_if_not_door_ok</IVC>
+   <IVC>V62_door_ok</IVC>
+   <IVC>V271_warning_start_only_in_station</IVC>
+   <IVC>V58_env_always_ok</IVC>
+   <IVC>V264_env_ok</IVC>
+   <IVC>V59_prop_ok</IVC>
+   <IVC>V251_door_opens_before_leaving_station</IVC>
+   <IVC>V60_open_door</IVC>
+   <IVC>V265_door_doesnt_close_if_not_asked</IVC>
+   <IVC>V268_door_initially_closed</IVC>
+   <IVC>V269_initially_not_in_station</IVC>
+   <IVC>V253_between_A_and_X</IVC>
+   <IVC>OK</IVC>
+   <IVC>V61_close_door</IVC>
+</Results>

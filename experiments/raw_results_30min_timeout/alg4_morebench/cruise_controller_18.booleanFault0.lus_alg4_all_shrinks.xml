@@ -1,0 +1,8 @@
+<Result>
+   <ShrinkID>1</ShrinkID>
+   <InitialSize>55</InitialSize>
+   <FinalSize>53</FinalSize>
+   <SatChecks>53</SatChecks>
+   <UnsatChecks>2</UnsatChecks>
+   <Runtime unit="sec">9.174999999999999</Runtime>
+</Result>

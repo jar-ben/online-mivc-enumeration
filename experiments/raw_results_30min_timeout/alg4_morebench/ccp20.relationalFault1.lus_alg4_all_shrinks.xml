@@ -1,0 +1,128 @@
+<Result>
+   <ShrinkID>1</ShrinkID>
+   <InitialSize>93</InitialSize>
+   <FinalSize>75</FinalSize>
+   <SatChecks>75</SatChecks>
+   <UnsatChecks>18</UnsatChecks>
+   <Runtime unit="sec">15.232</Runtime>
+</Result>
+<Result>
+   <ShrinkID>2</ShrinkID>
+   <InitialSize>88</InitialSize>
+   <FinalSize>73</FinalSize>
+   <SatChecks>73</SatChecks>
+   <UnsatChecks>15</UnsatChecks>
+   <Runtime unit="sec">14.897000000000002</Runtime>
+</Result>
+<Result>
+   <ShrinkID>3</ShrinkID>
+   <InitialSize>84</InitialSize>
+   <FinalSize>75</FinalSize>
+   <SatChecks>75</SatChecks>
+   <UnsatChecks>9</UnsatChecks>
+   <Runtime unit="sec">11.406999999999996</Runtime>
+</Result>
+<Result>
+   <ShrinkID>4</ShrinkID>
+   <InitialSize>86</InitialSize>
+   <FinalSize>75</FinalSize>
+   <SatChecks>75</SatChecks>
+   <UnsatChecks>11</UnsatChecks>
+   <Runtime unit="sec">11.698999999999998</Runtime>
+</Result>
+<Result>
+   <ShrinkID>5</ShrinkID>
+   <InitialSize>88</InitialSize>
+   <FinalSize>75</FinalSize>
+   <SatChecks>75</SatChecks>
+   <UnsatChecks>13</UnsatChecks>
+   <Runtime unit="sec">13.498000000000005</Runtime>
+</Result>
+<Result>
+   <ShrinkID>6</ShrinkID>
+   <InitialSize>84</InitialSize>
+   <FinalSize>73</FinalSize>
+   <SatChecks>73</SatChecks>
+   <UnsatChecks>11</UnsatChecks>
+   <Runtime unit="sec">12.679000000000002</Runtime>
+</Result>
+<Result>
+   <ShrinkID>7</ShrinkID>
+   <InitialSize>86</InitialSize>
+   <FinalSize>73</FinalSize>
+   <SatChecks>73</SatChecks>
+   <UnsatChecks>13</UnsatChecks>
+   <Runtime unit="sec">14.783000000000015</Runtime>
+</Result>
+<Result>
+   <ShrinkID>8</ShrinkID>
+   <InitialSize>91</InitialSize>
+   <FinalSize>73</FinalSize>
+   <SatChecks>73</SatChecks>
+   <UnsatChecks>18</UnsatChecks>
+   <Runtime unit="sec">14.080999999999989</Runtime>
+</Result>
+<Result>
+   <ShrinkID>9</ShrinkID>
+   <InitialSize>86</InitialSize>
+   <FinalSize>73</FinalSize>
+   <SatChecks>73</SatChecks>
+   <UnsatChecks>13</UnsatChecks>
+   <Runtime unit="sec">13.768999999999977</Runtime>
+</Result>
+<Result>
+   <ShrinkID>10</ShrinkID>
+   <InitialSize>84</InitialSize>
+   <FinalSize>73</FinalSize>
+   <SatChecks>73</SatChecks>
+   <UnsatChecks>11</UnsatChecks>
+   <Runtime unit="sec">12.488</Runtime>
+</Result>
+<Result>
+   <ShrinkID>11</ShrinkID>
+   <InitialSize>86</InitialSize>
+   <FinalSize>75</FinalSize>
+   <SatChecks>75</SatChecks>
+   <UnsatChecks>11</UnsatChecks>
+   <Runtime unit="sec">11.763000000000005</Runtime>
+</Result>
+<Result>
+   <ShrinkID>12</ShrinkID>
+   <InitialSize>73</InitialSize>
+   <FinalSize>73</FinalSize>
+   <SatChecks>73</SatChecks>
+   <UnsatChecks>0</UnsatChecks>
+   <Runtime unit="sec">7.652000000000015</Runtime>
+</Result>
+<Result>
+   <ShrinkID>13</ShrinkID>
+   <InitialSize>84</InitialSize>
+   <FinalSize>73</FinalSize>
+   <SatChecks>73</SatChecks>
+   <UnsatChecks>11</UnsatChecks>
+   <Runtime unit="sec">13.075999999999993</Runtime>
+</Result>
+<Result>
+   <ShrinkID>14</ShrinkID>
+   <InitialSize>90</InitialSize>
+   <FinalSize>75</FinalSize>
+   <SatChecks>75</SatChecks>
+   <UnsatChecks>15</UnsatChecks>
+   <Runtime unit="sec">14.391999999999996</Runtime>
+</Result>
+<Result>
+   <ShrinkID>15</ShrinkID>
+   <InitialSize>88</InitialSize>
+   <FinalSize>75</FinalSize>
+   <SatChecks>75</SatChecks>
+   <UnsatChecks>13</UnsatChecks>
+   <Runtime unit="sec">12.77800000000002</Runtime>
+</Result>
+<Result>
+   <ShrinkID>16</ShrinkID>
+   <InitialSize>88</InitialSize>
+   <FinalSize>75</FinalSize>
+   <SatChecks>75</SatChecks>
+   <UnsatChecks>13</UnsatChecks>
+   <Runtime unit="sec">13.07099999999997</Runtime>
+</Result>

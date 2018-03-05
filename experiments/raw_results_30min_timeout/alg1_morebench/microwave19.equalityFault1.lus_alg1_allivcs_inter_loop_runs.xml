@@ -1,0 +1,40 @@
+<Run>
+   <RunID>1</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">0.203</Time>
+</Run>
+<Run>
+   <RunID>2</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">0.101</Time>
+</Run>
+<Run>
+   <RunID>3</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">0.21</Time>
+</Run>
+<Run>
+   <RunID>4</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">0.103</Time>
+</Run>
+<Run>
+   <RunID>5</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">0.105</Time>
+</Run>
+<Run>
+   <RunID>6</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">0.104</Time>
+</Run>
+<Run>
+   <RunID>7</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">0.103</Time>
+</Run>
+<Run>
+   <RunID>8</RunID>
+   <Result>VALID</Result>
+   <Time unit="sec">1.202</Time>
+</Run>

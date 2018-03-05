@@ -1,0 +1,30 @@
+<Run>
+   <RunID>1</RunID>
+   <Result>VALID</Result>
+   <Time unit="sec">284.049</Time>
+</Run>
+<Run>
+   <RunID>2</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">9.546</Time>
+</Run>
+<Run>
+   <RunID>3</RunID>
+   <Result>VALID</Result>
+   <Time unit="sec">313.707</Time>
+</Run>
+<Run>
+   <RunID>4</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">19.318</Time>
+</Run>
+<Run>
+   <RunID>5</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">14.307</Time>
+</Run>
+<Run>
+   <RunID>6</RunID>
+   <Result>NOT_YET_CHECKED</Result>
+   <Time unit="sec">0.0</Time>
+</Run>

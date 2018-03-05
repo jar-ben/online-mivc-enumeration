@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<Results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <UcRuntime unit="sec">0.348</UcRuntime>
+   <Timeout unit="sec">51.575</Timeout>
+   <ProofTime unit="sec">3.967</ProofTime>
+   <Runtime unit="sec">4.315</Runtime>
+   <IVC>DEFS__is_therapy~0._outvar</IVC>
+   <IVC>DEFS__is_therapy~0.mode</IVC>
+   <IVC>_TOP__ASSERT__9</IVC>
+   <IVC>_TOP__ASSERT__20</IVC>
+   <IVC>_TOP__CONFIG~0.CONFIG_OUT.Configured</IVC>
+   <IVC>_TOP__CONFIG~0.CONFIG_OUT.Infusion_Total_Duration</IVC>
+   <IVC>_TOP__CONFIG~0.TLM_MODE_IN.System_On</IVC>
+   <IVC>_TOP__CONFIG~0.__ASSERT</IVC>
+   <IVC>_TOP__CONFIG~0.__ASSUME__CONJ</IVC>
+   <IVC>_TOP__CONFIG~0.__ASSUME__HIST</IVC>
+   <IVC>_TOP__CONFIG~0.__CONFIG__ASSERT__3</IVC>
+   <IVC>_TOP__CONFIG~0.__CONFIG__PROP__3</IVC>
+   <IVC>_TOP__IM~0.CONFIG_IN.Configured</IVC>
+   <IVC>_TOP__IM~0.IM_OUT.Current_System_Mode</IVC>
+   <IVC>_TOP__IM~0.TLM_MODE_IN.System_On</IVC>
+   <IVC>_TOP__IM~0.__ASSERT</IVC>
+   <IVC>_TOP__IM~0.__ASSUME__CONJ</IVC>
+   <IVC>_TOP__IM~0.__ASSUME__HIST</IVC>
+   <IVC>_TOP__IM~0.__IM__ASSERT__5</IVC>
+   <IVC>_TOP__IM~0.__IM__ASSERT__12</IVC>
+   <IVC>_TOP__IM~0.__IM__PROP__3</IVC>
+   <IVC>_TOP__IM~0.__IM__PROP__10</IVC>
+   <IVC>_TOP__OUTPUT~0.GPCA_SW_OUT.Current_System_Mode</IVC>
+   <IVC>_TOP__OUTPUT~0.IM_IN.Current_System_Mode</IVC>
+   <IVC>_TOP__OUTPUT~0.__ASSERT</IVC>
+   <IVC>_TOP__OUTPUT~0.__ASSUME__CONJ</IVC>
+   <IVC>_TOP__OUTPUT~0.__ASSUME__HIST</IVC>
+   <IVC>_TOP__OUTPUT~0.__OUTPUT__PROP__27</IVC>
+   <IVC>__GUARANTEE10</IVC>
+   <TRIVC>_TOP__CONFIG~0.__ASSERT</TRIVC>
+   <TRIVC>_TOP__CONFIG~0.__CONFIG__ASSERT__3</TRIVC>
+   <TRIVC>_TOP__CONFIG~0.TLM_MODE_IN.System_On</TRIVC>
+   <TRIVC>_TOP__ASSERT__9</TRIVC>
+   <TRIVC>_TOP__CONFIG~0.CONFIG_OUT.Configured</TRIVC>
+   <TRIVC>_TOP__IM~0.__ASSERT</TRIVC>
+   <TRIVC>__GUARANTEE10</TRIVC>
+   <TRIVC>_TOP__OUTPUT~0.__ASSERT</TRIVC>
+   <TRIVC>_TOP__CONFIG~0.__ASSUME__CONJ</TRIVC>
+   <TRIVC>DEFS__is_therapy~0.mode</TRIVC>
+   <TRIVC>_TOP__OUTPUT~0.IM_IN.Current_System_Mode</TRIVC>
+   <TRIVC>DEFS__is_therapy~0._outvar</TRIVC>
+   <TRIVC>_TOP__ASSERT__20</TRIVC>
+   <TRIVC>_TOP__CONFIG~0.__ASSUME__HIST</TRIVC>
+   <TRIVC>_TOP__IM~0.__IM__ASSERT__12</TRIVC>
+   <TRIVC>_TOP__IM~0.__IM__ASSERT__5</TRIVC>
+   <TRIVC>_TOP__CONFIG~0.CONFIG_OUT.Infusion_Total_Duration</TRIVC>
+   <TRIVC>_TOP__IM~0.CONFIG_IN.Configured</TRIVC>
+   <TRIVC>_TOP__OUTPUT~0.__OUTPUT__PROP__27</TRIVC>
+   <TRIVC>_TOP__OUTPUT~0.GPCA_SW_OUT.Current_System_Mode</TRIVC>
+   <TRIVC>_TOP__IM~0.IM_OUT.Current_System_Mode</TRIVC>
+   <TRIVC>_TOP__IM~0.TLM_MODE_IN.System_On</TRIVC>
+   <TRIVC>_TOP__OUTPUT~0.__ASSUME__CONJ</TRIVC>
+   <TRIVC>_TOP__IM~0.__IM__PROP__3</TRIVC>
+   <TRIVC>_TOP__CONFIG~0.__CONFIG__PROP__3</TRIVC>
+   <TRIVC>_TOP__IM~0.__ASSUME__HIST</TRIVC>
+   <TRIVC>_TOP__OUTPUT~0.__ASSUME__HIST</TRIVC>
+   <TRIVC>_TOP__IM~0.__ASSUME__CONJ</TRIVC>
+   <TRIVC>_TOP__IM~0.__IM__PROP__10</TRIVC>
+</Results>
