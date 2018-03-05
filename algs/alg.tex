@@ -7,6 +7,7 @@
 \SetKwFunction{Dequeue}{Dequeue}
 \SetKwFunction{Enqueue}{Enqueue}
 \SetKwFunction{approx}{IVC\_UC}
+\SetKwFunction{UpdateSQ}{UpdateShrinkingQueue}
 \SetKwProg{Fn}{Function}{:}{}
 \SetKwFunction{Init}{Init}
 
@@ -31,9 +32,7 @@
 		}
 		\While{$\mathit{shrinkingQueue}$ is not empty}{
 			$\mathit{U} \gets \Dequeue(\mathit{shrinkingQueue})$\;
-			\If{$U \in \mathit{Unexplored}$}{
-    			$\Shrink(U)$\;
-            }
+			$\Shrink(U)$\;
 		}
 	}
 }
@@ -43,14 +42,15 @@
 	$\mathit{growingQueue} \gets$ empty queue\;
 	\For{$T_i \in U$}{
 		\If{$ U \setminus \{ T_i \} \in \mathit{Unexplored}$ }{		
-			\eIf{$\Solve(I, U \setminus \{ T_i \}, P)$}{
+			\leIf{$\Solve(I, U \setminus \{ T_i \}, P)$}{
 				$U \gets U \setminus \{ T_i \}$\;
 			}{
-				$\Enqueue(\mathit{growingQueue}, U \setminus \{ T_i \})$\;			
+				$\Enqueue(\mathit{growingQueue}, U \setminus \{ T_i \})$			
 			}
 		}
 	}
-	\textbf{output} $U$;\tcp*{Output Minimal IVC}
+	\textbf{output} $U$ \tcp*{Output Minimal IVC}
+	$\UpdateSQ(U)$\;
 	$\mathit{Unexplored} \gets \mathit{Unexplored} \setminus \mathit{Sup}(U)$\;
 	\While{$\mathit{growingQueue}$ is not empty}{
 		$V \gets \Dequeue(\mathit{growingQueue})$\;
@@ -63,6 +63,7 @@
 	$M \gets $ a maximal set $ \in \mathit{Unexplored}$ such that $M \supseteq V$\;
 	\While{$\Solve(I, M, P)$}{
 			$M_{\mathit{IVC}} \gets \approx((I,M), P)$\;			
+			$\UpdateSQ(M_{\mathit{IVC}})$\;
 			$\Enqueue(\mathit{shrinkingQueue}, M_{\mathit{IVC}})$\;
 			$\mathit{Unexplored} \gets \mathit{Unexplored} \setminus \mathit{Sup}(M_{\mathit{IVC}})$\;			
 			$T_i \gets$ choose $T_i \in (M_{\mathit{IVC}} \setminus V)$\;
@@ -71,3 +72,9 @@
 	$\mathit{Unexplored} \gets \mathit{Unexplored} \setminus \mathit{Sub}(M)$\;
 }	
 
+\setcounter{AlgoLine}{0}
+\Fn{\UpdateSQ{$U$}}{
+	\For{$V \in \mathit{shrinkingQueue}$}{
+		\lIf{$U \subset V$}{remove $V$ from $\mathit{shrinkingQueue}$}	
+	}
+}	

@@ -22,7 +22,10 @@ In previous work~\cite{Ghass16,Murugesan16:renext,Ghass17Cov,Ghass17AllIVCs} we 
 
 To be useful for these tasks, the generation process must be efficient and the generated IVC must be accurate and precise (that is, sound and minimal).  In previous work, we have developed an efficient {\em offline} algorithm~\cite{Ghass17AllIVCs} for finding all minimal IVCs based on the MARCO algorithm for MUSes~\cite{marco2016fast}.  The algorithm is considered {\em offline} because it is not until all IVCs have been computed that one knows whether the solutions computed are, in fact, minimal.  In cases in which models contain many IVCs, this approach can be impractically expensive or simply not terminate.
 
-In this paper, we propose a novel {\em online} algorithm for MIVC enumeration.  With this algorithm, solutions are produced at a regular rate, and each solution produced is guaranteed to be minimal.  Additionally, for models with a large number of IVCs, the proposed algorithm is considerably more efficient than the baseline MARCO algorithm.  We demonstrate this via an experimental evaluation.
+In this paper, we propose a novel {\em online} algorithm for MIVC enumeration.  With this algorithm, solutions are produced incrementally, and each solution produced is guaranteed to be minimal.  
+Therefore, the algorithm produces at least some MIVCs even in the case of models for which is a complete MIVC enumeration intractable. Moreover, the proposed algorithm is often more efficient then the baseline MARCO also in the case of tractable models.
+%Additionally, for models with a large number of IVCs, the proposed algorithm is considerably more efficient than the baseline MARCO algorithm.  
+We demonstrate this via an experimental evaluation.
 
 The rest of the paper is organized as follows. In Section~\ref{sec:preliminaries} we define all the necessary notions. Section~\ref{sec:existing-techniques} summarizes the existing techniques. In Section~\ref{sec:algorithm} we present our novel algorithm. Section~\ref{sec:example-execution} provides an example execution of our algorithm. Finally, sections \ref{sec:implementation} and \ref{sec:experiment} cover implementation details and present experimental results. 	
 
