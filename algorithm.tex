@@ -119,7 +119,7 @@ However, in the latter case, all the sets stored in $\mathit{shrinkingQueue}$ ar
 	\item[I3)] There are no two $U, V$ in the queue such that $U \subseteq V$. 
 \end{itemize} 
 
-To ensure that the invariants hold, we use the procedure \texttt{updateShrinking\-Queue} which given an adequate set $U$ removes from $\mathit{shrinkingQueue}$ all supersets of $U$. We call the procedure every time a MIVC is found and every time a set is added to the queue. 
+To ensure that the invariants hold, we use the procedure \texttt{UpdateShrinking\-Queue} which given an adequate set $U$ removes from $\mathit{shrinkingQueue}$ all supersets of $U$. We call the procedure every time a MIVC is found and every time a set is added to the queue. 
 
 \subsubsection{Correctness}
 The algorithm produces only the MIVCs found by the shrinking procedure and all of them are \emph{fresh}, i.e. produced only once. Only subsets whose status is known are removed from the set $\mathit{Unexplored}$, thus no MIVC is excluded from the computation. The algorithm terminates and all MIVCs are found since the size of $\mathit{Unexplored}$ is reduced after every iteration. 
