@@ -4,11 +4,25 @@
 {Cadence JasperGold Formal Verification Platform}.
 \newblock \url{https://www.cadence.com/}.
 
+\bibitem{expr}
+{IVCs} repository.
+\newblock
+  \url{https://github.com/jar-ben/online-mivc-enumeration/tree/master/experiments}.
+
+\bibitem{bench}
+{Lustre Benchmarks}.
+\newblock \url{https://github.com/elaghs/benchmarks}.
+
 \bibitem{bacchus2015using}
 F.~Bacchus and G.~Katsirelos.
 \newblock Using minimal correction sets to more efficiently compute minimal
   unsatisfiable sets.
 \newblock In {\em CAV'15}, 2015.
+
+\bibitem{NFM2015:backes}
+J.~Backes et~al.
+\newblock Requirements analysis of a quad-redundant flight control system.
+\newblock In {\em NFM 2015}, 2015.
 
 \bibitem{belov2012muser2}
 A.~Belov and J.~Marques-Silva.
@@ -45,13 +59,6 @@ K.~Claessen and N.~Sörensson.
 N.~Een et~al.
 \newblock Efficient implementation of property directed reachability.
 \newblock In {\em FMCAD'11}, 2011.
-
-\bibitem{minisat}
-N.~E{\'e}n and N.~S{\"o}rensson.
-\newblock An extensible sat-solver.
-\newblock In E.~Giunchiglia and A.~Tacchella, editors, {\em Theory and
-  Applications of Satisfiability Testing}, pages 502--518, Berlin, Heidelberg,
-  2004. Springer Berlin Heidelberg.
 
 \bibitem{jkind}
 A.~Gacek, J.~Backes, M.~Whalen, L.~Wagner, and E.~Ghassabani.
@@ -115,6 +122,12 @@ K.~L. McMillan.
   checking.
 \newblock Technical Report 1999-01, Cadence Berkeley Labs, Berkeley, CA 94704,
   1999.
+
+\bibitem{piskac2016}
+A.~Mebsout and C.~Tinelli.
+\newblock Proof certificates for smt-based model checkers for infinite-state
+  systems.
+\newblock In {\em FMCAD'16}, 2016.
 
 \bibitem{Miller10:CACM}
 S.~P. Miller, M.~W. Whalen, and D.~D. Cofer.

@@ -5,8 +5,8 @@
 
 \Fn{\Solve{$I$,$U$,$P$}}{
 $res \gets \CheckAdq(I, U, P)$\;
-\If{res = UNKNOWN}{
-    $\mathit{approximateWarning} \gets true$; \tcp*{a global variable}
+\If{res = {\sc Unknown}}{
+    $\mathit{approximateWarning} \gets true$ \tcp*{a global variable}
 }
-\Return $res = \mathit{ADEQUATE}$\;
+\Return $(res = $ {\sc Adequate})\;
 }
