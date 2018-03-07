@@ -1,7 +1,7 @@
 %\section{Implementation}
 %\label{sec:impl}
 %\subsection{Implementation}
-We have implemented the %\aivcalg 
+We have implemented the %\aivcalg
 algorithm
 in an industrial model checker called \texttt{JKind} ~\cite{jkind},
 which verifies safety properties of  infinite-state synchronous systems.
@@ -9,9 +9,8 @@ It accepts Lustre programs \cite{Halbwachs91:lustre} as input.  The translation 
 into a symbolic transition system in \texttt{JKind} is straightforward and is similar to what is described
 in~\cite{Hagen08:FMCAD}.
 Verification is supported by multiple ``proof engines'' that execute in parallel, including K-induction,
-property directed reachability (PDR), and lemma generation engines that attempt to prove
-multiple properties in parallel.  To implement the engines,
-\texttt{JKind} emits SMT problems using the theories of linear integer and real arithmetic.  \texttt{JKind} supports the
+property directed reachability (PDR), and lemma generation.  During verification,
+\texttt{JKind} emits SMT problems using the theories of linear integer and real arithmetic, and can use the
 %I remove citations to save some space in the end
 %------------------
 %\texttt{Z3}~\cite{DeMoura08:z3},
@@ -31,7 +30,7 @@ We use the \texttt{JKind} IVC generation engine to implement the \ucalg\ procedu
 %However, as we will show in the experiments, on the one hand, the \ucbfalg ~algorithm is very expensive. On the other hand, the \ucalg ~algorithm is not only fast, but it also generates \ivc s that are
 %quite close to the \mivc s computed by \ucbfalg.
 
-\todo{ALL: how do timeouts fit into the general framework?}
+%\todo{ALL: how do timeouts fit into the general framework?}
 
 \iffalse
 As mentioned in Section~\ref{sec:allivcs} the \isadeq\ procedure may not terminate.
