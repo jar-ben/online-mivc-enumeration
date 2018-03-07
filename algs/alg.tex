@@ -23,12 +23,12 @@
 \Fn{\FindMIVCs{}}{
 	\While{$\mathit{Unexplored} \neq \emptyset$}{
 		%$U_{max} \gets$ a maximal $U_{max} \in \mathit{Unexplored}$\;
-		$U_{max} \gets $ a maximal set $\in \mathit{Unexplored}$\;
-        \eIf{$\Solve(I,U,P)$}{
-			$U_{\mathit{IVC}} \gets \approx((I,U_{max}), P)$\;
+		$U_{\mathit{max}} \gets $ a maximal set $\in \mathit{Unexplored}$\;
+        \eIf{$\Solve(I,U_{\mathit{max}},P)$}{
+			$U_{\mathit{IVC}} \gets \approx((I,U_{\mathit{max}}), P)$\;
 			$\Shrink(U_{\mathit{IVC}})$\;
 		}{
-			$\mathit{Unexplored} \gets \mathit{Unexplored} \setminus \mathit{Sub}(U_{max})$\;			
+			$\mathit{Unexplored} \gets \mathit{Unexplored} \setminus \mathit{Sub}(U_{\mathit{max}})$\;			
 		}
 		\While{$\mathit{shrinkingQueue}$ is not empty}{
 			$\mathit{U} \gets \Dequeue(\mathit{shrinkingQueue})$\;
@@ -75,6 +75,6 @@
 \setcounter{AlgoLine}{0}
 \Fn{\UpdateSQ{$U$}}{
 	\For{$V \in \mathit{shrinkingQueue}$}{
-		\lIf{$U \subset V$}{remove $V$ from $\mathit{shrinkingQueue}$}	
+		\lIf{$U \subseteq V$}{remove $V$ from $\mathit{shrinkingQueue}$}	
 	}
 }	
