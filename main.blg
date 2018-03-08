@@ -1,0 +1,11 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
+The style file: abbrv.bst
+Database file #1: biblio.bib
+Repeated entry---line 91 of file biblio.bib
+ : @inproceedings{NFM2015:backes
+ :                              ,
+I'm skipping whatever remains of this entry
+Warning--to sort, need author or key in jasper_gold
+Warning--to sort, need author or key in bench
+Warning--to sort, need author or key in expr
+(There was 1 error message)
