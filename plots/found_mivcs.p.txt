@@ -18,9 +18,9 @@ set ylabel myylabel
 set xlabel myxlabel 
 
 if (!exists("ymax")) ymax = 316
-if (!exists("xmax")) xmax = 73
-set yrange [1:ymax]
-set xrange [1:xmax]
+if (!exists("xmax")) xmax = 30
+set yrange [0:ymax]
+set xrange [0:xmax]
 
 set key default
 set key box
