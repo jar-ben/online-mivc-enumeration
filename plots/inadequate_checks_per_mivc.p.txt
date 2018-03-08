@@ -1,0 +1,38 @@
+reset
+set size ratio 0.69
+set terminal pdf size 3,2
+
+if (!exists("ofile")) ofile = 'inadequate_checks_per_mivc_70.pdf'
+set output ofile
+
+#set lmargin 6
+#set rmargin 2
+#set tmargin 1
+#set bmargin 3
+
+if (!exists("myylabel")) myylabel = '# inadequate checks'
+if (!exists("myxlabel")) myxlabel = '# produced MIVCs'
+set ylabel myylabel 
+set xlabel myxlabel 
+
+if (!exists("ymax")) ymax = 8000
+if (!exists("xmax")) xmax = 70
+set yrange [1:ymax]
+set xrange [1:xmax]
+
+set key default
+set key box
+set key right bottom
+set key width 0 
+
+set logscale y
+
+#set format y "10^{%L}"
+#set format x "10^{%L}"
+
+set ytics add ("8000" 8000)
+
+if (!exists("filename")) filename = 'inadequate_checks_per_mivc.data'
+
+plot filename using 1:2 title "the new algorithm" with points lt 6 ps 0.4 lc rgb "blue", \
+filename using 1:3 title "online MARCO" with points lt 8 ps 0.4 lc rgb "red"
