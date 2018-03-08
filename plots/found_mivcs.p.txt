@@ -1,6 +1,8 @@
 reset
-set size ratio 0.25
-set terminal pdf size 6,1.9
+#set size ratio 0.25
+#set terminal pdf size 6,1.9
+set size ratio 0.69
+set terminal pdf size 3,2
 
 if (!exists("ofile")) ofile = 'found_mivcs.pdf'
 set output ofile
