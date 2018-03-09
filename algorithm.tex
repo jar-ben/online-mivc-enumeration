@@ -82,22 +82,17 @@ unable to prove the property, we conservatively assume that
 the property is falsifiable and set a global warning flag {\em approximateWarning} to the
 user that the results produced may be approximate.
 
-%allow the solving algorithm to time out after a user-defined period of time.
-%
-%\mike{Information here about timeouts and their affect on solving}
-
-
-\begin{algorithm}[H]
+\begin{algorithm}[t!]
 \begin{small}
 \input{./algs/alg}
-\caption{The new MIVC enumeration algorithm}
+\caption{The Grow-Shrink algorithm}
 \label{alg:allmivc}
 \end{small}
 \end{algorithm}
 
 
 \subsection{Complete Algorithm}
-In this section, we describe, how to combine the shrink and grow methods to form an efficient online MIVC enumeration algorithm.
+In this section, we describe, how to combine the shrink and grow methods to form an efficient online MIVC enumeration algorithm. We call the algorithm Grow-Shrink algorithm.
 Since knowledge of (approximately) maximal inadequate subsets can be exploited to speed up the shrinking procedure, it might be tempting to first find all MISes.
 However, this is in general intractable since there can be up to exponentially many MISes (w.r.t. the size of $T$).
 Instead, we propose to alternate both the shrinking and growing procedures.
@@ -128,11 +123,7 @@ To ensure that the invariants hold, we use the procedure \texttt{UpdateShrinking
 
 \paragraph{Correctness:}
 The algorithm produces only the MIVCs found by the shrinking procedure and all of them are \emph{fresh}, i.e. produced only once. Only subsets whose status is known are removed from the set $\mathit{Unexplored}$, thus no MIVC is excluded from the computation. The algorithm terminates and all MIVCs are found since the size of $\mathit{Unexplored}$ is reduced after every iteration.
-
-
-
-%\mike{Made slight wordsmithing changes to algorithms}
-%\mike{Made incompleteness explicit in algorithm}		
+		
 
 \subsection{Symbolic Representation of Unexplored Subsets}
 \label{sec:symbolic-representation}

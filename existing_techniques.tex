@@ -16,38 +16,35 @@ The first property used to improve the naive enumeration algorithm is the \emph{
 
 \begin{lemma}[Monotonicity]
 \label{lemma:monotonicity}
-If a set of conjuncts  $U \subseteq T$  is an adequate set for $(I, T) \vdash P$   than all its supersets are adequate for  $(I, T) \vdash P$ as well:
-\begin{center}
-$\forall U_1 \subseteq U_2 \subseteq T: \, (I, U_1) \vdash P \Rightarrow (I, U_2) \vdash P$.
-\end{center}
-Symmetrically, if   $U \subseteq T$  is an inadequate set for $(I, T) \vdash P$   than all its subsets are inadequate for  $(I, T) \vdash P$ as well:
-\begin{center}
-$\forall U_1 \subseteq U_2 \subseteq T: \, (I, U_2) \nvdash P \Rightarrow (I, U_1) \nvdash P$.
-\end{center}
+If a set of conjuncts  $U \subseteq T$  is an adequate set for $(I, T) \vdash P$   than all its supersets are adequate for  $(I, T) \vdash P$ as well:\\ 
+
+\vspace{-10pt}
+\centerline{$\forall U_1 \subseteq U_2 \subseteq T: \, (I, U_1) \vdash P \Rightarrow (I, U_2) \vdash P$.}
+\vspace{2pt}
+\noindent
+Symmetrically, if   $U \subseteq T$  is an inadequate set for $(I, T) \vdash P$   than all its subsets are inadequate for  $(I, T) \vdash P$ as well:\\ 
+
+\vspace{-10pt}
+\centerline{$\forall U_1 \subseteq U_2 \subseteq T: \, (I, U_2) \nvdash P \Rightarrow (I, U_1) \nvdash P$.}
 \end{lemma}
 
+\vspace{-15pt}
 \begin{proof}
-%From $U_1 \subseteq U_2$ we have $U_2 \Rightarrow U_1$. Thus the
 If $U_1 \subseteq U_2$ then reachable states of $(I, U_2)$ form  a subset of the reachable states
 of $(I, U_1)$.
 \end{proof}
-%
-%\begin{corollary}
-%For $(I, T) \vdash P$, if $U \subseteq T$ is inadequate for property $P$, than all of its subsets are inadequate for $P$ as well:
-%\begin{center}
-%$\forall U_1 \subseteq U_2 \subseteq T: \, (I, U_2) \nvdash P \Rightarrow (I, U_1) \nvdash P$.
-%\end{center}
-%\end{corollary}
 
 
+\vspace{-5pt}
 The monotonicity allows  to determine status  of multiple subsets of $T$ while using only a single check for adequacy. For example, if a set $U \subseteq T$ is determined to be adequate, than all of its supersets are   adequate and do not need to be explicitly checked. Let     $\mathit{Sup}(U)$ and $\mathit{Sub}(U)$ denote the set of all supersets and subsets of $U$, respectively.
 
 Every algorithm for computing MIVCs has to determine status (i.e adequate or inadequate) of every subset of $T$.  In order to distinguish the subsets whose status is already known from those whose status is not known yet, we denote the former subsets as \emph{explored} subsets and the latter as \emph{unexplored} subsets. Moreover, we distinguish \emph{maximal} unexplored subsets:
+
+\vspace{-5pt}
 \begin{itemize}
 	\item $U_{max}$ is a \emph{maximal unexplored subset} of $T$ iff $U_{max} \subseteq T$, $U_{max}$ is unexplored, and each of its proper supersets is explored.
-%	\item $U_{min}$ is a \emph{minimal unexplored subset} of $T$ iff $U_{min} \subseteq T$, $U_{max}$ is unexplored, and each of its proper subsets is explored.
 \end{itemize}
-
+\vspace{-5pt}
 
 
 \begin{algorithm}[!t]
@@ -65,5 +62,5 @@ leave the set adequate. A n\"aive example is shown in Algorithm~\ref{shrink-proc
 Ghassabani et al.~\cite{Ghass17AllIVCs} proposed an algorithm for MIVC enumeration which iteratively chooses maximal unexplored subsets and tests them for adequacy. Each maximal subset that is found to be adequate is then shrunk into a MIVC. This algorithm enumerates MIVCs in an online manner with a relatively steady rate of the enumeration. However, an evaluation of the algorithm shown that it is rather slow since the shrinking procedure can be extremely time consuming as each check for adequacy is in fact a model checking problem.
 
 Therefore, Ghassabani et al.~\cite{Ghass17AllIVCs} proposed another algorithm which, instead of computing MIVCs in on online manner,
-rather computes only \emph{approximately} minimal IVCs. In particular, it iteratively picks maximal unexplored subsets, checks them for adequacy, and turns the adequate subsets into approximately minimal IVCs using the approximation algorithm \texttt{IVC\_UC}~\cite{Ghass16}. \texttt{IVC\_UC} is able to identify IVCs which are often very close to actual MIVCs, yet cheap to compute. This enumeration algorithm computes approximately minimal IVCs, and identifies MIVCs at the very end of the computation.  An experimental evaluation shows that the latter algorithm computes all MIVCs much faster than the algorithm based on shrinking. However, it does not enumerate MIVCs in an online manner and thus on some benchmarks may produce no MIVCs within a given time limit.
+rather computes only \emph{approximately} minimal IVCs. In particular, it iteratively picks maximal unexplored subsets, checks them for adequacy, and turns the adequate subsets into approximately minimal IVCs using the approximation algorithm \texttt{IVC\_UC}~\cite{Ghass16}. \texttt{IVC\_UC} is able to identify IVCs which are often very close to actual MIVCs, yet cheap to compute. This enumeration algorithm computes approximately minimal IVCs, and identifies MIVCs at the very end of the computation.  An experimental evaluation shows that the latter algorithm computes all MIVCs much faster than the algorithm based on shrinking. However, it does not enumerate MIVCs online and thus on some benchmarks may produce no MIVCs within a given time limit.
 
