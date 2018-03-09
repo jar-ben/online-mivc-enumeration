@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.20)  6 MAR 2018 21:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.20)  8 MAR 2018 07:00
 entering extended mode
 **C:/Users/Elaheh/Documents/GitHub/online-mivc-enumeration/main.tex
 (C:/Users/Elaheh/Documents/GitHub/online-mivc-enumeration/main.tex
@@ -782,14 +782,14 @@ Underfull \vbox (badness 3601) has occurred while \output is active []
 File: ./plots/found_mivcs.pdf Graphic file (type pdf)
 
 <use ./plots/found_mivcs.pdf>
-Package pdftex.def Info: ./plots/found_mivcs.pdf used on input line 26.
+Package pdftex.def Info: ./plots/found_mivcs.pdf used on input line 39.
 (pdftex.def)             Requested size: 346.89647pt x 109.20813pt.
 
 <./plots/time_to_complete.pdf, id=67, 433.62pt x 136.51pt>
 File: ./plots/time_to_complete.pdf Graphic file (type pdf)
 
 <use ./plots/time_to_complete.pdf>
-Package pdftex.def Info: ./plots/time_to_complete.pdf used on input line 33.
+Package pdftex.def Info: ./plots/time_to_complete.pdf used on input line 46.
 (pdftex.def)             Requested size: 346.89647pt x 109.20813pt.
 
 <./plots/adequate_checks_per_mivc_70.pdf, id=68, 216.81pt x 151.56625pt>
@@ -797,7 +797,7 @@ File: ./plots/adequate_checks_per_mivc_70.pdf Graphic file (type pdf)
 
 <use ./plots/adequate_checks_per_mivc_70.pdf>
 Package pdftex.def Info: ./plots/adequate_checks_per_mivc_70.pdf used on input 
-line 42.
+line 55.
 (pdftex.def)             Requested size: 173.44823pt x 121.25316pt.
 
 <./plots/inadequate_checks_per_mivc_70.pdf, id=69, 216.81pt x 151.56625pt>
@@ -805,7 +805,7 @@ File: ./plots/inadequate_checks_per_mivc_70.pdf Graphic file (type pdf)
 
 <use ./plots/inadequate_checks_per_mivc_70.pdf>
 Package pdftex.def Info: ./plots/inadequate_checks_per_mivc_70.pdf used on inpu
-t line 48.
+t line 61.
 (pdftex.def)             Requested size: 173.44823pt x 121.25316pt.
 ) (conclusion.tex) (main.bbl
 [13]
@@ -841,11 +841,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  17282 strings out of 493333
  356073 string characters out of 3139190
- 466911 words of memory out of 3000000
+ 466910 words of memory out of 3000000
  20444 multiletter control sequences out of 15000+200000
  13558 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,19n,68p,1044b,13682s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,19n,68p,1224b,13682s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
 x10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Progr
@@ -868,7 +868,7 @@ C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (16 pages, 447650 bytes).
+Output written on main.pdf (16 pages, 469946 bytes).
 PDF statistics:
  187 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

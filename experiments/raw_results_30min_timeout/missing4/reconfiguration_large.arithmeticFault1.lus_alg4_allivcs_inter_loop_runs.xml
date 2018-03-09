@@ -1,0 +1,120 @@
+<Run>
+   <RunID>1</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">4.414</Time>
+</Run>
+<Run>
+   <RunID>2</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">5.136</Time>
+</Run>
+<Run>
+   <RunID>3</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">5.23</Time>
+</Run>
+<Run>
+   <RunID>4</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">9.161</Time>
+</Run>
+<Run>
+   <RunID>5</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">10.716</Time>
+</Run>
+<Run>
+   <RunID>6</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">8.462</Time>
+</Run>
+<Run>
+   <RunID>7</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">0.101</Time>
+</Run>
+<Run>
+   <RunID>8</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">4.311</Time>
+</Run>
+<Run>
+   <RunID>9</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">3.204</Time>
+</Run>
+<Run>
+   <RunID>10</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">0.103</Time>
+</Run>
+<Run>
+   <RunID>11</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">5.51</Time>
+</Run>
+<Run>
+   <RunID>12</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">4.108</Time>
+</Run>
+<Run>
+   <RunID>13</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">3.012</Time>
+</Run>
+<Run>
+   <RunID>14</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">6.406</Time>
+</Run>
+<Run>
+   <RunID>15</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">0.101</Time>
+</Run>
+<Run>
+   <RunID>16</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">12.236</Time>
+</Run>
+<Run>
+   <RunID>17</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">1.001</Time>
+</Run>
+<Run>
+   <RunID>18</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">4.919</Time>
+</Run>
+<Run>
+   <RunID>19</RunID>
+   <Result>UNKNOWN</Result>
+   <Time unit="sec">1415.083</Time>
+</Run>
+<Run>
+   <RunID>20</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">4.722</Time>
+</Run>
+<Run>
+   <RunID>21</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">4.222</Time>
+</Run>
+<Run>
+   <RunID>22</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">0.101</Time>
+</Run>
+<Run>
+   <RunID>23</RunID>
+   <Result>INVALID</Result>
+   <Time unit="sec">8.629</Time>
+</Run>
+<Run>
+   <RunID>24</RunID>
+   <Result>NOT_YET_CHECKED</Result>
+   <Time unit="sec">0.0</Time>
+</Run>
