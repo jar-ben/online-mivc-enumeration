@@ -1,20 +1,20 @@
 reset
 #set size ratio 0.25
 #set terminal pdf size 4,1.9
-set size ratio 0.69
-set terminal pdf size 3,2
+set size ratio 0.909
+set terminal pdf size 2.5,2.5
 
 if (!exists("ofile")) ofile = 'found_mivcs.pdf'
 set output ofile
 
-#set lmargin 6
-#set rmargin 2
-#set tmargin 1
-#set bmargin 3
+set lmargin 7
+set rmargin 1
+set tmargin 0
+set bmargin 1
 
 if (!exists("myylabel")) myylabel = '# MIVCs'
 if (!exists("myxlabel")) myxlabel = 'individual benchmarks'
-set ylabel myylabel 
+set ylabel myylabel offset 1,0,0
 set xlabel myxlabel 
 
 if (!exists("ymax")) ymax = 316
@@ -32,5 +32,5 @@ set key width 0
 
 if (!exists("filename")) filename = 'found_mivcs.data'
 
-plot filename using 1:2 title "the new algorithm" with points lt 6 ps 0.4 lc rgb "blue", \
-filename using 1:3 title "online MARCO" with points lt 8 ps 0.4 lc rgb "red"
+plot filename using 1:2 title "Grow-Shrink" with points lt 6 ps 0.4 lc rgb "blue", \
+filename using 1:3 title "Online MARCO" with points lt 8 ps 0.4 lc rgb "red"

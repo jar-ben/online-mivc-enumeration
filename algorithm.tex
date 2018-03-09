@@ -40,7 +40,7 @@ The search for inadequate sets is done with the help  of the grow procedure.
 \end{small}
 \end{algorithm}
 
-Recall that if a set is determined to be inadequate then all of its subsets are necessarily also inadequate. Therefore, the larger the set that is determined to be inadequate, the more inadequate sets are explored.  %(due to the monotonicity of adequacy).
+Recall that if a set is determined to be inadequate then all of its subsets are necessarily also inadequate. Therefore, the larger is the set that is determined to be inadequate, the more inadequate sets are explored.  %(due to the monotonicity of adequacy).
 To identify inadequate sets as quickly as possible we search for maximal inadequate sets (MISes).
 
 In order to find a MIS, we can find an inadequate set $U \subset T$ and use a process called \emph{grow} which turns $U$ to a MIS for $(I,T) \vdash P$.
@@ -116,7 +116,7 @@ However, in the latter case, all the sets stored in $\mathit{shrinkingQueue}$ ar
 \begin{itemize}
 	\item[I1)] For each already produced MIVC $M$ holds that there is no $U$ in the queue such that $M \subseteq U$.
 	%\item[I2)] There are no duplicated sets in the queue (each set is presented only once).
-	\item[I3)] There are no two $U, V$ in the queue such that $U \subseteq V$.
+	\item[I2)] There are no two $U, V$ in the queue such that $U \subseteq V$.
 \end{itemize}
 
 To ensure that the invariants hold, we use the procedure \texttt{UpdateShrinking\-Queue} which given an adequate set $U$ removes from $\mathit{shrinkingQueue}$ all supersets of $U$. We call the procedure every time a MIVC is found and every time a set is added to the queue.
