@@ -105,7 +105,7 @@ Procedure \texttt{FindMIVCs} works iteratively. In each iteration, the procedure
 
 Procedure \texttt{Shrink} works as described in Section~\ref{sec:shrink}. However, besides shrinking the given set into a MIVC, the procedure has also another purpose. Every inadequate set that is found during the shrinking is stored in a queue $\mathit{growingQueue}$. At the end of the procedure, all of these inadequate sets are grown into approximately maximal inadequate sets using the procedure \texttt{Grow}.
 
-Procedure \texttt{Grow} turns a given inadequate set $V$ into an approximately maximal inadequate set $M$ as described in Section~\ref{sec:grow}. The resultant set and all of its subsets are marked as explored. Moreover, every adequate set that is found during the growing is marked as explored and enqueued into $\mathit{shrinkingQueue}$.
+Procedure \texttt{Grow} turns a given inadequate set $V$ into an approximately maximal inadequate set $M$ as described in Section~\ref{sec:grow}. The resultant set and all of its subsets are marked as explored. Moreover, every adequate set found during the growing is marked as explored and enqueued into $\mathit{shrinkingQueue}$.
 The queue $\mathit{shrinkingQueue}$ is dequeued at the end of each iteration of the main procedure \texttt{FindMIVCs} and the sets that were stored in the queue are shrunk to MIVCs.
 
 
@@ -115,7 +115,7 @@ However, in the latter case, all the sets stored in $\mathit{shrinkingQueue}$ ar
 
 \begin{itemize}
 	\item[I1)] For each already produced MIVC $M$ holds that there is no $U$ in the queue such that $M \subseteq U$.
-	\item[I2)] There are no duplicated sets in the queue (each set is presented only once).
+	%\item[I2)] There are no duplicated sets in the queue (each set is presented only once).
 	\item[I3)] There are no two $U, V$ in the queue such that $U \subseteq V$.
 \end{itemize}
 

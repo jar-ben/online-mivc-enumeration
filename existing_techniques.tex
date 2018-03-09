@@ -2,7 +2,7 @@
 %Let us first consider
 Consider first
 a naive enumeration algorithm that   explicitly checks each subset of $T$ for being an IVC  and then finds the minimal IVCs  using subset inclusion relation. The main disadvantage of this approach is the large number of checks since there are exponentially many subsets of $T$.
-We briefly describe existing techniques that can be used to find all MIVCs while checking only a a small portion of subsets of $T$  for being IVCs.  Most of the techniques were inspired by the MUS enumeration techniques~\cite{Liffiton2016,bacchus2015using,belov2012muser2,nadel2014accelerated,DBLP:conf/sefm/BendikBBC16,DBLP:conf/fsttcs/BendikBCB16}   proposed in the area of constraint processing and applied by Ghassabani et al.~\cite{Ghass17AllIVCs,Ghass16}.
+We briefly describe existing techniques that can be used to find all MIVCs while checking only a a small portion of subsets of $T$  for being IVCs.  Most of the techniques were inspired by the MUS enumeration techniques~\cite{Liffiton2016,DBLP:conf/sefm/BendikBBC16,DBLP:conf/fsttcs/BendikBCB16}   proposed in the area of constraint processing and applied by Ghassabani et al.~\cite{Ghass17AllIVCs,Ghass16}.
 
 
 \begin{definition}[Inadequacy] A set of conjuncts  $U \subseteq T$  is an \emph{inadequate} set for $(I, T) \vdash P$ iff $(I, U) \nvdash P$. Especially, $U \subseteq T$ is a \emph{Maximal Inadequate Set (MIS)} for $(I, T) \vdash P$ iff $U$ is inadequate and $\forall T_i \in (T \setminus U): \, (I, U \cup \{ T_i\}) \vdash P$.
