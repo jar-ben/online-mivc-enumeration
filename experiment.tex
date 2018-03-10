@@ -1,5 +1,5 @@
 We are interested in examining the performance of algorithms to compute minimal IVCs.  We examine three algorithms: \textbf{Offline MARCO}, the algorithm from~\cite{Ghass17AllIVCs}, \textbf{Online MARCO}, a variant of the algorithm from~\cite{Ghass17AllIVCs} that performs a shrink step prior to returning a solution to ensure minimality, and \textbf{Grow-Shrink}, the algorithm described in this paper.  We investigate the following research questions: (RQ1:) For the large models where the complete MIVC enumeration is intractable, 
-how many MIVCs are found within the given time limit?  (RQ2:) For the tractable models, i.e. models in which all MIVCs are found, how much time is required to complete the enumeration of MIVCs?  Finally, we are interested in how many solver calls are necessary for the enumeration.  Thus, we add (RQ3:) What is the (average) number of solver calls with result adequate/inadequate required by evaluated algorithms to produce individual MIVCs?
+how many MIVCs are found within the given time limit?  (RQ2:) For the tractable models, i.e. models in which all MIVCs are found, how much time is required to complete the enumeration of MIVCs?  Finally, we are interested in how many solver calls are necessary for the enumeration.  Thus, we add (RQ3:) What is the (average) number of solver calls with result adequate/inadequate required by evaluated online algorithms to produce individual MIVCs?
 
 
 \paragraph{Experimental Setup}:  We start from a benchmark suite that is a superset of the benchmarks used in \cite{Ghass17AllIVCs}. This suite contains 660 models, and includes all models that yield a valid result (530 in total) from previous Lustre model checking papers~\cite{Hagen08:FMCAD,piskac2016} and 130 industrial models yielding valid results derived from an infusion pump system \cite{hilt2013} and other sources \cite{piskac2016,NFM2015:backes}.
@@ -22,7 +22,7 @@ For each test model, we configured \jkind\ to use the \texttt{Z3} solver and the
 \begin{minipage}{.52\textwidth}
 \centering
 \includegraphics[scale=0.8]{./plots/time_to_complete.pdf}%
-\captionof{figure}{Runtime for tractable benchmarks for all algorithms.}%
+\captionof{figure}{Runtime for tractable benchmarks for all algorithms in a log scale.}%
 \label{res:time_to_complete}
 \end{minipage}
 \end{figure}
@@ -66,4 +66,4 @@ The improvement in the number of \emph{inadequate} calls is due the novel shrink
 Each (approximately) maximal inadequate subset found by the growing procedure allows to save (up to exponentially) many inadequate calls during subsequent executions of the shrinking procedure.
 Indeed, the Grow-Shrink algorithm performed on average only 353 inadequate calls to output the first 70 MIVCs, whereas the online MARCO needed to perform 7775 calls to output the same number of MIVCs.
 
-The improvement in the number of adequate calls is not so significant as in the case of inadequate calls. Yet, since the adequate calls are usually much more time consuming than inadequate ones, even a slight saving in the number of adequate calls might significantly speed up the whole computation. The Grow-Shrink algorithm saves adequate calls due to the usage of the shrinking queue and due to the invariants that are maintained by the queue. In particular, shall two comparable sets appear in the queue, only the smaller is left. Thus, the algorithm avoids shrinking of relatively large sets and saves some adequate calls.
+The improvement in the number of \emph{adequate} calls is not so significant as in the case of inadequate calls. Yet, since the adequate calls are usually much more time consuming than inadequate ones, even a slight saving in the number of adequate calls might significantly speed up the whole computation. The Grow-Shrink algorithm saves adequate calls due to the usage of the shrinking queue and due to the invariants that are maintained by the queue. In particular, shall two comparable sets appear in the queue, only the smaller is left. Thus, the algorithm avoids shrinking of relatively large sets and saves some adequate calls.
