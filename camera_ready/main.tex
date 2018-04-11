@@ -1,0 +1,117 @@
+\documentclass{llncs}
+\usepackage{ amssymb }
+\usepackage[linesnumbered, ruled, lined, noend]{algorithm2e}
+\usepackage{tikz}
+\usetikzlibrary{arrows,shapes,positioning}
+\usepackage{subcaption}
+\captionsetup{compatibility=false}
+\usepackage[normalem]{ulem}
+
+\usepackage{xcolor}
+\definecolor{todocolor}{RGB}{72,130,84}
+\newcommand{\todo}[1] {
+  \textcolor{todocolor}{TODO: #1}
+}
+
+\usepackage{ntheorem}
+\newtheorem{observation}{Observation}
+\renewcommand{\theobservation}{\arabic{observation}.}% #.
+
+\newcommand{\bfalg}{\texttt{\small{IVC\_BF}}}
+\newcommand{\ucalg}{\texttt{\small{IVC\_UC}}}
+\newcommand{\ucbfalg}{\texttt{\small{IVC\_UCBF}}}
+\newcommand{\mustalg}{\texttt{\small{IVC\_MUST}}}
+\newcommand{\jkind}{\texttt{\small{JKind}}}
+\newcommand{\getivc}{\textsc{GetIVC}}
+\newcommand{\mike}[1]{\textcolor{red}{Mike: #1}}
+
+\newcommand{\new}[1]{\textcolor{blue}{#1}}
+\newcommand{\old}[1]{\sout{#1}}
+
+
+
+
+\begin{document}
+
+\title{Online Enumeration of All Minimal Inductive Validity Cores}
+
+\author{Jaroslav Bend\'ik\inst{1}
+	\and Elaheh Ghassabani\inst{2}
+	\and Michael Whalen\inst{2}
+	\and Ivana \v Cern\'a\inst{1}
+}
+
+\institute{Faculty of Informatics, Masaryk University, Brno, Czech Republic\\
+\email{\{xbendik,cerna\}@fi.muni.cz}
+\and
+Department of Computer Science \& Engineering, University of Minnesota, MN, USA\\
+\email{\{ghass013,mwwhalen\}@umn.edu}
+}
+
+
+\maketitle
+\begin{abstract}
+Symbolic model checkers can construct proofs of safety properties over complex models, but when a proof succeeds, the results do not generally provide much insight to the user.  Minimal Inductive Validity Cores (MIVCs) trace a property to a minimal set of model elements necessary for constructing a proof, and can help to explain why a property is true of a model.  In addition, the traceability information provided by MIVCs can be used to perform a variety of engineering analysis such as coverage analysis, robustness analysis, and vacuity detection.  The more MIVCs are identified, the more precisely such analyses can be performed.   Nevertheless, a full enumeration of all MIVCs is in general intractable due to the large number of possible model element sets.  The bottleneck of existing algorithms is that they are not guaranteed to emit minimal IVCs until the end of the computation, so returned results are not known to be minimal until all solutions are produced.
+
+In this paper, we propose an algorithm that identifies MIVCs in an \emph{online} manner (i.e., one by one) and can be terminated at any time.  We benchmark our new algorithm against existing algorithms on a variety of examples, and demonstrate that our algorithm not only is better in intractable cases but also completes the enumeration of MIVCs faster than competing algorithms in many tractable cases.
+
+\keywords{Inductive Validity Cores, SMT-based model checking, Inductive proofs, Traceability, Proof cores}
+\end{abstract}
+
+
+\section{Introduction}
+\label{sec:intro}
+\input{intro}
+
+
+%\section{Motivating Example}
+%\label{sec:mot-example}
+%\input{motivation}
+%\todo{Mike and Elaheh: Do we need a motivating example? Something like altitude switch model in your all ivcs paper. Currently, there is just a very brief preliminaries section. It might be unclear for the reader how does the transition system looks like.}
+
+\section{Preliminaries}
+\label{sec:preliminaries}
+\input{preliminaries}
+
+
+\section{Existing Techniques}
+\label{sec:existing-techniques}
+\input{existing_techniques}
+
+
+\section{Grow-Shrink Algorithm}
+\label{sec:algorithm}
+\input{algorithm}
+
+\subsection{Implementation}
+\label{sec:implementation}
+\input{impl}
+
+\section{Example Execution of the Grow-Shrink Algorithm}
+\label{sec:example-execution}
+\input{example_execution}
+
+
+
+
+
+\section{Experiment}
+\label{sec:experiment}
+\input{experiment}
+
+\section{Conclusion}
+\label{sec:conclusions}
+\input{conclusion}
+
+
+\medskip
+\noindent
+\new{
+\textbf{Acknowledgements.} \hspace{5pt} This work has been partially supported by the Czech Science Foundation grant No. 18-02177S.}
+
+
+\bibliographystyle{abbrv}
+\bibliography{biblio}
+
+
+\end{document} 

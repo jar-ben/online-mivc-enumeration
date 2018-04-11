@@ -1,0 +1,25 @@
+A transition system $(I,T)$ over a state space $S$ consists of an initial state predicate $I : S \rightarrow bool$ and a transition step predicate $T : S \times S \rightarrow bool$. The notion of reachability for $(I, T)$ is defined as the smallest predicate $R : S \rightarrow bool$ satisfying the following formulae:
+
+\vspace{-5pt}
+\begin{itemize}
+	\item[] $\forall s \in S: \, I(s) \Rightarrow R(s)$
+	\item[] $\forall s, s' \in S: \, R(s) \wedge T(s, s') \Rightarrow R(s')$
+\end{itemize}
+
+\vspace{-5pt}
+A safety property $P: S \rightarrow bool$ holds on a transition system $(I, T)$ iff it holds on all reachable states, i.e., $\forall s \in S: \, R(s) \Rightarrow P(s)$. We denote this by $(I, T) \vdash P$. We assume
+the transiton step predicate $T$ is equivalent to   a conjunction of transition step predicates $T_1, \ldots, T_n$,  called top level conjuncts.
+%the transition relation has the structure of a top-level conjunction $T(s, s') = T_1(s, s') \wedge \cdots \wedge T_n(s, s')$.
+In such case, $T$ can be identified with the set of its top level conjuncts $\{ T_1, \ldots, T_n\}$. By further abuse of notation, we write $T \setminus \{ T_i \}$ to denote removal of top level conjunct $T_i$ from $T$, and $T \cup \{ T_j\}$ to denote addition of top level conjunct $T_j$ to $T$.
+
+
+\begin{definition}
+A set of conjuncts $U \subseteq T$ is an \emph{ Inductive Validity Core (IVC)} for $(I, T) \vdash P$ iff $(I, U) \vdash P$. Moreover, $U$ is a \emph{Minimal IVC (MIVC)} for $(I, T) \vdash P$ iff $(I, U) \vdash P$ and $\forall T_i \in U: \, (I, U \setminus \{ T_i\}) \nvdash P$.
+\end{definition}
+
+Note, that the minimality \new{(and dually maximality) in this work} is with respect to the set inclusion and not wrt cardinality \new{as e.g. in the MaxSAT problem}. There can be multiple MIVCs with different cardinalities.
+For an illustration of the concepts on a particular transition system, please refer e.g. to the Altitude Switch example~\cite{Ghass17AllIVCs}.
+
+
+
+
